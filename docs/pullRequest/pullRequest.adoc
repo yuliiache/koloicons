@@ -1,0 +1,31 @@
+= Rise a PR
+:toc:
+
+== Before rise a PR
+1. Review AC and make sure all done.
+2. Do not forget to left comments if some part of code complicated, unpredictable or explaining you decision.
+3. Fix all issues from eslint, prettier.
+4. Fix all issues from unit test.
+5. Make sure name of you branch contain the ticket number.
+6. Create PR.
+
+== While review a PR
+1. Review all files on diff tab in PR and make sure again that it is ready for review.
+2. Add reviewers for review, one of review need to make more qualified, at least two reviewers have to review the PR.
+3. Approve PR yourself to mark that you agree with all changes.
+4. Waiting until pipeline is finish to review logs, if logs has errors fix it. If no errors go to next point.
+5. Send notification to channel for reviewing you PR and tag all colleges witch added like reviewers.
+6. Waiting for review results and fix all comments or addressing it if exists. Do not mark comments as resolved itself.
+7. Notify in thread at first message about resolve all comments. Repeat point 6 and 7 until the PR will be approved of both reviewers.
+
+== Merging a PR
+1. Make sure that PR branch updated.
+2. Resolve conflicts.
+3. Make sure that pipeline staff successfully finished
+4. Request review again if needed.
+5. Merge with squash and close source PR branch.
+
+== Debug/Check your PR
+1. npm run lint - run lint. This command runs automatically on each commit
+2. npm run test - run unit tests. This command runs automatically on each push.
+3. npm start - when the project is started you can catch some errors and see the logs in the browser

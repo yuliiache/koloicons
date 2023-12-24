@@ -1,0 +1,39 @@
+@import "../settings";
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+
+  font-size: $mainFontSize;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  font-weight: normal;
+  font-size: $mainFontSize;
+  line-height: 1.5;
+  font-family: $mainFontFamily;
+  font-style: normal;
+  background-color: $LightBG;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

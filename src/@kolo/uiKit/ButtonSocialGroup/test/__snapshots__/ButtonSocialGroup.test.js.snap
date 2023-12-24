@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonSocialGroup component should render snapshot successfuly 1`] = `
+<DocumentFragment>
+  <ul
+    class="buttonSocialGroup"
+  >
+    <li
+      class="buttonSocialGroupItem"
+    >
+      <button
+        class="buttonSocial"
+        data-testid="buttonSocialComponent"
+        type="button"
+      >
+        <span
+          class="buttonSocialText"
+          data-testid="buttonSocialComponentText"
+        >
+          Facebook
+        </span>
+        <i
+          class="buttonSocialIcon"
+        >
+          <span>
+            MockedIcon
+          </span>
+        </i>
+      </button>
+    </li>
+    <li
+      class="buttonSocialGroupItem"
+    >
+      <button
+        class="buttonSocial buttonSocialDisconnected"
+        data-testid="buttonSocialComponent"
+        type="button"
+      >
+        <span
+          class="buttonSocialText"
+          data-testid="buttonSocialComponentText"
+        >
+          Disconnect Facebook
+        </span>
+        <i
+          class="buttonSocialIcon"
+        >
+          <span>
+            MockedIcon
+          </span>
+        </i>
+      </button>
+    </li>
+    <li
+      class="buttonSocialGroupItem"
+    >
+      <button
+        class="buttonSocial"
+        data-testid="buttonSocialComponent"
+        type="button"
+      >
+        <span
+          class="buttonSocialText"
+          data-testid="buttonSocialComponentText"
+        >
+          Connect Facebook
+        </span>
+        <i
+          class="buttonSocialIcon"
+        >
+          <span>
+            MockedIcon
+          </span>
+        </i>
+      </button>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

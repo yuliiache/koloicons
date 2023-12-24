@@ -1,0 +1,9 @@
+= Code review
+
+_Don't bullying your colleges while reviewing PR and not only. Be honest with yourself that your review is important for reviewers and developer witch call a review. Don't forget that you read code more often than write._
+
+1. Check link:../codeStyles/codeStyles.adoc[code styles] requirements.
+2. Share knowledge with colleges about existing components, code, helpers or best practices.
+3. Think about compatibles new code on existing project.
+4. Suggesting to make code simple and readable.
+5. Suggesting make changes if some part of code will be reused.

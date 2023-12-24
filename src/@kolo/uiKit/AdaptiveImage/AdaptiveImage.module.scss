@@ -1,0 +1,48 @@
+@import "@kolo/design";
+
+.adaptiveImage {
+  position: relative;
+  line-height: 0;
+
+  &Loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 500ms;
+
+    &Enter,
+    &EnterActive {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &ExitActive {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    svg {
+      opacity: 0.8;
+      animation: iconLoaderSpiner 0.5s infinite linear;
+    }
+  }
+
+  &Picture {
+    transition: opacity 500ms;
+    opacity: 0;
+
+    &EnterDone {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

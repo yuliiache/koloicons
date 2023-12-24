@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle should render snapshot successfuly 1`] = `
+<DocumentFragment>
+  <label
+    class="toggle"
+    for="toggleId"
+  >
+    <input
+      class="toggleInput"
+      data-testid="toggleComponent"
+      id="toggleId"
+      name="toggle"
+      type="checkbox"
+    />
+    <span
+      class="toggleLabel"
+    />
+  </label>
+</DocumentFragment>
+`;

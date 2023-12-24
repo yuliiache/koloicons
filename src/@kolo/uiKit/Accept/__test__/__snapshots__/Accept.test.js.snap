@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accept should render snapshot successfuly 1`] = `
+<img
+  alt="alt accept text"
+  height="100"
+  src="acceptImage"
+  width="100"
+/>
+`;

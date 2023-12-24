@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar should render snapshot successfuly 1`] = `
+<img
+  alt="alt avatar text"
+  height="160"
+  src="avatarImage"
+  width="160"
+/>
+`;

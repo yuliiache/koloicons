@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component should render snapshot successfuly 1`] = `
+<DocumentFragment>
+  <div
+    class="select"
+  >
+    <label
+      class="selectLabel"
+      data-testid="selectComponent"
+      for="selectId"
+    >
+      Test select
+    </label>
+    <div
+      class="selectWrapper"
+    >
+      <select
+        class="selectOptions"
+        id="selectId"
+        name="test-select"
+      >
+        <option
+          class="selectOption"
+          data-testid="first"
+          value="first"
+        >
+          first
+        </option>
+        <option
+          class="selectOption"
+          data-testid="second"
+          value="second"
+        >
+          second
+        </option>
+        <option
+          class="selectOption"
+          data-testid="third"
+          value="third"
+        >
+          third
+        </option>
+      </select>
+    </div>
+  </div>
+</DocumentFragment>
+`;

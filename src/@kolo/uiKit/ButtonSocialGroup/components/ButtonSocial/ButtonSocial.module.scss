@@ -1,0 +1,61 @@
+@import "@kolo/design";
+
+.buttonSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 16px;
+
+  font-family: $mainFontFamily;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-align: center;
+  color: $secFontColor;
+
+  background-color: $WhiteBG;
+  border: none;
+  cursor: pointer;
+
+  transition: box-shadow 0.2s ease-out;
+
+  &:hover {
+    color: $BlueColor;
+  }
+
+  &:focus {
+    position: relative;
+    outline: 4px solid rgba($color: $BlueColor, $alpha: 0.2);
+    z-index: 1;
+  }
+
+  &Icon {
+    display: inline-flex;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &Text {
+    margin-right: 16px;
+  }
+
+  &Disconnected {
+    &:hover {
+      color: $RedColor;
+
+      &Text,
+      &Icon {
+        opacity: 1;
+      }
+    }
+
+    &Text,
+    &Icon {
+      opacity: 0.7;
+    }
+  }
+}

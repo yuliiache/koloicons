@@ -1,0 +1,93 @@
+@import "@kolo/design";
+
+.month-pack {
+  background-color: $BrightBG;
+
+  &__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: $mobileWidth) {
+      padding-top: 48px;
+      padding-bottom: 40px;
+    }
+
+    &--header {
+      @include main-text(48px, normal, 900);
+
+      margin: 0;
+      margin-bottom: 16px;
+
+      text-align: center;
+      color: $mainFontColor;
+
+      @media (max-width: $mobileWidth) {
+        @include main-text(32px, normal, 900);
+      }
+    }
+
+    &--paragraph {
+      @include main-text(24px, 1.4, normal);
+
+      max-width: 480px;
+      margin: 0;
+      margin-bottom: 48px;
+
+      text-align: center;
+      color: $secFontColor;
+
+      @media (max-width: $tabletWidth) {
+        max-width: 100%;
+      }
+
+      @media (max-width: $mobileWidth) {
+        @include main-text(18px, 1.56, normal);
+
+        margin-bottom: 24px;
+      }
+    }
+
+    &--size-options {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 48px;
+
+      font-size: 0.6rem;
+      line-height: 1.5;
+      color: $GreyColor;
+
+      @media (max-width: $mobileWidth) {
+        flex-direction: column;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__list {
+    width: 100%;
+
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 24px;
+
+    @media (max-width: $tabletWidth) {
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+  }
+}

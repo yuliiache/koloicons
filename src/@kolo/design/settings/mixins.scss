@@ -1,0 +1,108 @@
+@import "./media-queries";
+@import "./colors";
+
+@mixin vh {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+@mixin overlay {
+  position: fixed;
+  top: $headerHeight;
+  overflow: hidden;
+
+  &::before {
+    position: fixed;
+    content: "";
+    top: $headerHeight;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $OverlayColor;
+    z-index: 7;
+  }
+}
+
+@mixin overlay-download {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  height: 100vh;
+
+  &::before {
+    position: fixed;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $backgroundColor;
+    z-index: 2;
+  }
+}
+
+@mixin overlay-icons {
+  position: fixed;
+  overflow: hidden;
+  top: $headerHeight;
+  height: calc(100% - $headerHeight);
+
+  &::before {
+    position: fixed;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: $headerHeight;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $backgroundColor;
+    z-index: 7;
+  }
+
+  @include mobile-screen {
+    top: 0;
+
+    &::before {
+      top: 0;
+    }
+  }
+}
+
+@mixin container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@mixin link-default {
+  font-size: 0.6rem;
+  line-height: 1.5;
+  color: $GreyColor;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: color 0.4s ease-in-out;
+
+  &:hover {
+    color: $BlueColor;
+  }
+}
+
+@mixin transition($ms) {
+  transition: all $ms linear;
+}

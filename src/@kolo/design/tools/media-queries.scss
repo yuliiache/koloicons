@@ -1,0 +1,19 @@
+@import "../settings";
+
+@mixin mobile-screen {
+  @media (min-width: $mobileWidth) {
+    @content;
+  }
+}
+
+@mixin tablet-screen {
+  @media (min-width: $tabletWidth) {
+    @content;
+  }
+}
+
+@mixin laptop-screen {
+  @media (min-width: $laptopWidth) {
+    @content;
+  }
+}

@@ -1,0 +1,8 @@
+@import "../settings";
+
+@mixin main-text($fontSize, $lineHeight, $fontWeight) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-family: $mainFontFamily;
+}

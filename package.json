@@ -1,0 +1,83 @@
+{
+  "name": "koloicons-team-5",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^0.27.2",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "classnames": "^2.3.1",
+    "downloadjs": "^1.4.7",
+    "final-form": "^4.20.7",
+    "jwt-decode": "^3.1.2",
+    "rc-tooltip": "^5.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-final-form": "^6.5.9",
+    "react-redux": "^8.1.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.8",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.0",
+    "redux-actions": "^2.6.5",
+    "redux-saga": "^1.2.0",
+    "reselect": "^4.1.6",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:dev": "dotenv -e .env.development react-scripts build",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "eslint src --ext .js --fix",
+    "prettier": "prettier src --ext .js",
+    "prettier:write": "prettier --write src --ext .js",
+    "prepare": "husky install | chmod ug+x .husky/*"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "prettier"
+    ]
+  },
+  "engines": {
+    "node": "16.16.0",
+    "npm": "8.17.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@welldone-software/why-did-you-render": "^7.0.1",
+    "babel-jest": "^29.6.1",
+    "dotenv-cli": "^7.2.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.3",
+    "jest": "^29.4.2",
+    "jest-environment-jsdom": "^29.6.1",
+    "prettier": "^2.7.1",
+    "prop-types": "^15.8.1",
+    "sass": "^1.54.4"
+  }
+}

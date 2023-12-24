@@ -1,0 +1,89 @@
+@import "@kolo/design";
+
+.select {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+
+  &Label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $secFontColor;
+
+    cursor: pointer;
+  }
+
+  &Wrapper {
+    position: relative;
+
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    height: 56px;
+  }
+
+  &Options {
+    display: block;
+    box-sizing: border-box;
+    min-width: 100%;
+    height: 100%;
+    padding: 16px 16px;
+
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: $secFontColor;
+
+    background: linear-gradient(to bottom, $WhiteBG, $WhiteBG);
+
+    border: solid 1px $ActiveBorderColor;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 0 0 $WhiteBG, inset 0 24px 35px -4px $ShadowColor;
+    cursor: pointer;
+    appearance: none;
+
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(to bottom, $WhiteBG, $WhiteBG);
+      outline: none;
+      box-shadow: inset 0 2px 0 0 $WhiteBG, inset 0 24px 35px -4px $ActiveInputColor;
+
+      & + svg {
+        fill: $IconColor;
+      }
+    }
+
+    &:focus {
+      box-shadow: inset 0 2px 0 0 $WhiteBG, inset 0 24px 35px -4px $ActiveInputColor, 0 0 0 4px $FocusShadowInput;
+    }
+
+    &:invalid {
+      color: $GreyColor;
+    }
+
+    &Option {
+      color: $secFontColor;
+    }
+
+    & + svg {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+
+      width: 16px;
+      height: 16px;
+
+      fill: $IconDisable;
+
+      transform: translateY(-50%);
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+}
