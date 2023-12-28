@@ -3,7 +3,7 @@ def LAST_STAGE_NAME
 pipeline {
         agent any
         environment {
-            TEAM_NAME = 'Team 4'
+            TEAM_NAME = 'Team 5'
             SLACK_CHANNEL = '#ci-cd'
             DEVELOPMENT_BRANCH = 'develop'
             DEV_ENV_CONF_PATH = '/var/lib/jenkins/env_config/.env.development'
