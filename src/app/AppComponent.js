@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import {Route, Routes} from 'react-router-dom';
 import {ToastContainer} from 'react-toastify';
 import {HomePage} from '@kolo/pages/Home/Home';
+
+import {APP_ROUTES} from './AppRoutes';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 // import {Header, Footer} from '@kolo/ui-kit';
 // HomePage,
@@ -11,23 +15,29 @@ import {HomePage} from '@kolo/pages/Home/Home';
 // IconsPage,
 // PolicyDocsComponent,
 // ResetPasswordPage,
-import 'react-toastify/dist/ReactToastify.css';
 
 // TODO: Replace Header, Footer placeholders
 const Header = () => <div>Header placeholder</div>;
 const Footer = () => <div>Footer placeholder</div>;
+
+const UiKit = lazy(() => import('@kolo/pages/UiKit/UiKit'));
 
 export const AppComponent = () => {
   return (
     <>
       <ToastContainer />
       <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={<HomePage />}
-        />
-        {/* { <Route path={'/login'} element={<LoginPage isLogin />} />
+      <Suspense fallback={<div>...Loading</div>}>
+        <Routes>
+          <Route
+            path={APP_ROUTES.HOME}
+            element={<HomePage />}
+          />
+          <Route
+            path={APP_ROUTES.UI_KIT}
+            element={<UiKit />}
+          />
+          {/* { <Route path={'/login'} element={<LoginPage isLogin />} />
         <Route path={'/register'} element={<LoginPage />} />
         <Route path={'/pricing'} element={<PricingPage />} />
         <Route path={'/my-account'} element={<MyAccountPage />} />
@@ -36,7 +46,8 @@ export const AppComponent = () => {
         <Route path={'/privacy-policy-docs'} element={<PolicyDocsComponent />} />
         <Route path={'/cookie-policy-docs'} element={<PolicyDocsComponent />} />
         <Route path={'/reset-password'} element={<ResetPasswordPage />} />} */}
-      </Routes>
+        </Routes>
+      </Suspense>
       <Footer />
     </>
   );
