@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: Error message, hint: Hint text 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput invalid"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: Error message, hint: undefined 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput invalid"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: undefined, hint: Hint text 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: undefined, hint: undefined 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: Error message, hint: Hint text 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput invalid"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: Error message, hint: undefined 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput invalid"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: undefined, hint: Hint text 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: undefined, hint: undefined 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests handles input change 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders as disabled 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders with all props 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput invalid"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders with hint 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders with invalid state 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput invalid"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Invalid input
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders with label 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders with placeholder 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders with required props 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <input
+      class="inputGroupInput"
+      id="test"
+      type="text"
+      value="value"
+    />
+  </div>
+</div>
+`;
