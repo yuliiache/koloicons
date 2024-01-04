@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link component renders correctly for external link with type accent 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--accent"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type brand 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--brand"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type default 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--default"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type default-red 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--default-red"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type main 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--main"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for internal link with type accent 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--accent"
+    data-testid="internalLinkComponent"
+    href="/"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for internal link with type brand 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--brand"
+    data-testid="internalLinkComponent"
+    href="/"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for internal link with type default 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--default"
+    data-testid="internalLinkComponent"
+    href="/"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for internal link with type default-red 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--default-red"
+    data-testid="internalLinkComponent"
+    href="/"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for internal link with type main 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--main"
+    data-testid="internalLinkComponent"
+    href="/"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;

@@ -1,0 +1,42 @@
+@import "@kolo/design";
+
+.link {
+  @include main-text(0.6rem, 1.5, null);
+  color: $secFontColor;
+
+  transition: color $transition-main ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $BlueColor;
+  }
+
+  &--main {
+    @include main-text(0.8rem, null, 500);
+  }
+
+  &--brand {
+    @include main-text(0.7rem, null, null);
+    color: $BlueColor;
+
+    &:hover,
+    &:focus {
+      color: $GreenColor;
+    }
+  }
+
+  &--default {
+    color: $lighthGrey;
+  }
+
+  &--accent {
+    color: $GreenColor;
+  }
+
+  &--default-red {
+    &:hover,
+    &:focus {
+      color: $RedColor;
+    }
+  }
+}
