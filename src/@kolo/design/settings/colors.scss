@@ -56,3 +56,35 @@ $FocusShadowCards: rgba(9, 86, 22, 0.2);
 $BorderIconCard: rgba(61, 126, 255, 0.5);
 $ShadowPanel: rgba(57, 63, 77, 0.1);
 $ShadowPanelInfo: rgba(41, 48, 64, 0.1);
+
+//Button
+$GreyDisableBgBtn: #bbc0cc;
+$LightGreyFontBtn: #dde0e6;
+$LightGreyBgBtn: #eaeef7;
+$GreyFontBtn: #525866;
+$PrimaryGradientStart: #5c91e8;
+$PrimaryGradientEnd: #3f6fdf;
+$AccentGradientStart: #2fab76;
+$AccentGradientEnd: #1c8651;
+$BasicGradientStart: #eff2f9;
+$BasicGradientEnd: #e3e8f4;
+
+$primaryBoxShadowColor: rgba(23, 65, 152, 0.2);
+$accentBoxShadowColor: rgba(9, 86, 22, 0.2);
+$basicBoxShadowColor: rgba(84, 90, 105, 0.1);
+$focusBoxShadowColor: rgba(80, 130, 230, 0.2);
+$hoverBoxShadowColor: rgba(255, 255, 255, 0.2);
+$basicBoxShadowColorSec: rgba(145, 158, 171, 0.2);
+
+$primaryBoxShadow: inset 0 -1px 3px 0 $primaryBoxShadowColor;
+$primaryBoxShadowActStart: inset 0 1px 3px 0 $primaryBoxShadowColor;
+$primaryBoxShadowActEnd: inset 0 -30px 30px -2px $hoverBoxShadowColor;
+$primaryBoxShadowFocHov: inset 0 30px 30px -2px $hoverBoxShadowColor;
+$boxShadowFocEnd: 0 0 0 4px $focusBoxShadowColor;
+$accentBoxShadow: inset 0 -1px 3px 0 $accentBoxShadowColor;
+$basicBoxShadow: inset 0 -1px 3px 0 $basicBoxShadowColor;
+$basicBoxShadowAct: inset 0 1px 3px 0 $basicBoxShadowColor;
+$basicBoxShadowActEnd: inset 0 30px 40px -2px $basicBoxShadowColorSec;
+$basicBoxShadowFocHovStart: inset 0 -1px 3px 0 $basicBoxShadowColor;
+$basicBoxShadowFocMid: inset 0 -30px 40px -2px $basicBoxShadowColorSec;
+$basicBoxShadowHovEnd: inset 0 -10px 40px -10px $basicBoxShadowColorSec;

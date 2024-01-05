@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component snapshot should render { description: 'accent color, big size', props: [Object] } snapshot: accent color, big size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-big button-accent"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'accent color, full-width size', props: [Object] } snapshot: accent color, full-width size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-full-width button-accent"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'accent color, small size', props: [Object] } snapshot: accent color, small size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-small button-accent"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'basic color, big size', props: [Object] } snapshot: basic color, big size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-big button-basic"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'basic color, full-width size', props: [Object] } snapshot: basic color, full-width size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-full-width button-basic"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'basic color, small size', props: [Object] } snapshot: basic color, small size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-small button-basic"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'disabled state', props: [Object] } snapshot: disabled state 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-small button-primary button-disabled"
+    data-testid="buttonComponent"
+    disabled=""
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'primary color, big size', props: [Object] } snapshot: primary color, big size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-big button-primary"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'primary color, full-width size', props: [Object] } snapshot: primary color, full-width size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-full-width button-primary"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button component snapshot should render { description: 'primary color, small size', props: [Object] } snapshot: primary color, small size 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-small button-primary"
+    data-testid="buttonComponent"
+    type="button"
+  >
+    <span
+      data-testid="buttonComponentText"
+    >
+      Common Text
+    </span>
+  </button>
+</DocumentFragment>
+`;

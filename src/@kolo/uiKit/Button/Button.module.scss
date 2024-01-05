@@ -1,0 +1,86 @@
+@import "@kolo/design";
+
+.button {
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  font-size: $mainFontSize;
+  border-radius: 4px;
+  color: $WhiteBG;
+  transition: box-shadow 0.2s ease-out;
+  line-height: 1.5;
+  box-sizing: border-box;
+  text-align: center;
+
+  &.button-small {
+    padding: 12px 24px;
+  }
+
+  &.button-big {
+    padding: 24px;
+  }
+
+  &.button-full-width {
+    width: 100%;
+    padding: 12px 24px;
+  }
+
+  &.button-primary {
+    background: linear-gradient(to bottom, $PrimaryGradientStart, $PrimaryGradientEnd);
+    box-shadow: $primaryBoxShadow;
+
+    &:not(:disabled):active {
+      background: linear-gradient(to bottom, $PrimaryGradientEnd, $PrimaryGradientStart);
+      box-shadow: $primaryBoxShadowActStart, $primaryBoxShadowActEnd;
+    }
+
+    &:not(:disabled):focus {
+      box-shadow: $primaryBoxShadow, $primaryBoxShadowFocHov, $boxShadowFocEnd;
+    }
+
+    &:not(:disabled):hover {
+      box-shadow: $primaryBoxShadow, $primaryBoxShadowFocHov;
+    }
+  }
+
+  &.button-accent {
+    background: linear-gradient(to bottom, $AccentGradientStart, $AccentGradientEnd 99%);
+    box-shadow: $accentBoxShadow;
+
+    &:not(:disabled):active {
+      box-shadow: $primaryBoxShadowActStart, $primaryBoxShadowActEnd;
+    }
+
+    &:not(:disabled):focus {
+      box-shadow: $primaryBoxShadow, $primaryBoxShadowFocHov, $boxShadowFocEnd;
+    }
+
+    &:not(:disabled):hover {
+      box-shadow: $accentBoxShadow, $primaryBoxShadowFocHov;
+    }
+  }
+
+  &.button-basic {
+    background: linear-gradient(to bottom, $BasicGradientStart, $BasicGradientEnd);
+    box-shadow: $basicBoxShadow;
+    color: $GreyFontBtn;
+
+    &:not(:disabled):active {
+      box-shadow: $basicBoxShadowAct, $basicBoxShadowActEnd;
+    }
+
+    &:not(:disabled):focus {
+      box-shadow: $basicBoxShadowFocHovStart, $basicBoxShadowFocMid, $boxShadowFocEnd;
+    }
+
+    &:not(:disabled):hover {
+      box-shadow: $basicBoxShadowFocHovStart, $basicBoxShadowHovEnd;
+    }
+  }
+
+  &.button-disabled {
+    background: $GreyDisableBgBtn;
+    cursor: default;
+    color: $LightGreyFontBtn;
+  }
+}
