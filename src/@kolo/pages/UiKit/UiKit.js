@@ -1,9 +1,8 @@
 import React from 'react';
 import {LinksGroup} from '@kolo/pages/UiKit/components/LinksGroup/LinksGroup';
 
-
-import InputGroup from "./components/InputGroup";
 import {Buttons} from './components/Buttons/Buttons';
+import InputGroup from "./components/InputGroup";
 import {Tooltip} from './components/Tooltip/Tooltip';
 
 const UiKit = () => {

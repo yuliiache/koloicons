@@ -32,10 +32,10 @@ export const Button = ({
 };
 
 Button.propTypes = {
-  size: PropTypes.oneOf(BUTTON_SIZE),
-  color: PropTypes.oneOf(BUTTON_COLOR),
+  size: PropTypes.oneOf(Object.values(BUTTON_SIZE)),
+  color: PropTypes.oneOf(Object.values(BUTTON_COLOR)),
   text: PropTypes.string.isRequired,
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func,
-  type: PropTypes.oneOf(BUTTON_TYPE),
+  type: PropTypes.oneOf(Object.values(BUTTON_TYPE)),
 };
