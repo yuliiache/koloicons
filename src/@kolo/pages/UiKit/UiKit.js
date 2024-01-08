@@ -2,14 +2,16 @@ import React from 'react';
 import {LinksGroup} from '@kolo/pages/UiKit/components/LinksGroup/LinksGroup';
 
 import {Buttons} from './components/Buttons/Buttons';
-import InputGroup from "./components/InputGroup";
+import InputGroup from './components/InputGroup';
+import LabelGroup from './components/LabelGroup/LabelGroup';
 import {Tooltip} from './components/Tooltip/Tooltip';
 
 const UiKit = () => {
   return (
     <div>
       <h1>UI-kit</h1>
-      <InputGroup/>
+      <LabelGroup />
+      <InputGroup />
       <Buttons />
       <LinksGroup />
       <Tooltip label="Tooltip">

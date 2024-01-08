@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label component renders correctly for default style with large size 1`] = `
+<DocumentFragment>
+  <span
+    class="label default large"
+    data-testid="labelComponent"
+  >
+    Default
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Label component renders correctly for default style with small size 1`] = `
+<DocumentFragment>
+  <span
+    class="label default small"
+    data-testid="labelComponent"
+  >
+    Default
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Label component renders correctly for primary style with large size 1`] = `
+<DocumentFragment>
+  <span
+    class="label primary large"
+    data-testid="labelComponent"
+  >
+    Primary
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Label component renders correctly for primary style with small size 1`] = `
+<DocumentFragment>
+  <span
+    class="label primary small"
+    data-testid="labelComponent"
+  >
+    Primary
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Label component renders correctly for success style with large size 1`] = `
+<DocumentFragment>
+  <span
+    class="label success large"
+    data-testid="labelComponent"
+  >
+    Success
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Label component renders correctly for success style with small size 1`] = `
+<DocumentFragment>
+  <span
+    class="label success small"
+    data-testid="labelComponent"
+  >
+    Success
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Label component renders correctly for warning style with large size 1`] = `
+<DocumentFragment>
+  <span
+    class="label warning large"
+    data-testid="labelComponent"
+  >
+    Warning
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Label component renders correctly for warning style with small size 1`] = `
+<DocumentFragment>
+  <span
+    class="label warning small"
+    data-testid="labelComponent"
+  >
+    Warning
+  </span>
+</DocumentFragment>
+`;
