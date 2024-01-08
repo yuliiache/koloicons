@@ -1,4 +1,5 @@
 import React from 'react';
+import {ButtonLink} from '@kolo/uiKit/ButtonLink/ButtonLink';
 
 import {Buttons} from './components/Buttons/Buttons';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
@@ -15,6 +16,10 @@ const UiKit = () => {
       <LabelGroup />
       <InputGroup />
       <Buttons />
+      <ButtonLink
+        text="Button link"
+        url="/"
+      />
       <LinksGroup />
       <Tooltip label="Tooltip">
         <button>Trigger me</button>

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonLink component snapshot should render button link 1`] = `
+<DocumentFragment>
+  <a
+    data-testid="buttonLinkComponent"
+    href="/"
+  >
+    <button
+      class="button button-small button-primary"
+      data-testid="buttonComponent"
+      type="button"
+    >
+      <span
+        data-testid="buttonComponentText"
+      >
+        Link
+      </span>
+    </button>
+  </a>
+</DocumentFragment>
+`;
