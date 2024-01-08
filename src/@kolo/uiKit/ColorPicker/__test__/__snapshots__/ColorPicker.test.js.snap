@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPicker component should renders correctly with big size 1`] = `
+<DocumentFragment>
+  <label
+    class="label big"
+  >
+    <div
+      class="colorPointer"
+      style="background-color: rgb(0, 0, 0);"
+    />
+    <input
+      class="colorInput"
+      data-testid="colorPickerComponent"
+      id="colorPicker"
+      type="color"
+      value="#000000"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`ColorPicker component should renders correctly with small size 1`] = `
+<DocumentFragment>
+  <label
+    class="label small"
+  >
+    <div
+      class="colorPointer"
+      style="background-color: rgb(0, 0, 0);"
+    />
+    <input
+      class="colorInput"
+      data-testid="colorPickerComponent"
+      id="colorPicker"
+      type="color"
+      value="#000000"
+    />
+  </label>
+</DocumentFragment>
+`;

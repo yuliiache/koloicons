@@ -1,0 +1,42 @@
+@import "@kolo/design";
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $IconInvert;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: $ColorPickerBoxShadow;
+  cursor: pointer;
+
+  &.big {
+    width: 40px;
+    height: 40px;
+
+    & > .colorPointer {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.small {
+    width: 32px;
+    height: 32px;
+
+    & > .colorPointer {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.colorPointer {
+  border: 0;
+  border-radius: 50%;
+}
+
+.colorInput {
+  @include vh;
+}

@@ -57,6 +57,10 @@ $BorderIconCard: rgba(61, 126, 255, 0.5);
 $ShadowPanel: rgba(57, 63, 77, 0.1);
 $ShadowPanelInfo: rgba(41, 48, 64, 0.1);
 
+// ColorPicker
+$ColorPickerShadow: rgba(25, 37, 63, 0.1);
+$ColorPickerBoxShadow: 0 2px 6px 0 $ColorPickerShadow;
+
 //Button
 $GreyDisableBgBtn: #bbc0cc;
 $LightGreyFontBtn: #dde0e6;
