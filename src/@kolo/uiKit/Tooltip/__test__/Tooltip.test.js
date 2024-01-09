@@ -2,7 +2,7 @@ import React from 'react';
 import {cleanup, fireEvent, render, screen} from '@testing-library/react';
 
 import {TOOLTIP_PLACEMENT, TRIGGER_ACTION} from '../constants';
-import {Tooltip} from '../Tooltip';
+import Tooltip from '../Tooltip';
 
 describe('Tooltip', () => {
   afterEach(cleanup);

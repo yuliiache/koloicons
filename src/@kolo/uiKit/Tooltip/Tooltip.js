@@ -7,7 +7,7 @@ import {overlayInnerStyle} from './styles';
 
 import 'rc-tooltip/assets/bootstrap_white.css';
 
-export const Tooltip = ({label, placement = TOOLTIP_PLACEMENT.LEFT, trigger = TRIGGER_ACTION.HOVER, children}) => {
+const Tooltip = ({label, placement = TOOLTIP_PLACEMENT.LEFT, trigger = TRIGGER_ACTION.HOVER, children}) => {
   if (!label) {
     return children;
   }
@@ -30,3 +30,5 @@ Tooltip.propTypes = {
   trigger: PropTypes.oneOf(Object.values(TRIGGER_ACTION)),
   children: PropTypes.node,
 };
+
+export default Tooltip;

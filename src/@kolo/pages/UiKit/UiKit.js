@@ -6,12 +6,14 @@ import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import {LinksGroup} from './components/LinksGroup/LinksGroup';
-import {Tooltip} from './components/Tooltip/Tooltip';
+import {Section} from './components/Section/Section';
+import Tooltips from './components/Tooltips/Tooltips';
 
 const UiKit = () => {
   return (
     <div>
       <h1>UI-kit</h1>
+      <InputGroup />
       <ColorPickerWrap />
       <LabelGroup />
       <InputGroup />
@@ -21,9 +23,9 @@ const UiKit = () => {
         url="/"
       />
       <LinksGroup />
-      <Tooltip label="Tooltip">
-        <button>Trigger me</button>
-      </Tooltip>
+      <Section title="Tooltip">
+        <Tooltips />
+      </Section>
     </div>
   );
 };
