@@ -2,13 +2,13 @@ import React from 'react';
 import {ButtonLink} from '@kolo/uiKit/ButtonLink/ButtonLink';
 
 import {Buttons} from './components/Buttons/Buttons';
+import {Checkboxes} from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import {LinksGroup} from './components/LinksGroup/LinksGroup';
 import {Section} from './components/Section/Section';
 import Tooltips from './components/Tooltips/Tooltips';
-import {Checkboxes} from './components/Checkboxes/Checkboxes';
 
 const UiKit = () => {
   return (
