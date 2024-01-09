@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox Component basic render succeed 1`] = `
+<DocumentFragment>
+  <label
+    class="checkbox"
+  >
+    <input
+      class="checkbox__input"
+      id="testId"
+      type="checkbox"
+    />
+    <span
+      class="checkbox__indicator"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox Component handles isChecked state 1`] = `
+<DocumentFragment>
+  <label
+    class="checkbox"
+  >
+    <input
+      checked=""
+      class="checkbox__input"
+      id="testId"
+      type="checkbox"
+    />
+    <span
+      class="checkbox__indicator"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox Component handles isChecked state 2`] = `
+<DocumentFragment>
+  <label
+    class="checkbox"
+  >
+    <input
+      checked=""
+      class="checkbox__input"
+      id="testId"
+      type="checkbox"
+    />
+    <span
+      class="checkbox__indicator"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox Component respects isDisabled prop 1`] = `
+<DocumentFragment>
+  <label
+    class="checkbox"
+  >
+    <input
+      checked=""
+      class="checkbox__input"
+      disabled=""
+      id="testId"
+      type="checkbox"
+    />
+    <span
+      class="checkbox__indicator"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox Component shows error message when hasError is true 1`] = `
+<DocumentFragment>
+  <label
+    class="checkbox"
+  >
+    <input
+      class="checkbox__input"
+      id="testId"
+      type="checkbox"
+    />
+    <span
+      class="checkbox__indicator checkbox__indicator--error"
+    />
+    <span
+      class="checkbox__error"
+    >
+      Required
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox Component triggers onChange event 1`] = `
+<DocumentFragment>
+  <label
+    class="checkbox"
+  >
+    <input
+      class="checkbox__input"
+      id="testId"
+      type="checkbox"
+    />
+    <span
+      class="checkbox__indicator"
+    />
+  </label>
+</DocumentFragment>
+`;
