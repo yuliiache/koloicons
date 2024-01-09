@@ -17,9 +17,7 @@ const UiKit = () => {
       <InputGroup />
       <ColorPickerWrap />
       <LabelGroup />
-      <InputGroup />
       <Checkboxes />
-      <InputGroup/>
       <Buttons />
       <ButtonLink
         text="Button link"
