@@ -1,0 +1,12 @@
+@import "@kolo/design";
+
+.radio {
+  &Group {
+    display: inline-flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 2px;
+    background-color: $BrandColor;
+    border-radius: 4px;
+  }
+}

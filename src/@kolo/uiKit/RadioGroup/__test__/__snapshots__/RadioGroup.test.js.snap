@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup should render snapshot successfully 1`] = `
+<DocumentFragment>
+  <div
+    class="radioGroup"
+  >
+    <div
+      class="radioButton radioButtonActive"
+      tabindex="0"
+    >
+      <input
+        checked=""
+        class="radioButtonInput"
+        data-testid="radioGroupComponent"
+        id="1"
+        name="radioGroup"
+        type="radio"
+        value="line"
+      />
+      <label
+        class="radioButtonLabel"
+        for="1"
+      >
+        line
+      </label>
+    </div>
+    <div
+      class="radioButton"
+      tabindex="0"
+    >
+      <input
+        class="radioButtonInput"
+        data-testid="radioGroupComponent"
+        id="2"
+        name="radioGroup"
+        type="radio"
+        value="solid"
+      />
+      <label
+        class="radioButtonLabel"
+        for="2"
+      >
+        solid
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;

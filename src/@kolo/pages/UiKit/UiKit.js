@@ -7,6 +7,7 @@ import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import {LinksGroup} from './components/LinksGroup/LinksGroup';
+import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
 import {Section} from './components/Section/Section';
 import Tooltips from './components/Tooltips/Tooltips';
 
@@ -26,6 +27,9 @@ const UiKit = () => {
       <LinksGroup />
       <Section title="Tooltip">
         <Tooltips />
+      </Section>
+      <Section title="RadioGroupButtons">
+        <RadioGroupWrapper />
       </Section>
     </div>
   );
