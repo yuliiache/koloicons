@@ -7,7 +7,7 @@ import {EXTERNAL_LINK_TEST_ID, INTERNAL_LINK_TEST_ID, LINK_TYPES} from './consta
 
 import styles from './Link.module.scss';
 
-export const Link = ({url, text, type = LINK_TYPES.DEFAULT}) => {
+const Link = ({url, children, type, isInNewTab = false}) => {
   const isInternalUrl = url.startsWith('/');
   const linksClasses = classNames(styles.link, styles[`link--${type}`]);
 
@@ -17,8 +17,10 @@ export const Link = ({url, text, type = LINK_TYPES.DEFAULT}) => {
         className={linksClasses}
         data-testid={INTERNAL_LINK_TEST_ID}
         to={url}
+        target={isInNewTab ? '_blank' : undefined}
+        rel={isInNewTab ? 'noopener noreferrer' : undefined}
       >
-        {text}
+        {children}
       </InternalLink>
     );
   }
@@ -28,16 +30,19 @@ export const Link = ({url, text, type = LINK_TYPES.DEFAULT}) => {
       className={linksClasses}
       href={url}
       data-testid={EXTERNAL_LINK_TEST_ID}
-      target="_blank"
+      target={isInNewTab ? '_blank' : undefined}
       rel="noopener noreferrer nofollow"
     >
-      {text}
+      {children}
     </a>
   );
 };
 
 Link.propTypes = {
   url: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  isInNewTab: PropTypes.bool,
+  children: PropTypes.node.isRequired,
   type: PropTypes.oneOf(Object.values(LINK_TYPES)),
 };
+
+export default Link;

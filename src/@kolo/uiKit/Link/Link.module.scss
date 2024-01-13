@@ -1,8 +1,10 @@
 @import "@kolo/design";
 
 .link {
-  @include main-text(0.6rem, 1.5, null);
-  color: $secFontColor;
+  display: inline-block;
+
+  @include main-text(0, 1.5, null);
+  color: $lighthGrey;
 
   transition: color $transition-main ease-in-out;
 
@@ -11,8 +13,14 @@
     color: $BlueColor;
   }
 
+  &:focus {
+    outline: 0;
+    box-shadow: $LinkBoxShadow;
+  }
+
   &--main {
     @include main-text(0.8rem, null, 500);
+    color: $secFontColor;
   }
 
   &--brand {
@@ -26,14 +34,18 @@
   }
 
   &--default {
-    color: $lighthGrey;
+    @include main-text(0.6rem, 1.5, null);
   }
 
   &--accent {
+    @include main-text(0.6rem, 1.5, null);
     color: $GreenColor;
   }
 
   &--default-red {
+    @include main-text(0.6rem, 1.5, null);
+    color: $secFontColor;
+
     &:hover,
     &:focus {
       color: $RedColor;

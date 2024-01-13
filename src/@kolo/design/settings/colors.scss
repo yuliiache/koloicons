@@ -95,3 +95,7 @@ $basicBoxShadowFocMid: inset 0 -30px 40px -2px $basicBoxShadowColorSec;
 $basicBoxShadowHovEnd: inset 0 -10px 40px -10px $basicBoxShadowColorSec;
 //Radio Buttons Colors
 $RadioButtonHover: hsla(0, 0%, 100%, 0.3);
+
+// Link
+$LinkShadow: rgba(36, 105, 242, 0.2);
+$LinkBoxShadow: 0 0 0 4px $LinkShadow;

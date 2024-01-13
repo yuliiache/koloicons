@@ -1,38 +1,66 @@
 import {LINK_TYPES} from '@kolo/uiKit/Link/constants';
-import {Link} from '@kolo/uiKit/Link/Link';
+import Link from '@kolo/uiKit/Link/Link';
 
 import style from './LinksGroup.module.scss';
 
-export const LinksGroup = () => {
+const LinksGroup = () => {
   return (
-    <>
-      <h2>Links</h2>
-      <div className={style.linksWrap}>
+    <ul className={style.linksList}>
+      <li>
         <Link
           url="/"
-          text="Internal link"
           type={LINK_TYPES.MAIN}
-        />
+        >
+          <span>Internal link</span>
+        </Link>
+      </li>
+      <li>
         <Link
-          url="https://uk-ua.facebook.com/"
-          text="External link"
-          type={LINK_TYPES.BRAND}
-        />
-        <Link
-          url="https://uk-ua.facebook.com/"
-          text="External link"
-        />
-        <Link
-          url="https://uk-ua.facebook.com/"
-          text="External link"
+          url="/privacy-policy-docs"
           type={LINK_TYPES.ACCENT}
-        />
+          isInNewTab
+        >
+          <span>Internal link that opens in a new tab</span>
+        </Link>
+      </li>
+      <li>
         <Link
           url="https://uk-ua.facebook.com/"
-          text="External link"
+          type={LINK_TYPES.BRAND}
+          isInNewTab
+        >
+          <span>External link</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          url="https://uk-ua.facebook.com/"
+          type={LINK_TYPES.DEFAULT}
+          isInNewTab
+        >
+          <span>External link</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          url="https://uk-ua.facebook.com/"
+          type={LINK_TYPES.ACCENT}
+          isInNewTab
+        >
+          <span>External link</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          url="https://uk-ua.facebook.com/"
           type={LINK_TYPES.DEFAULT_RED}
-        />
-      </div>
-    </>
+          isInNewTab
+        >
+          <span>External link</span>
+        </Link>
+      </li>
+    </ul>
   );
 };
+
+export default LinksGroup;

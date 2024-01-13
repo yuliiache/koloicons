@@ -7,6 +7,19 @@ exports[`Link component renders correctly for external link with type accent 1`]
     data-testid="externalLinkComponent"
     href="http://external.com"
     rel="noopener noreferrer nofollow"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type accent that should open in a new tab 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--accent"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
     target="_blank"
   >
     External link
@@ -15,6 +28,19 @@ exports[`Link component renders correctly for external link with type accent 1`]
 `;
 
 exports[`Link component renders correctly for external link with type brand 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--brand"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type brand that should open in a new tab 1`] = `
 <DocumentFragment>
   <a
     class="link link--brand"
@@ -35,6 +61,19 @@ exports[`Link component renders correctly for external link with type default 1`
     data-testid="externalLinkComponent"
     href="http://external.com"
     rel="noopener noreferrer nofollow"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type default that should open in a new tab 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--default"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
     target="_blank"
   >
     External link
@@ -49,6 +88,19 @@ exports[`Link component renders correctly for external link with type default-re
     data-testid="externalLinkComponent"
     href="http://external.com"
     rel="noopener noreferrer nofollow"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type default-red that should open in a new tab 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--default-red"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
     target="_blank"
   >
     External link
@@ -57,6 +109,19 @@ exports[`Link component renders correctly for external link with type default-re
 `;
 
 exports[`Link component renders correctly for external link with type main 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--main"
+    data-testid="externalLinkComponent"
+    href="http://external.com"
+    rel="noopener noreferrer nofollow"
+  >
+    External link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for external link with type main that should open in a new tab 1`] = `
 <DocumentFragment>
   <a
     class="link link--main"
@@ -82,12 +147,40 @@ exports[`Link component renders correctly for internal link with type accent 1`]
 </DocumentFragment>
 `;
 
+exports[`Link component renders correctly for internal link with type accent that should open in a new tab 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--accent"
+    data-testid="internalLinkComponent"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
 exports[`Link component renders correctly for internal link with type brand 1`] = `
 <DocumentFragment>
   <a
     class="link link--brand"
     data-testid="internalLinkComponent"
     href="/"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for internal link with type brand that should open in a new tab 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--brand"
+    data-testid="internalLinkComponent"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
   >
     Internal link
   </a>
@@ -106,6 +199,20 @@ exports[`Link component renders correctly for internal link with type default 1`
 </DocumentFragment>
 `;
 
+exports[`Link component renders correctly for internal link with type default that should open in a new tab 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--default"
+    data-testid="internalLinkComponent"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
 exports[`Link component renders correctly for internal link with type default-red 1`] = `
 <DocumentFragment>
   <a
@@ -118,12 +225,40 @@ exports[`Link component renders correctly for internal link with type default-re
 </DocumentFragment>
 `;
 
+exports[`Link component renders correctly for internal link with type default-red that should open in a new tab 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--default-red"
+    data-testid="internalLinkComponent"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
 exports[`Link component renders correctly for internal link with type main 1`] = `
 <DocumentFragment>
   <a
     class="link link--main"
     data-testid="internalLinkComponent"
     href="/"
+  >
+    Internal link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component renders correctly for internal link with type main that should open in a new tab 1`] = `
+<DocumentFragment>
+  <a
+    class="link link--main"
+    data-testid="internalLinkComponent"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
   >
     Internal link
   </a>

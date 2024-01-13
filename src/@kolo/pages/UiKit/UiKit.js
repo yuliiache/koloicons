@@ -6,7 +6,7 @@ import {Checkboxes} from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
-import {LinksGroup} from './components/LinksGroup/LinksGroup';
+import LinksGroup from './components/LinksGroup/LinksGroup';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
 import {Section} from './components/Section/Section';
 import Tooltips from './components/Tooltips/Tooltips';
@@ -24,7 +24,9 @@ const UiKit = () => {
         text="Button link"
         url="/"
       />
-      <LinksGroup />
+      <Section title="Link">
+        <LinksGroup />
+      </Section>
       <Section title="Tooltip">
         <Tooltips />
       </Section>
