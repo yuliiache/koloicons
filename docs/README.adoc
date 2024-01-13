@@ -8,3 +8,5 @@
 == link:codeReview/codeReview.adoc[Code review]
 
 == link:branchAndPullRequestsNaming/branchAndPullRequestsNaming.adoc[Branch and Pull Requests Naming]
+
+== link:typeScriptStyle/typeScriptStyle.adoc[TypeScript Style Guide]

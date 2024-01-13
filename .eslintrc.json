@@ -55,6 +55,16 @@
           }
         ]
       }
+    },
+    // typescript
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+      "plugins": ["react", "simple-import-sort", "@typescript-eslint"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
     }
   ]
 }

@@ -1,11 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import {FC} from 'react';
 
 import {SELECT_TEST_ID} from './constants';
-
 import styles from './Select.module.scss';
 
-export const Select = ({label, name, options = [], value = '', compId = 'selectId', onChange}) => {
+interface Props {
+  label?: string;
+  name?: string;
+  options?: string[];
+  value?: string;
+  compId?: string;
+  onChange?: () => void;
+}
+
+export const Select: FC<Props> = ({label, name, options = [], value = '', compId = 'selectId', onChange}) => {
   return (
     <div className={styles.select}>
       {!!label && (
@@ -40,13 +47,4 @@ export const Select = ({label, name, options = [], value = '', compId = 'selectI
       </div>
     </div>
   );
-};
-
-Select.propTypes = {
-  label: PropTypes.string,
-  name: PropTypes.string,
-  options: PropTypes.arrayOf(PropTypes.string),
-  value: PropTypes.string,
-  compId: PropTypes.string,
-  onChange: PropTypes.func,
 };

@@ -1,0 +1,70 @@
+= TypeScript styles
+:toc:
+
+== Type inference
+Leave out type annotations for trivially inferred types: string, number, boolean, RegExp
+
+```
+// bad
+const a: boolean = true; 
+const b: number = 5;
+const c: string = 'text';
+const [isActive, setIsActive] = useState<boolean>(false);
+
+// good
+const a = true; 
+const b = 5;
+const c = 'text';
+const [isActive, setIsActive] = useState(false);
+```
+
+== Type can be narrowed
+Use explicit type declaration to narrow the type
+
+```
+// bad
+type UserRole = 'admin' | 'guest';
+const [userRole, setUserRole] = useState('admin'); // Type 'string'
+
+// good
+type UserRole = 'admin' | 'guest';
+const [userRole, setUserRole] = useState<UserRole>('admin'); // Type 'UserRole'
+```
+
+== Interface or Type
+Type can be used to name primitives, unions, tuples, and any other types
+Use Interface when declaring types for objects
+
+// bad
+interface UserRole = 'admin' | 'guest';
+type UserInfo {
+  name: string;
+  role: 'admin' | 'guest';
+}
+
+// good
+type UserRole = 'admin' | 'guest';
+interface UserInfo = {
+  name: string;
+  role: UserRole;
+};
+
+```
+
+== Type Naming
+Don’t use prefix and postfix in the type naming when to indicate interface or type.
+
+// bad
+interface IProps = {...};
+type UserRoleType = 'admin' | 'guest';
+
+// good
+interface Props = {...};
+type UserRole = 'admin' | 'guest';
+
+```
+
+== Any
+Consider not to use any. In circumstances where you want to use any, consider one of:
+- provide a more specific type;
+- use unknown;

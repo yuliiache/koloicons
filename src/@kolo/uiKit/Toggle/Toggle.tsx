@@ -1,11 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import {FC} from 'react';
 
 import {TOGGLE_TEST_ID} from './constants';
-
 import styles from './Toggle.module.scss';
 
-export const Toggle = ({isChecked = false, isDisabled = false, name, compId = 'toggleId', onChange}) => {
+interface Props {
+  name: string;
+  compId?: string;
+  isChecked?: boolean;
+  isDisabled?: boolean;
+  onChange: () => void;
+}
+
+export const Toggle: FC<Props> = ({name, compId = 'toggleId', isChecked = false, isDisabled = false, onChange}) => {
   return (
     <label
       className={styles.toggle}
@@ -24,12 +30,4 @@ export const Toggle = ({isChecked = false, isDisabled = false, name, compId = 't
       <span className={styles.toggleLabel} />
     </label>
   );
-};
-
-Toggle.propTypes = {
-  isChecked: PropTypes.bool,
-  isDisabled: PropTypes.bool,
-  name: PropTypes.string.isRequired,
-  compId: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
 };
