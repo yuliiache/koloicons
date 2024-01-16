@@ -11,10 +11,15 @@ import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper'
 import {Section} from './components/Section/Section';
 import Tooltips from './components/Tooltips/Tooltips';
 
+import style from './UiKit.module.scss';
+
 const UiKit = () => {
   return (
     <div>
       <h1>UI-kit</h1>
+      <Section title="HTTP request section">
+        <div className={style.buttonsWrapper}>{/* Use small basic button and add it here. */}</div>
+      </Section>
       <InputGroup />
       <ColorPickerWrap />
       <LabelGroup />
