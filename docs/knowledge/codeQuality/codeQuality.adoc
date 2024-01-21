@@ -1,0 +1,5 @@
+== Code quality
+:toc:
+
+=== 1. link:debugging/debugging.adoc[Debugging]
+=== 2. link:testing/testing.adoc[Testing]

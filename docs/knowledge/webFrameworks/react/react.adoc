@@ -1,0 +1,77 @@
+== React
+:toc:
+
+=== 1. https://legacy.reactjs.org/docs/components-and-props.html#function-and-class-components[React component definition (functional, class)]
+=== 2. https://react.dev/learn/passing-props-to-a-component[React component props]
+- https://legacy.reactjs.org/docs/render-props.html[render props]
+
+=== 3. https://react.dev/learn/state-a-components-memory[React component state]
+- initial state
+- setState
+- stateful vs stateless components
+
+=== 4. React class component lifecycle methods
+=== 5.* https://react.dev/reference/react[React hooks API]:
+- `useEffect (https://react.dev/learn/removing-effect-dependencies[problem])`, `useState`, `useReducer`, `useMemo`, `useRef`
+- https://reactjs.org/docs/hooks-rules.html[rules]
+- https://react.dev/learn/reusing-logic-with-custom-hooks[custom hooks]
+
+=== 6. Components composition
+- props.children
+- composition vs inheritance
+- lifting state up
+- practical decomposition task
+
+=== 7. https://react.dev/learn/writing-markup-with-jsx[JSX]
+=== 8. https://react.dev/reference/react-dom[React DOM]
+=== 9. https://react.dev/reference/react-dom/components/common#reference[React DOM Events]
+`SyntheticEvent`, `persist event`
+
+=== 10. https://react.dev/reference/react-dom/components#form-components:~:text=and%20dangerouslySetInnerHTML.-,Form%20components,-These%20built%2Din[Forms]
+`controlled`,`uncontrolled components`
+
+=== 11. https://legacy.reactjs.org/docs/faq-internals.html#what-is-the-virtual-dom[Virtual DOM]
+- https://ru.reactjs.org/docs/reconciliation.html[reconciliation]
+- https://github.com/acdlite/react-fiber-architecture[fiber]
+
+=== 12. React code reuse patterns
+- https://legacy.reactjs.org/docs/higher-order-components.html[higher-order components]
+
+=== 13. https://react.dev/reference/react/createContext[Context]
+`when to use`, `Context.Provider`, `Context.Consumer`, `Context vs Redux`
+
+=== 14. https://react.dev/reference/react-dom/createPortal[Portals]
+=== 15.  https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary[Error Boundaries]
+
+=== 16.  React component lifecycle phases (render, pre-commit, commit)
+- https://vmarchesin.medium.com/the-react-lifecycle-step-by-step-47c0db0bfe73#:%7E:text=Pre%2Dcommit%20phase%3A%20Is%20a,any%20side%20effects%20are%20triggered[class components]
+- https://react.dev/learn/render-and-commit[fn components]
+- https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/#render-and-commit-phases[...]
+
+=== 19. https://react.dev/reference/react-dom/server[Server rendering]
+`renderToPipeableStream`
+`renderToStaticNodeStream`
+`renderToReadableStream`
+`renderToString`
+`renderToNodeStream`
+
+
+=== 20. https://react.dev/reference/react/memo[React.memo], https://react.dev/reference/react/lazy[React.lazy, Suspense p1] https://betterprogramming.pub/routing-and-code-splitting-in-react-fc7315f0bde4[p2]
+
+=== 21. Optimizing Performance
+- https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key[keys]
+- https://react.dev/reference/react/Profiler[Profiler],
+- https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en[Dev Tools],
+- https://create-react-app.dev/docs/production-build/[prod build, code splitting],
+- https://levelup.gitconnected.com/how-to-render-your-lists-faster-with-react-virtualization-5e327588c910[virtualization]
+
+=== 22. Security
+-  https://medium.com/javascript-security/avoiding-xss-in-react-is-still-hard-d2b5c7ad9412[XSS on React Props]
+- https://blog.logrocket.com/using-dangerouslysetinnerhtml-in-a-react-application/[dangerouslySetInnerHTML]
+
+
+
+
+
+
+

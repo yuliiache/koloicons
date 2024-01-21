@@ -1,0 +1,17 @@
+== React State Management
+:toc:
+
+=== 1. https://legacy.reactjs.org/docs/faq-state.html#gatsby-focus-wrapper[Local state to a class component]
+=== 2.* https://react.dev/learn/state-a-components-memory[Local state to a functional component]
+=== 3. https://legacy.reactjs.org/docs/state-and-lifecycle.html#using-state-correctly[State modifying]
+=== 4.* https://react.dev/reference/react/useReducer[Using the state hook (useState, useReducer)]
+=== 5.* https://react.dev/learn/passing-data-deeply-with-context[React Context API in terms of state management]
+=== 6.* https://redux.js.org/understanding/history-and-design/prior-art[Flux architecture]
+=== 7.* https://redux.js.org/usage/[Redux]
+`three main principles`, `actions`, `reducers`, `store`, `data normalization`
+
+=== 8.* https://redux.js.org/understanding/history-and-design/middleware[Redux Async Flow (middleware)]
+
+=== 9.* https://redux.js.org/usage/writing-logic-thunks[Redux Thunk]
+
+=== 10.* https://redux-saga.js.org/[Redux Saga]

@@ -1,0 +1,32 @@
+== TypeScripts
+:toc:
+
+=== 1. https://medium.com/swlh/the-major-benefits-of-using-typescript-aa8553f5e2ed#:~:text=Static%20Typing,earlier%20in%20the%20debugging%20process[What is typescript? Benefits over JS.]
+
+=== 2. https://www.typescriptlang.org/docs/handbook/basic-types.html#void[Basics of types]
+- Boolean,
+- Number,
+- String,
+- Array,
+- Enum,
+- Any,
+- Void,
+- Null,
+- Undefined,
+- Object Literal types
+
+=== 3. https://www.typescriptlang.org/docs/handbook/variable-declarations.html[Variable declaration]
+
+=== 4. https://www.typescriptlang.org/docs/handbook/2/functions.html[Functions]
+- declaration and usage
+- return type
+- arrow functions
+- optional default parameters in function
+
+=== 5.
+- https://www.typescriptlang.org/docs/handbook/2/objects.html[Interfaces]
+- https://www.typescriptlang.org/docs/handbook/2/classes.html[Classes]
+- https://www.typescriptlang.org/docs/handbook/2/types-from-types.html[Custom types]
+https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types[Types union and Intersection]
+
+== 6. https://www.typescriptlang.org/docs/handbook/modules.html[Module system]

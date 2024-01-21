@@ -1,0 +1,62 @@
+== JavaScript/ECMAScript Core
+:toc:
+
+=== 1. Variables:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var[var]
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let[let]
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const[const]
+- https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Symbol[symbol]
+
+=== 2. Data types and data structures
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures[Primitive vs Complex]
+
+=== 3. Operators
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators[General groups of operators]
+
+=== 4. "Collections
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections[Regular arrays]
+
+=== 5. Objects
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects[Working with objects]
+
+=== 6. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration[Loops and iterations]
+- for...in vs for..of
+- while vs for
+
+=== 7. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions[Functions]
+- Defining functions
+- Calling functions
+- Functions scope
+- Scope and the function stack (https://medium.com/joonsikyang/scope-and-the-scope-chain-27216a853a4e[Scope chaining])
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#:~:text=Multiply%2Dnested%20functions[Nested functions] and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures[closures]
+- this
+
+=== 8. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators[Operators]
+
+=== 9. OOP
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain[Inheritance and Prototypes]
+- https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up#:~:text=The%20most%20important%20difference%20between,is%20itself%20an%20object%20instance[Class based vs proto based]
+
+=== 10. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode[Strict mode]
+
+=== 11. https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop[Concurrency model and Event Loop]
+
+=== 12. https://javascript.info/callbacks#pyramid-of-doom[Callback hell] & https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise[Promises] / https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function[async fn]
+
+=== 13. https://javascript.info/modules[Modules]
+
+=== 14. Extended Parameter Handling
+- http://es6-features.org/#DefaultParameterValues[Default Parameter Values]
+- http://es6-features.org/#RestParameter[Rest Parameter]
+- http://es6-features.org/#SpreadOperator[Spread Operator]
+- https://javascript.info/destructuring-assignment[Destructuring]
+
+=== 15. https://dev.to/lydiahallie/series/3341[JavaScript Visualized]
+- https://www.jsv9000.app/[Event Loop]
+- Hoisting
+- Scope (Chain)
+- the JavaScript Engine
+- Prototypal Inheritance
+- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function*[Generators and Iterators]
+- Promises & Async/Await
+

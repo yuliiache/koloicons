@@ -1,0 +1,7 @@
+== Configuration And Networks
+:toc:
+
+=== 1. link:cicd/cicd.adoc[CI/CD]
+=== 2. link:networks/networks.adoc[Networks]
+=== 3. link:security/security.adoc[Security]
+=== 4. link:cloud/cloud.adoc[Cloud]

@@ -1,0 +1,33 @@
+== HTML
+:toc:
+
+=== 1.* HTML definition
+- https://atendesigngroup.com/articles/brief-history-html[A Brief History of HTML]
+- https://developer.mozilla.org/en-US/docs/Web/HTML[HTML]
+- new tags Html5
+
+`<article>  <aside>, <audio>, <bdi>, <canvas>, <datalist>, <details>, <embed>, <figure>, <figcaption>, <footer>, <header>, <keygen>, <mark>, <meter>, <nav>, <output>, <progress>, <rp>, <rt>, <ruby>, <time>, <track>, <video>, and <wbr>.`
+
+There are also new input types
+`tel, search, url, e-mail, datetime, date, month, week, time, datetime-local, number, range, and color`
+
+=== 2. https://www.w3schools.com/html/html5_syntax.asp[HTML syntax]
+=== 3. https://www.w3schools.com/html/html_attributes.asp[Attributes]
+=== 4. https://www.w3schools.com/tags/ref_html_dtd.asp[DOCTYPE]
+=== 5. https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction[DOM]
+=== 6.* https://www.developer.com/design/html5-page-layout/[Structural layout]
+- HTML structural elements
+- Key HTML5 Page Structure Elements
+- Understanding the Proper Way to Lay Out a Page with HTML5
+- https://stackoverflow.com/questions/83073/why-not-use-tables-for-layout-in-html[Why not use tables for layout in HTML?]
+
+=== 7. http://html5doctor.com/html5-forms-introduction-and-new-attributes/[HTML forms]
+=== 8. https://html.spec.whatwg.org/multipage/text-level-semantics.html#text-level-semantics[Text-level semantics]
+=== 9. https://web.dev/howbrowserswork/[How browsers work]
+=== 10.* https://www.keycdn.com/blog/blocking-the-dom[Render-blocking resources]
+=== 11.* https://web.dev/critical-rendering-path/[Critical rendering path]
+=== 12. https://www.hongkiat.com/blog/css-object-model-cssom/[CSSOM (p1)] https://www.youtube.com/watch?v=-CATiyw2-Ns[CSSOM (p2)]
+=== 13. https://web.dev/critical-rendering-path-render-tree-construction/[Rendering tree, reflow, repaint (p1)] https://www.phpied.com/rendering-repaint-reflowrelayout-restyle/[Rendering tree, reflow, repaint (p2)]
+=== 14. [Semantics]
+=== 15.* https://www.themelocation.com/best-html5-practices/[HTML design: hints, best practices]
+=== 16 https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d[Resource hints]

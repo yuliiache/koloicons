@@ -1,0 +1,9 @@
+== Cloud
+:toc:
+
+=== 1. https://patterns.arcitura.com/cloud-computing-patterns/basics/basic-concepts-and-terminology/cloud[What is cloud technology]
+=== 2. https://www.youtube.com/watch?v=M988_fsOSWo[What is cloud services]
+=== 3. https://www.youtube.com/watch?v=36zducUX16w[Cloud model]
+- IaaS
+- PaaS
+- SaaS

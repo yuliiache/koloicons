@@ -1,0 +1,16 @@
+== Debugging
+:toc:
+
+=== 1.* https://www.w3schools.com/js/js_debugging.asp[Code Debugging]
+=== 2.* https://developer.chrome.com/docs/devtools/[Chrome Developers Tools]
+
+=== 3.* Static code analysis:
+- https://eslint.org/[ESLint] / https://jshint.com/[JSHint] / https://www.jslint.com/[JSLint]
+
+=== 4. https://en.wikipedia.org/wiki/Code_refactoring[Refactoring]
+- What Is Refactoring?
+- Refactoring Goals.
+
+=== 5. https://sourcemaking.com/refactoring/refactorings[Refactoring Techniques]
+- Composing methods;
+- Moving Features between Objects.

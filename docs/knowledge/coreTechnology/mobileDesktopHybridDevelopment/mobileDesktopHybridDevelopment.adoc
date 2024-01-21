@@ -1,0 +1,9 @@
+== Mobile / Desktop / Hybrid Development
+:toc:
+
+=== 1. https://learn.microsoft.com/en-us/archive/msdn-magazine/2014/november/modern-apps-mobile-web-sites-vs-native-apps-vs-hybrid-apps[Modern Apps part 1] /  https://www.nngroup.com/articles/mobile-native-apps/[Modern Apps part 2]
+- https://cordova.apache.org/docs/en/latest/[Cordova]
+- https://ionicframework.com/docs/[Ionic]
+- https://nativescript.org/[Nativescript]
+- https://www.electronjs.org/docs/latest/[Electron]
+- https://reactnative.dev/docs/getting-started[React Native]

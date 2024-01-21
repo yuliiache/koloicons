@@ -1,0 +1,10 @@
+== Core Technology
+:toc:
+
+=== 1. link:jsCore/jsCore.adoc[JavaScript/ECMAScript Core]
+=== 2. link:html/html.adoc[HTML]
+=== 3. link:css/css.adoc[CSS]
+=== 4. link:webServices/webServices.adoc[Web Services]
+=== 5. link:typescript/typescript.adoc[TypeScript]
+=== 6. link:mobileDesktopHybridDevelopment/mobileDesktopHybridDevelopment.adoc[Mobile / Desktop / Hybrid Development]
+=== 7.* https://github.com/azat-io/you-dont-know-js-ru[Books]

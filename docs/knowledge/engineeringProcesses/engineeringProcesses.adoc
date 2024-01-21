@@ -1,0 +1,25 @@
+== Processes
+:toc:
+
+=== 1. https://www.tutorialspoint.com/sdlc/sdlc_overview.htm[General understanding of SDLC model]
+- Phases of SDLC model:
+`Waterfall Model`
+`Iterative Model`
+`Spiral Model`
+`V-Model`
+`Big Bang Model`
+- SDLC methodologies:
+`Agile`
+`Lean`
+`Waterfall`
+`Iterative`
+`Spiral`
+`DevOps`
+
+
+=== 2. https://www.mountaingoatsoftware.com/blog/what-are-story-points[Estimation]
+=== 3. https://www.atlassian.com/agile/scrum[General info of scrum]
+- artifacts
+- roles
+- meetings types
+- sprint life-cycle

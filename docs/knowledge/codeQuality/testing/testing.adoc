@@ -1,0 +1,8 @@
+== Testing
+:toc:
+
+=== 1. https://martinfowler.com/articles/mocksArentStubs.html[Classical and Mockist Testing]
+=== 2. https://www.softwaretestinghelp.com/types-of-software-testing/[Types of testing]
+=== 3.* https://www.toptal.com/freelance/your-boss-won-t-appreciate-tdd-try-bdd[BDD, TDD concepts]
+=== 4.* https://www.guru99.com/unit-testing-guide.html[Unit testing]
+=== 5. https://medium.com/@andreweastwood/what-is-the-difference-between-code-coverage-and-test-coverage-9b991392c5c1[Test coverage & Code coverage]

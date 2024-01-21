@@ -1,0 +1,67 @@
+== Design Architecture
+:toc:
+
+=== 1. OOP principles https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript[p1], https://eloquentjavascript.net/06_object.html[p2]:
+- encapsulation;
+- abstraction;
+- prototype interference,
+- polymorphism;
+- constructors and object instances;
+- composition;
+
+=== 2. https://www.bigocheatsheet.com/[Algorithms] - https://www.youtube.com/watch?v=Fu4BzQNN0Qs[explanation]:
+- Complexity
+
+=== 3. https://www.dotnettricks.com/learn/designpatterns/understanding-mvc-mvp-and-mvvm-design-patterns[Understanding MVC, MVP and MVVM]
+
+=== 4. link:../../books/Algorithhms.pdf[Algorithms]:
+- Data structures
+- Tree (traversal)
+- Search
+- Sorting
+
+=== 5. https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa[S.O.L.I.D] - https://www.youtube.com/watch?v=WMO9aarO390&list=PLz_dGYmQRrr8rWKkoB3BtxF7JpCzUKny_[video]
+
+=== 6. JavaScript Design Patterns https://www.dofactory.com/javascript/design-patterns[v1], https://www.patterns.dev/posts[v2]
+- Singleton
+- Adapter
+- Composite
+- Decorator
+- Factory Method
+- Mediator
+- Builder
+- Bridge
+- Facade
+- Flyweight
+- Proxy
+- Chain of Responsibility
+- Command
+- Interpreter
+- Iterator
+- Memento
+- Observer
+- State
+- Visitor
+
+=== 7. * JS Modules https://www.freecodecamp.org/news/javascript-modules-a-beginner-s-guide-783f7d7a5fcc[(BASIC)] | https://2ality.com/2014/09/es6-modules-final.html[(MORE)]:
+- Common JS;
+- AMD;
+- ECMAScript 6 Modules;
+- Dynamic ES module (System JS)."
+
+=== 8.* https://medium.com/@NeotericEU/single-page-application-vs-multiple-page-application-2591588efe58[SPA vs MPA]
+
+=== 9. https://sourcemaking.com/antipatterns/software-development-antipatterns[Antipatterns]
+
+=== 10.* Functional programming https://www.defmacro.org/2006/06/19/fp.html[en] https://doka.guide/js/fp/[ru] https://hackernoon.com/9-functional-programming-concepts-everyone-should-know-uy503u21[more]
+- general understanding;
+- HOF;
+- scope;
+- closures;
+- pure functions;
+- immutability;
+- purity;
+- stateless;
+- function composition;
+- currying;
+- map/filter/reduce;

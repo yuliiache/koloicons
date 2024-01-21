@@ -1,0 +1,28 @@
+== Web Services
+:toc:
+
+=== 1. Server-side interaction:
+- https://peoplesofttutorial.com/difference-between-synchronous-and-asynchronous-messaging/[* Synchronous vs. Asynchronous Communications]
+- https://www.w3schools.com/xml/ajax_intro.asp[AJAX **A**synchronous - **J**avaScript **A**nd **X**ML];
+- https://www.w3schools.com/xml/ajax_xmlhttprequest_create.asp[XMLHttpRequest]
+- https://appmaster.io/blog/json-vs-xml[JSON (JavaScript Object Notation) vs XML (Extensible Markup Language)]
+
+=== 2. https://en.wikipedia.org/wiki/Representational_state_transfer[REST]
+
+=== 3. Server-side interaction:
+- https://www.geeksforgeeks.org/what-is-long-polling-and-short-polling/[* Long/Short Polling concept]
+- https://blog.teamtreehouse.com/an-introduction-to-websockets[* Web Sockets concept]
+
+=== 4.* https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9[REST]
+
+=== 5.* https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS[CORS]
+
+=== 6. https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API[*Fetch API]
+- Basic concepts
+- Interfaces:
+- GlobalFetch
+- Headers
+- Request
+- Response
+- Using Fetch
+- AbortController

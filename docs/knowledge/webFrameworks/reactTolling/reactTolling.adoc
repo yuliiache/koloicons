@@ -1,0 +1,5 @@
+== React dev tooling
+:toc:
+
+=== 1. https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en[React DevTools plugin]
+=== 2. https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en[Redux DevTools plugin]

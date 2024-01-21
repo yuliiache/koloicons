@@ -3,10 +3,12 @@
 
 == link:codeStyles/codeStyles.adoc[Code styles]
 
+== link:typeScriptStyle/typeScriptStyle.adoc[TypeScript Style Guide]
+
 == link:pullRequest/pullRequest.adoc[Raising a PR]
 
 == link:codeReview/codeReview.adoc[Code review]
 
 == link:branchAndPullRequestsNaming/branchAndPullRequestsNaming.adoc[Branch and Pull Requests Naming]
 
-== link:typeScriptStyle/typeScriptStyle.adoc[TypeScript Style Guide]
+== link:knowledge/knowledge.adoc[Knowledge base]

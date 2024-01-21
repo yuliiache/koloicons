@@ -1,0 +1,8 @@
+== Networks
+:toc:
+
+=== 1. https://en.wikipedia.org/wiki/Domain_Name_System[DNS]
+=== 2. OSI Model https://youtu.be/Ilk7UXzV_Qc[p1] https://www.bmc.com/blogs/osi-model-7-layers/[p2]
+=== 3.* https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS[CORS]
+=== 4.* https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API[Web Sockets[
+=== 5.* https://youtu.be/hExRDVZHhig[HTTP(S)]

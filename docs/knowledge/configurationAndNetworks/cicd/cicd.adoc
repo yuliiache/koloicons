@@ -1,0 +1,34 @@
+=== CI/CD
+:toc:
+
+=== 1. VCS systems (centralized vs dvcs)
+- https://www.atlassian.com/git/tutorials/what-is-version-control[What is version control]
+- https://www.atlassian.com/blog/software-teams/version-control-centralized-dvcs[Distributed vs Centralized VCS]
+
+=== 2. Package managers (one of)
+- https://bower.io/docs/api/[bower cli]
+- https://jspm.org/[jspm cli]
+- https://docs.npmjs.com/cli/v9/commands/npm[npm cli]
+- https://classic.yarnpkg.com/en/docs/cli/[yarn cli]
+
+=== 3. Pipeline
+- https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment[CI vs CD vs CD]
+
+
+=== 4. Comparing branching strategies (git workflows)
+- https://www.atlassian.com/git/tutorials/comparing-workflows[Centralized Workflow]
+- https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow[Feature Branch Workflow]
+- https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow[Gitflow Workflow]
+- https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow[Forking Workflow]
+- https://www.atlassian.com/git/tutorials/merging-vs-rebasing[Merge vs Rebase]
+- https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html[Basic git commands]
+
+=== 5. Package managers
+- semver
+- configuring npm
+- yarn workflow and configuration"
+"Node.js application areas (build tools/bundlers, npm, gulp, webpack)
+- npm as build tool
+- gulp
+- webpack cli and configuration
+- rollup.js cli and configuration"
