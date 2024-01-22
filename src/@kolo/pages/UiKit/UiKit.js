@@ -4,6 +4,7 @@ import {ButtonLink} from '@kolo/uiKit/ButtonLink/ButtonLink';
 import {Buttons} from './components/Buttons/Buttons';
 import {Checkboxes} from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
+import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
 import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import LinksGroup from './components/LinksGroup/LinksGroup';
@@ -18,7 +19,10 @@ const UiKit = () => {
     <div>
       <h1>UI-kit</h1>
       <Section title="HTTP request section">
-        <div className={style.buttonsWrapper}>{/* Use small basic button and add it here. */}</div>
+        <div className={style.buttonsWrapper}>
+          {/* Use small basic button and add it here. */}
+          <GetFaqsButton />
+        </div>
       </Section>
       <InputGroup />
       <ColorPickerWrap />
