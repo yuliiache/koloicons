@@ -4,6 +4,10 @@ export const ICON_SIZES = {
   detailed: '60',
   simple: '48',
 };
+export enum BillingInterval {
+  MONTH = 'month',
+  YEAR = 'year',
+}
 export const ICON_STYLES = {
   line: 'line',
   solid: 'solid',
