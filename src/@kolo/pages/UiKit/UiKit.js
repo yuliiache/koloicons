@@ -5,6 +5,7 @@ import {Buttons} from './components/Buttons/Buttons';
 import {Checkboxes} from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
+import GetFeedbacks from './components/GetFeedbacks/GetFeedBacks';
 import GetPricingGroup from './components/GetPricing/GetPricingGroup';
 import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
@@ -21,6 +22,7 @@ const UiKit = () => {
       <h1>UI-kit</h1>
       <Section title="HTTP request section">
         <div className={style.buttonsWrapper}>
+          <GetFeedbacks />
           <GetFaqsButton />
           <GetPricingGroup />
         </div>
