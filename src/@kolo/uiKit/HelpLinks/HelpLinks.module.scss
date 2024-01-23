@@ -1,0 +1,10 @@
+@import "@kolo/design";
+
+.helpLinkList {
+  display: flex;
+  gap: 16px;
+
+  @media (max-width: $mobileWidth) {
+    gap: 32px;
+  }
+}

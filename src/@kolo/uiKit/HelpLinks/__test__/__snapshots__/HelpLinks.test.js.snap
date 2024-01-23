@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelpLinks component should successfully render snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="helpLinkList"
+  >
+    <li>
+      <a
+        class="link link--default"
+        data-testid="internalLinkComponent"
+        href="/privacy-policy-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Privacy Policy
+      </a>
+    </li>
+    <li>
+      <a
+        class="link link--default"
+        data-testid="internalLinkComponent"
+        href="/terms-of-service"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Terms of Service
+      </a>
+    </li>
+    <li>
+      <a
+        class="link link--default"
+        data-testid="internalLinkComponent"
+        href="/cookie-policy-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Cookie Policy
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

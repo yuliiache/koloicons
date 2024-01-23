@@ -1,14 +1,19 @@
-import React from 'react';
-import {Link as InternalLink} from 'react-router-dom';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
+import {FC} from 'react';
+import {Link as InternalLink} from 'react-router-dom';
 
-import {EXTERNAL_LINK_TEST_ID, INTERNAL_LINK_TEST_ID, LINK_TYPES} from './constants';
-
+import {EXTERNAL_LINK_TEST_ID, INTERNAL_LINK_TEST_ID, LinkType} from './constants';
 import styles from './Link.module.scss';
 
-const Link = ({url, children, type, isInNewTab = false}) => {
-  const isInternalUrl = url.startsWith('/');
+interface Props {
+  url: string;
+  children: React.ReactNode;
+  type?: LinkType;
+  isInNewTab?: boolean;
+}
+
+const Link: FC<Props> = ({url, children, type = LinkType.DEFAULT, isInNewTab = false}) => {
+  const isInternalUrl: boolean = url.startsWith('/');
   const linksClasses = classNames(styles.link, styles[`link--${type}`]);
 
   if (isInternalUrl) {
@@ -36,13 +41,6 @@ const Link = ({url, children, type, isInNewTab = false}) => {
       {children}
     </a>
   );
-};
-
-Link.propTypes = {
-  url: PropTypes.string.isRequired,
-  isInNewTab: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-  type: PropTypes.oneOf(Object.values(LINK_TYPES)),
 };
 
 export default Link;

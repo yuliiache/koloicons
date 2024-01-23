@@ -1,5 +1,6 @@
 import React from 'react';
 import {ButtonLink} from '@kolo/uiKit/ButtonLink/ButtonLink';
+import HelpLinks from '@kolo/uiKit/HelpLinks';
 
 import {Buttons} from './components/Buttons/Buttons';
 import {Checkboxes} from './components/Checkboxes/Checkboxes';
@@ -44,6 +45,9 @@ const UiKit = () => {
       </Section>
       <Section title="RadioGroupButtons">
         <RadioGroupWrapper />
+      </Section>
+      <Section title="HelpLinks">
+        <HelpLinks />
       </Section>
     </div>
   );

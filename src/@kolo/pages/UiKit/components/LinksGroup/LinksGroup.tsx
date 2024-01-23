@@ -1,15 +1,16 @@
-import {LINK_TYPES} from '@kolo/uiKit/Link/constants';
+import {LinkType} from '@kolo/uiKit/Link/constants';
 import Link from '@kolo/uiKit/Link/Link';
+import {FC} from 'react';
 
 import style from './LinksGroup.module.scss';
 
-const LinksGroup = () => {
+const LinksGroup: FC = () => {
   return (
     <ul className={style.linksList}>
       <li>
         <Link
           url="/"
-          type={LINK_TYPES.MAIN}
+          type={LinkType.MAIN}
         >
           <span>Internal link</span>
         </Link>
@@ -17,7 +18,7 @@ const LinksGroup = () => {
       <li>
         <Link
           url="/privacy-policy-docs"
-          type={LINK_TYPES.ACCENT}
+          type={LinkType.ACCENT}
           isInNewTab
         >
           <span>Internal link that opens in a new tab</span>
@@ -26,7 +27,7 @@ const LinksGroup = () => {
       <li>
         <Link
           url="https://uk-ua.facebook.com/"
-          type={LINK_TYPES.BRAND}
+          type={LinkType.BRAND}
           isInNewTab
         >
           <span>External link</span>
@@ -35,7 +36,6 @@ const LinksGroup = () => {
       <li>
         <Link
           url="https://uk-ua.facebook.com/"
-          type={LINK_TYPES.DEFAULT}
           isInNewTab
         >
           <span>External link</span>
@@ -44,7 +44,7 @@ const LinksGroup = () => {
       <li>
         <Link
           url="https://uk-ua.facebook.com/"
-          type={LINK_TYPES.ACCENT}
+          type={LinkType.ACCENT}
           isInNewTab
         >
           <span>External link</span>
@@ -53,7 +53,7 @@ const LinksGroup = () => {
       <li>
         <Link
           url="https://uk-ua.facebook.com/"
-          type={LINK_TYPES.DEFAULT_RED}
+          type={LinkType.DEFAULT_RED}
           isInNewTab
         >
           <span>External link</span>

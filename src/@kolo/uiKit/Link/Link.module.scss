@@ -8,8 +8,7 @@
 
   transition: color $transition-main ease-in-out;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $BlueColor;
   }
 
@@ -27,8 +26,7 @@
     @include main-text(0.7rem, null, null);
     color: $BlueColor;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $GreenColor;
     }
   }
@@ -46,8 +44,7 @@
     @include main-text(0.6rem, 1.5, null);
     color: $secFontColor;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $RedColor;
     }
   }
