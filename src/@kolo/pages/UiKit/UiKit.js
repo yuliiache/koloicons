@@ -8,6 +8,7 @@ import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
 import GetFeedbacks from './components/GetFeedbacks/GetFeedBacks';
 import GetPricingGroup from './components/GetPricing/GetPricingGroup';
+import IconsWrapper from './components/IconsWrapper/IconsWrapper';
 import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import LinksGroup from './components/LinksGroup/LinksGroup';
@@ -49,6 +50,7 @@ const UiKit = () => {
       <Section title="HelpLinks">
         <HelpLinks />
       </Section>
+      <IconsWrapper />
     </div>
   );
 };

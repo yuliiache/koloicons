@@ -1,0 +1,20 @@
+@import "@kolo/design";
+
+.icons {
+  &Grey {
+    fill: #717886;
+  }
+  &Rgba {
+    fill: rgba(175, 181, 196, 0.8);
+  }
+
+  &Check {
+    fill: $CheckColor;
+  }
+
+  &Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
