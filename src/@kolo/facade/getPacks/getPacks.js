@@ -1,8 +1,7 @@
 import {IconSize} from '@kolo/constants/constants';
 import {httpService} from '@kolo/services/httpService/httpService';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 import PropTypes from 'prop-types';
-
-import {API_ENDPOINTS} from '../endpoints';
 
 export const getPacks = ({
   pageSize = 1,
@@ -11,7 +10,7 @@ export const getPacks = ({
   free = false,
   iconSize = IconSize.DETAILED,
 }) =>
-  httpService.get(API_ENDPOINTS.PACKS, {
+  httpService.get(ApiEndpoint.PACKS, {
     params: {free, iconSize, pageSize, currentPage, monthPack},
   });
 

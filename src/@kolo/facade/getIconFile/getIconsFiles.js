@@ -1,4 +1,5 @@
 import {httpService} from '@kolo/services';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 
 export const getIconsFiles = ({iconsList, userId, format = 'png', pngSize, color}) => {
   // TODO remove this logic from here
@@ -16,7 +17,7 @@ export const getIconsFiles = ({iconsList, userId, format = 'png', pngSize, color
     sanitizedIconsList[icon.style][icon.size].push(icon._id);
   });
 
-  return httpService.get(`/downloads`, {
+  return httpService.get(ApiEndpoint.GET_ICONS_FILES, {
     params: {
       format,
       userId,

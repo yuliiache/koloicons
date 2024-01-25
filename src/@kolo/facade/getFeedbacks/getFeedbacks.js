@@ -1,5 +1,4 @@
 import {httpService} from '@kolo/services/httpService/httpService';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 
-import {API_ENDPOINTS} from '../endpoints';
-
-export const getFeedbacks = () => httpService.get(API_ENDPOINTS.FEEDBACKS);
+export const getFeedbacks = () => httpService.get(ApiEndpoint.FEEDBACKS);

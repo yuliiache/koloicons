@@ -1,9 +1,9 @@
-import {API_ENDPOINTS} from '@kolo/facade/endpoints';
 import {httpService} from '@kolo/services/httpService/httpService';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 
 import {getFeedbacks} from '../getFeedbacks';
 
-import {mockedFeddbacks} from './mockedFeddbacks';
+import {mockedFeedbacks} from './mockedFeedbacks';
 
 jest.mock('@kolo/services/httpService/httpService', () => {
   return {
@@ -15,7 +15,7 @@ jest.mock('@kolo/services/httpService/httpService', () => {
 
 describe('getFeedbacks', () => {
   it('should return feedbacks', async () => {
-    const expectedResponse = {data: mockedFeddbacks};
+    const expectedResponse = {data: mockedFeedbacks};
 
     httpService.get.mockResolvedValue(expectedResponse);
 
@@ -27,6 +27,6 @@ describe('getFeedbacks', () => {
   it('should call getFeedBacks with correct argument', async () => {
     await getFeedbacks();
 
-    expect(httpService.get).toHaveBeenCalledWith(API_ENDPOINTS.FEEDBACKS);
+    expect(httpService.get).toHaveBeenCalledWith(ApiEndpoint.FEEDBACKS);
   });
 });

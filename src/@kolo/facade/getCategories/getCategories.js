@@ -1,11 +1,10 @@
 import {IconSize, IconStyle} from '@kolo/constants/constants';
 import {httpService} from '@kolo/services/httpService/httpService';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 import PropTypes from 'prop-types';
 
-import {API_ENDPOINTS} from '../endpoints';
-
 export const getCategories = ({iconSize = IconSize.DETAILED, iconStyle = IconStyle.LINE}) =>
-  httpService.get(API_ENDPOINTS.CATEGORIES, {
+  httpService.get(ApiEndpoint.CATEGORIES, {
     params: {iconSize, iconStyle},
   });
 

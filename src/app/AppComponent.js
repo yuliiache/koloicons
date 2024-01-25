@@ -2,8 +2,7 @@ import React, {lazy, Suspense} from 'react';
 import {Route, Routes} from 'react-router-dom';
 import {ToastContainer} from 'react-toastify';
 import {HomePage} from '@kolo/pages/Home/Home';
-
-import {APP_ROUTES} from './AppRoutes';
+import {AppRoute} from 'constants/AppRoute';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -30,11 +29,11 @@ export const AppComponent = () => {
       <Suspense fallback={<div>...Loading</div>}>
         <Routes>
           <Route
-            path={APP_ROUTES.HOME}
+            path={AppRoute.HOME}
             element={<HomePage />}
           />
           <Route
-            path={APP_ROUTES.UI_KIT}
+            path={AppRoute.UI_KIT}
             element={<UiKit />}
           />
           {/* { <Route path={'/login'} element={<LoginPage isLogin />} />

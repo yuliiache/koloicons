@@ -1,0 +1,16 @@
+export enum AppRoute {
+  HOME = '/',
+  UI_KIT = '/ui-kit',
+  LOGIN = '/login',
+  ICONS = '/icons',
+  CATEGORIES = '/categories',
+  PRICING = '/pricing',
+  REGISTER = '/register',
+  MY_ACCOUNT = '/my-account',
+  PLANTS = '/plans',
+  BILLING = '/billing',
+  SUPPORT = '/support',
+  TERMS_OF_SERVICE = '/terms-of-service',
+  PRIVACY_POLICY = '/privacy-policy-docs',
+  COOKIE_POLICY = '/cookie-policy-docs',
+}

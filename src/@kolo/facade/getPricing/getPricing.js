@@ -1,10 +1,9 @@
 import {httpService} from '@kolo/services/httpService/httpService';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 import PropTypes from 'prop-types';
 
-import {API_ENDPOINTS} from '../endpoints';
-
 const getPricing = (params) =>
-  httpService.get(API_ENDPOINTS.PRICING, {
+  httpService.get(ApiEndpoint.PRICING, {
     params: params,
   });
 

@@ -1,8 +1,9 @@
 import {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {useLocation, useNavigate} from 'react-router-dom';
-import {CATEGORY_ID, URLS} from '@kolo/constants/constants';
+import {CATEGORY_ID} from '@kolo/constants/constants';
 import {addQueryParams} from '@kolo/services/helpers/urls';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 
 import {getMonthPackStart} from './monthPackSlice';
 import {monthPackSelector} from './selectors';
@@ -19,7 +20,7 @@ const useMonthPack = () => {
 
   const handlePackItemClick = (categoryId) => {
     navigate({
-      pathname: URLS.icons,
+      pathname: ApiEndpoint.ICONS,
       search: addQueryParams(search, {
         [CATEGORY_ID]: categoryId,
       }),

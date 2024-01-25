@@ -1,7 +1,6 @@
 import {httpService} from '@kolo/services/httpService/httpService';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 
-import {API_ENDPOINTS} from '../endpoints';
-
-const getFaqs = () => httpService.get(API_ENDPOINTS.FAQS);
+const getFaqs = () => httpService.get(ApiEndpoint.FAQS);
 
 export default getFaqs;

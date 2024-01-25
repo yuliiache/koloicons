@@ -1,6 +1,6 @@
 import {BillingInterval} from '@kolo/constants/constants';
-import {API_ENDPOINTS} from '@kolo/facade/endpoints';
 import {httpService} from '@kolo/services/httpService/httpService';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 
 import getPricing from '../getPricing';
 
@@ -15,7 +15,7 @@ describe('getPricing', () => {
   it('calls httpService.get with the correct endpoint and params', () => {
     const params = {billingInterval: BillingInterval.MONTH};
     getPricing(params);
-    expect(httpService.get).toHaveBeenCalledWith(API_ENDPOINTS.PRICING, {params});
+    expect(httpService.get).toHaveBeenCalledWith(ApiEndpoint.PRICING, {params});
   });
   it('returns a successful response of the get request', async () => {
     const mockResponse = {data: {price: 10}};

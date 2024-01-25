@@ -1,6 +1,6 @@
 import type {Feedbacks} from '../types/feedback';
 
-export const mockedFeddbacks: Feedbacks = [
+export const mockedFeedbacks: Feedbacks = [
   {
     name: 'Bojan Novakovic',
     text: 'What I like the most about Koloicons is that I spend ZERO time on consistency, as all the icons I used in a recent project already had the same styling. 👌🏼 No corner or stroke adjustments, which is a huge time saver. 💯🙌🏻',

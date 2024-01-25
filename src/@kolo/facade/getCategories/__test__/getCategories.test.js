@@ -1,6 +1,6 @@
 import {IconSize, IconStyle} from '@kolo/constants/constants';
-import {API_ENDPOINTS} from '@kolo/facade/endpoints';
 import {httpService} from '@kolo/services/httpService/httpService';
+import {ApiEndpoint} from 'constants/ApiEndpoint';
 
 import {getCategories} from '../getCategories';
 
@@ -18,7 +18,7 @@ describe('getCategories', () => {
   it('should call httpService.get with the correct endpoint and params', async () => {
     await getCategories(params);
 
-    expect(httpService.get).toHaveBeenCalledWith(API_ENDPOINTS.CATEGORIES, {params});
+    expect(httpService.get).toHaveBeenCalledWith(ApiEndpoint.CATEGORIES, {params});
   });
 
   it('should return a successful response of the get request', async () => {
