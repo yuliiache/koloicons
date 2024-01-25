@@ -1,17 +1,21 @@
 export const SEARCH_QUERY = 'searchQuery';
 export const CATEGORY_ID = 'categoryId';
-export const ICON_SIZES = {
-  detailed: '60',
-  simple: '48',
-};
+
+export enum IconSize {
+  DETAILED = '60',
+  SIMPLE = '48',
+}
+
+export enum IconStyle {
+  LINE = 'line',
+  SOLID = 'solid',
+}
+
 export enum BillingInterval {
   MONTH = 'month',
   YEAR = 'year',
 }
-export const ICON_STYLES = {
-  line: 'line',
-  solid: 'solid',
-};
+
 export const PAGES = Object.freeze({
   freeIconPacks: 'Free Icon Packs',
   categories: 'Categories',

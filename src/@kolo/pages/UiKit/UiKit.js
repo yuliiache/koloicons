@@ -5,6 +5,7 @@ import HelpLinks from '@kolo/uiKit/HelpLinks';
 import {Buttons} from './components/Buttons/Buttons';
 import {Checkboxes} from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
+import GetCategoriesButton from './components/GetCategoriesButton/GetCategoriesButton';
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
 import GetFeedbacks from './components/GetFeedbacks/GetFeedBacks';
 import GetPricingGroup from './components/GetPricing/GetPricingGroup';
@@ -24,6 +25,7 @@ const UiKit = () => {
       <h1>UI-kit</h1>
       <Section title="HTTP request section">
         <div className={style.buttonsWrapper}>
+          <GetCategoriesButton />
           <GetFeedbacks />
           <GetFaqsButton />
           <GetPricingGroup />
