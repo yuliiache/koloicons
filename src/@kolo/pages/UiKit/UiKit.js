@@ -1,7 +1,7 @@
 import React from 'react';
-import {ButtonLink} from '@kolo/uiKit/ButtonLink/ButtonLink';
 import HelpLinks from '@kolo/uiKit/HelpLinks';
 
+import {ButtonLinkWrap} from './components/ButtonLink/ButtonLinkWrap';
 import {Buttons} from './components/Buttons/Buttons';
 import {Checkboxes} from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
@@ -15,6 +15,7 @@ import LabelGroup from './components/LabelGroup/LabelGroup';
 import LinksGroup from './components/LinksGroup/LinksGroup';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
 import {Section} from './components/Section/Section';
+import SignInMessageWrap from './components/SignInMessage/SignInMessageWrap';
 import Tooltips from './components/Tooltips/Tooltips';
 
 import style from './UiKit.module.scss';
@@ -36,10 +37,9 @@ const UiKit = () => {
       <LabelGroup />
       <Checkboxes />
       <Buttons />
-      <ButtonLink
-        text="Button link"
-        url="/"
-      />
+      <ButtonLinkWrap />
+      <SignInMessageWrap />
+      <LinksGroup />
       <Section title="Link">
         <LinksGroup />
       </Section>

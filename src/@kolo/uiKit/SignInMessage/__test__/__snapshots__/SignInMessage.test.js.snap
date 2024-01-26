@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInMessage should render SignInMessage snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="signInMessage"
+  >
+    <p
+      class="signInText"
+    >
+      Sign In to work with
+      <span
+        class="signInTitle"
+        data-testid="signInMessageComponent"
+      >
+         Download
+      </span>
+    </p>
+    <a
+      data-testid="buttonLinkComponent"
+      href="/login"
+    >
+      <button
+        class="button button-full-width button-basic"
+        data-testid="buttonComponent"
+        type="button"
+      >
+        <span
+          data-testid="buttonComponentText"
+        >
+          Sign In
+        </span>
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;

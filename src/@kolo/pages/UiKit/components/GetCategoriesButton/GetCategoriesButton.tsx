@@ -1,6 +1,6 @@
 import {IconSize, IconStyle} from '@kolo/constants/constants';
 import {getCategories} from '@kolo/facade/getCategories/getCategories';
-import {Button} from '@kolo/uiKit/Button/Button';
+import Button from '@kolo/uiKit/Button/Button';
 import {FC} from 'react';
 
 interface CategoriesData {

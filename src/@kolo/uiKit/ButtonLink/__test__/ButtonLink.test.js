@@ -2,7 +2,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import {cleanup, render, screen} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import {ButtonLink} from '../ButtonLink';
+import ButtonLink from '../ButtonLink';
 
 describe('ButtonLink component', () => {
   afterEach(cleanup);

@@ -1,5 +1,5 @@
 import getFaqs from '@kolo/facade/getFaqs/getFaqs';
-import {Button} from '@kolo/uiKit/Button/Button';
+import Button from '@kolo/uiKit/Button/Button';
 import {FC} from 'react';
 
 import styles from './GetFaqsButton.module.scss';
@@ -27,12 +27,9 @@ const GetFaqsButton: FC = () => {
   return (
     <div className={styles.getFaqsWrap}>
       <Button
-        color="primary"
-        size="small"
         text="Get FAQs"
         onClick={clickHandler}
         isDisabled={false}
-        type="button"
       />
     </div>
   );

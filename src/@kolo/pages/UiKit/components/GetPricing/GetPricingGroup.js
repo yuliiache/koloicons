@@ -1,7 +1,7 @@
 import {BillingInterval} from '@kolo/constants/constants';
 import getPricing from '@kolo/facade/getPricing/getPricing';
-import {Button} from '@kolo/uiKit/Button/Button';
-import {BUTTON_COLOR} from '@kolo/uiKit/Button/constants';
+import Button from '@kolo/uiKit/Button/Button';
+import {ButtonColor} from '@kolo/uiKit/Button/constants';
 
 const GetPricingGroup = () => {
   const fetchPricing = async (billingInterval) => {
@@ -28,12 +28,12 @@ const GetPricingGroup = () => {
   return (
     <>
       <Button
-        color={BUTTON_COLOR.BASIC}
+        color={ButtonColor.BASIC}
         text={'Billed Monthly'}
         onClick={handleClickMonth}
       />
       <Button
-        color={BUTTON_COLOR.BASIC}
+        color={ButtonColor.BASIC}
         text={'Billed Yearly'}
         onClick={handleClickYear}
       />

@@ -1,6 +1,6 @@
 import {getFeedbacks} from '@kolo/facade/getFeedbacks/getFeedbacks';
 import type {Feedbacks} from '@kolo/facade/getFeedbacks/types';
-import {Button} from '@kolo/uiKit/Button/Button';
+import Button from '@kolo/uiKit/Button/Button';
 
 const GetFeedbacks = () => {
   const handleOnClick = async () => {

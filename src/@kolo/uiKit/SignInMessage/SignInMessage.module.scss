@@ -1,0 +1,22 @@
+@import "@kolo/design";
+
+.signInMessage {
+  height: calc(100% - 64px);
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.signInText {
+  line-height: 1.33;
+  color: $lighthGrey;
+  margin: 12px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.signInTitle {
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
