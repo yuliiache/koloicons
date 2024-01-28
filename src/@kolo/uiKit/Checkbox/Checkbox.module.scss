@@ -1,16 +1,16 @@
 @import "../../design";
 
-$checkmark-icon: url('./assets/check.svg');
+$checkmark-icon: url("./assets/check.svg");
 
 .checkbox {
-  font-size: .7rem;
+  font-size: 0.7rem;
   line-height: 1.43;
   color: $secFontColor;
   width: fit-content;
   position: relative;
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin-right: 8px;
 
   &__indicator {
     position: relative;
@@ -19,12 +19,11 @@ $checkmark-icon: url('./assets/check.svg');
     width: 20px;
     height: 20px;
     border-radius: 2px;
-    margin-right: 8px;
     background: $WhiteBG none center no-repeat;
     background-size: contain;
     border: 1px solid $ActiveBorderColor;
     cursor: pointer;
-    transition: background-color .2s, border-color .2s;
+    transition: background-color 0.2s, border-color 0.2s;
   }
 
   &__input {
@@ -41,7 +40,7 @@ $checkmark-icon: url('./assets/check.svg');
 
     &:focus + .checkbox__indicator--error {
       border-color: $errorColor;
-      box-shadow: 0 0 0 4px rgba($errorColor,.2);
+      box-shadow: 0 0 0 4px rgba($errorColor, 0.2);
     }
 
     &:checked + .checkbox__indicator {

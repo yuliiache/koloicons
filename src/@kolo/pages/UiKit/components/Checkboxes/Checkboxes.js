@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
 import {Checkbox} from '@kolo/uiKit/Checkbox/Checkbox';
 
+import {Section} from '../Section/Section';
+
+import styles from './Checkboxes.module.scss';
+
 export const Checkboxes = () => {
   const [isUnchecked, setIsUnchecked] = useState(false);
   const [isChecked, setIsChecked] = useState(true);
@@ -24,29 +28,31 @@ export const Checkboxes = () => {
   };
 
   return (
-    <div>
-      <Checkbox
-        id="default"
-        isChecked={isUnchecked}
-        onChange={toggleCheckbox}
-      />
-      <Checkbox
-        id="checked"
-        isChecked={isChecked}
-        onChange={toggleChecked}
-      />
-      <Checkbox
-        id="disabled"
-        isChecked={isDisabled}
-        onChange={toggleDisabled}
-        isDisabled
-      />
-      <Checkbox
-        id="error"
-        isChecked={isRequired}
-        onChange={toggleError}
-        hasError={!isRequired}
-      />
-    </div>
+    <Section title="Checkbox">
+      <div className={styles.checkboxesWrapper}>
+        <Checkbox
+          id="default"
+          isChecked={isUnchecked}
+          onChange={toggleCheckbox}
+        />
+        <Checkbox
+          id="checked"
+          isChecked={isChecked}
+          onChange={toggleChecked}
+        />
+        <Checkbox
+          id="disabled"
+          isChecked={isDisabled}
+          onChange={toggleDisabled}
+          isDisabled
+        />
+        <Checkbox
+          id="error"
+          isChecked={isRequired}
+          onChange={toggleError}
+          hasError={!isRequired}
+        />
+      </div>
+    </Section>
   );
 };
