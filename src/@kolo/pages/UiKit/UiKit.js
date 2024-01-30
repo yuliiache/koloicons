@@ -13,6 +13,7 @@ import IconsWrapper from './components/IconsWrapper/IconsWrapper';
 import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import LinksGroup from './components/LinksGroup/LinksGroup';
+import Logos from './components/Logos';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
 import {Section} from './components/Section/Section';
 import SignInMessageWrap from './components/SignInMessage/SignInMessageWrap';
@@ -53,6 +54,7 @@ const UiKit = () => {
         <HelpLinks />
       </Section>
       <IconsWrapper />
+      <Logos />
     </div>
   );
 };
