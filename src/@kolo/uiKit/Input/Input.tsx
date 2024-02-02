@@ -1,15 +1,39 @@
-import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
+import React from 'react';
 
 import styles from './Input.module.scss';
+import {InputType} from './InputType';
 
-export const Input = ({id, label, placeholder, isDisabled = false, errorMessage, hint, value, onChange}) => {
+interface Props {
+  label?: string;
+  placeholder?: string;
+  isDisabled?: boolean;
+  errorMessage?: string;
+  hint?: string;
+  hasAutoFocus?: boolean;
+  id: string;
+  type: InputType;
+  value: string;
+  onChange: (value: string) => void;
+}
+
+const Input: React.FC<Props> = ({
+  id,
+  label,
+  placeholder,
+  errorMessage,
+  hint,
+  type,
+  value,
+  onChange,
+  isDisabled = false,
+  hasAutoFocus = false,
+}) => {
   const inputClasses = classNames(styles.inputGroupInput, {
     [styles.invalid]: errorMessage,
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     onChange(e.target.value);
   };
 
@@ -26,10 +50,11 @@ export const Input = ({id, label, placeholder, isDisabled = false, errorMessage,
       {hint && <span className={styles.inputGroupHint}>{hint}</span>}
       <input
         className={inputClasses}
-        type="text"
+        type={type}
         id={id}
         placeholder={placeholder}
         disabled={isDisabled}
+        autoFocus={hasAutoFocus}
         value={value}
         onChange={handleChange}
       />
@@ -38,15 +63,4 @@ export const Input = ({id, label, placeholder, isDisabled = false, errorMessage,
   );
 };
 
-Input.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  placeholder: PropTypes.string,
-  isDisabled: PropTypes.bool,
-  errorMessage: PropTypes.string,
-  hint: PropTypes.string,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-};
-
-
+export default Input;

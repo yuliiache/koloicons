@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: Error message, hint: Hint text 1`] = `
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: Error message, hint: Hint text, hasAutoFocus: false 1`] = `
 <div>
   <div
     class="inputGroup"
@@ -32,7 +32,39 @@ exports[`Input component tests Input component snapshots renders correctly - isD
 </div>
 `;
 
-exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: Error message, hint: undefined 1`] = `
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: Error message, hint: Hint text, hasAutoFocus: true 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput invalid"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: Error message, hint: undefined, hasAutoFocus: false 1`] = `
 <div>
   <div
     class="inputGroup"
@@ -59,7 +91,34 @@ exports[`Input component tests Input component snapshots renders correctly - isD
 </div>
 `;
 
-exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: undefined, hint: Hint text 1`] = `
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: Error message, hint: undefined, hasAutoFocus: true 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput invalid"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: undefined, hint: Hint text, hasAutoFocus: false 1`] = `
 <div>
   <div
     class="inputGroup"
@@ -86,7 +145,34 @@ exports[`Input component tests Input component snapshots renders correctly - isD
 </div>
 `;
 
-exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: undefined, hint: undefined 1`] = `
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: undefined, hint: Hint text, hasAutoFocus: true 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: undefined, hint: undefined, hasAutoFocus: false 1`] = `
 <div>
   <div
     class="inputGroup"
@@ -108,7 +194,29 @@ exports[`Input component tests Input component snapshots renders correctly - isD
 </div>
 `;
 
-exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: Error message, hint: Hint text 1`] = `
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: false, errorMessage: undefined, hint: undefined, hasAutoFocus: true 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: Error message, hint: Hint text, hasAutoFocus: false 1`] = `
 <div>
   <div
     class="inputGroup"
@@ -141,7 +249,40 @@ exports[`Input component tests Input component snapshots renders correctly - isD
 </div>
 `;
 
-exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: Error message, hint: undefined 1`] = `
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: Error message, hint: Hint text, hasAutoFocus: true 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput invalid"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: Error message, hint: undefined, hasAutoFocus: false 1`] = `
 <div>
   <div
     class="inputGroup"
@@ -169,7 +310,35 @@ exports[`Input component tests Input component snapshots renders correctly - isD
 </div>
 `;
 
-exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: undefined, hint: Hint text 1`] = `
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: Error message, hint: undefined, hasAutoFocus: true 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput invalid"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+    <span
+      class="inputGroupError"
+    >
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: undefined, hint: Hint text, hasAutoFocus: false 1`] = `
 <div>
   <div
     class="inputGroup"
@@ -197,7 +366,58 @@ exports[`Input component tests Input component snapshots renders correctly - isD
 </div>
 `;
 
-exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: undefined, hint: undefined 1`] = `
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: undefined, hint: Hint text, hasAutoFocus: true 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <span
+      class="inputGroupHint"
+    >
+      Hint text
+    </span>
+    <input
+      class="inputGroupInput"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: undefined, hint: undefined, hasAutoFocus: false 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      disabled=""
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests Input component snapshots renders correctly - isDisabled: true, errorMessage: undefined, hint: undefined, hasAutoFocus: true 1`] = `
 <div>
   <div
     class="inputGroup"
@@ -293,6 +513,28 @@ exports[`Input component tests renders with all props 1`] = `
     >
       Error message
     </span>
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders with autofocus 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
+    />
   </div>
 </div>
 `;
@@ -405,6 +647,28 @@ exports[`Input component tests renders with required props 1`] = `
       id="test"
       type="text"
       value="value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input component tests renders without autofocus 1`] = `
+<div>
+  <div
+    class="inputGroup"
+  >
+    <label
+      class="inputGroupLabel"
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      class="inputGroupInput"
+      id="test"
+      placeholder="Enter text"
+      type="text"
+      value="Test Value"
     />
   </div>
 </div>

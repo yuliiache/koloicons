@@ -4,6 +4,8 @@ import {ToastContainer} from 'react-toastify';
 import {HomePage} from '@kolo/pages/Home/Home';
 import {AppRoute} from 'constants/AppRoute';
 
+import MyAccountPage from '../@kolo/pages/MyAccountPage';
+
 import 'react-toastify/dist/ReactToastify.css';
 
 // import {Header, Footer} from '@kolo/ui-kit';
@@ -36,10 +38,13 @@ export const AppComponent = () => {
             path={AppRoute.UI_KIT}
             element={<UiKit />}
           />
+          <Route
+            path={AppRoute.MY_ACCOUNT}
+            element={<MyAccountPage />}
+          />
           {/* { <Route path={'/login'} element={<LoginPage isLogin />} />
         <Route path={'/register'} element={<LoginPage />} />
         <Route path={'/pricing'} element={<PricingPage />} />
-        <Route path={'/my-account'} element={<MyAccountPage />} />
         <Route path={'/icons'} element={<IconsPage />} />
         <Route path={'/terms-of-service'} element={<PolicyDocsComponent />} />
         <Route path={'/privacy-policy-docs'} element={<PolicyDocsComponent />} />

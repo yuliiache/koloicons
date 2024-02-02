@@ -1,9 +1,9 @@
-import React from "react";
-import {fireEvent, render} from "@testing-library/react";
+import React from 'react';
+import {fireEvent, render} from '@testing-library/react';
 
-import "@testing-library/jest-dom/extend-expect";
+import '@testing-library/jest-dom/extend-expect';
 
-import {Input} from "../Input";
+import Input from '../Input';
 
 const renderInputWithProps = (props) => {
   return render(<Input {...props} />);
@@ -14,6 +14,8 @@ describe('Input component tests', () => {
     id: 'test',
     label: 'Test Label',
     placeholder: 'Enter text',
+    type: 'text',
+    hasAutoFocus: false,
     value: 'Test Value',
     onChange: jest.fn(),
   };
@@ -23,8 +25,9 @@ describe('Input component tests', () => {
       name: 'renders with required props',
       props: {
         id: 'test',
+        type: 'text',
         value: 'value',
-        onChange: jest.fn()
+        onChange: jest.fn(),
       },
     },
     {
@@ -33,6 +36,7 @@ describe('Input component tests', () => {
         ...commonProps,
         isDisabled: false,
         errorMessage: 'Error message',
+        hasAutoFocus: false,
         hint: 'Hint text',
       },
     },
@@ -79,6 +83,20 @@ describe('Input component tests', () => {
         expect(container.querySelector('input')).toHaveAttribute('placeholder', 'Enter text');
       },
     },
+    {
+      name: 'renders with autofocus',
+      props: {...commonProps, hasAutoFocus: true},
+      assertion: (container) => {
+        expect(container.querySelector('input')).toHaveFocus();
+      },
+    },
+    {
+      name: 'renders without autofocus',
+      props: {...commonProps, hasAutoFocus: false},
+      assertion: (container) => {
+        expect(container.querySelector('input')).not.toHaveFocus();
+      },
+    },
   ];
 
   testCases.forEach(({name, props, action, assertion}) => {
@@ -94,17 +112,20 @@ describe('Input component tests', () => {
     for (const isDisabled of [true, false]) {
       for (const errorMessage of [undefined, 'Error message']) {
         for (const hint of [undefined, 'Hint text']) {
-          const props = {
-            ...commonProps,
-            isDisabled,
-            errorMessage,
-            hint,
-          };
+          for (const hasAutoFocus of [true, false]) {
+            const props = {
+              ...commonProps,
+              isDisabled,
+              errorMessage,
+              hint,
+              hasAutoFocus,
+            };
 
-          it(`renders correctly - isDisabled: ${isDisabled}, errorMessage: ${errorMessage}, hint: ${hint}`, () => {
-            const {container} = renderInputWithProps(props);
-            expect(container).toMatchSnapshot();
-          });
+            it(`renders correctly - isDisabled: ${isDisabled}, errorMessage: ${errorMessage}, hint: ${hint}, hasAutoFocus: ${hasAutoFocus}`, () => {
+              const {container} = renderInputWithProps(props);
+              expect(container).toMatchSnapshot();
+            });
+          }
         }
       }
     }

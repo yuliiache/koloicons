@@ -1,0 +1,66 @@
+@import "@kolo/design";
+
+.header {
+  padding: 0.8rem 0;
+  background-color: $WhiteBG;
+
+  &Container {
+    margin: 0 auto;
+    padding: 0 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 34.1rem;
+
+    @include mobile-screen {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: 0.2rem solid $BlueColor;
+  background-color: $LightBrandColor;
+  color: $BlueColor;
+  font-size: 0.9rem;
+  margin-right: 0.4rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 0.8rem;
+
+  h1 {
+    color: $secFontColor;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  p {
+    width: 100%;
+    font-size: 0.6rem;
+    line-height: 1.4;
+    color: $GreyColor;
+  }
+
+  @include mobile-screen {
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.inputGroup {
+  max-width: 34.1rem;
+  padding: 2.2rem 0.8rem 2.4rem;
+  margin: auto;
+}

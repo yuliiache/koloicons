@@ -10,7 +10,7 @@ import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
 import GetFeedbacks from './components/GetFeedbacks/GetFeedBacks';
 import GetPricingGroup from './components/GetPricing/GetPricingGroup';
 import IconsWrapper from './components/IconsWrapper/IconsWrapper';
-import InputGroup from './components/InputGroup';
+import InputGroup from './components/InputGroup/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import LinksGroup from './components/LinksGroup/LinksGroup';
 import Logos from './components/Logos';
