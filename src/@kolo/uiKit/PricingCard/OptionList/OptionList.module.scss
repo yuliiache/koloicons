@@ -1,0 +1,26 @@
+@import "@kolo/design";
+.optionTitle {
+  color: $lighthGrey;
+  font-weight: 400;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+
+  &:last-of-type ~ dd {
+    color: $lighthGrey;
+    font-weight: 500;
+  }
+
+  &:last-of-type {
+    margin-top: 5px;
+  }
+}
+
+.optionVal {
+  margin-left: 0;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}

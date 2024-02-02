@@ -1,0 +1,20 @@
+@import "@kolo/design";
+
+.price {
+  display: flex;
+  align-items: center;
+  margin: 16px 0 8px 0;
+  gap: 8px;
+}
+
+.priceVal {
+  font-weight: 500;
+  font-size: 48px;
+  color: $mainFontColor;
+}
+
+.priceDesc {
+  max-width: 70px;
+  line-height: 1.4;
+  color: $secFontColor;
+}

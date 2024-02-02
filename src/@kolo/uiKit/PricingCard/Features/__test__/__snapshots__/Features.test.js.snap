@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Features Component renders snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="planFeatures"
+  >
+    <li>
+      <strong>
+        Feature 1
+      </strong>
+    </li>
+    <li>
+      <strong>
+        Feature 2
+      </strong>
+    </li>
+    <li>
+      <strong>
+        Feature 3
+      </strong>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

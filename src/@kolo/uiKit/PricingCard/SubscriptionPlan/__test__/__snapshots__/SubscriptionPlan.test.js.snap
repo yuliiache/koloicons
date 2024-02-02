@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubscriptionPlan Component renders snapshot 1`] = `
+<DocumentFragment>
+  <span
+    class="label success large"
+    data-testid="labelComponent"
+  >
+    Personal
+  </span>
+  <div
+    class="price"
+  >
+    <span
+      class="priceVal"
+    >
+      $2.50
+    </span>
+    <span
+      class="priceDesc"
+    />
+  </div>
+</DocumentFragment>
+`;

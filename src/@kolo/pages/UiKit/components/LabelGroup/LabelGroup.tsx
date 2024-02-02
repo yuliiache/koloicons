@@ -1,12 +1,11 @@
-import React from 'react';
-import {LABEL_SIZE, LABEL_THEME} from '@kolo/uiKit/Label/constants';
+import {LabelSize, LabelTheme} from '@kolo/uiKit/Label/constants';
 import Label from '@kolo/uiKit/Label/Label';
+import { FC } from 'react';
 
 import {Section} from '../Section/Section';
-
 import styles from './LabelGroup.module.scss';
 
- const LabelGroup = () => {
+ const LabelGroup:FC = () => {
   return (
     <Section title="Label">
       <ul className={styles.list}>
@@ -15,22 +14,22 @@ import styles from './LabelGroup.module.scss';
         </li>
         <li>
           <Label
-            size={LABEL_SIZE.LARGE}
-            theme={LABEL_THEME.SUCCESS}
+            size={LabelSize.LARGE}
+            theme={LabelTheme.SUCCESS}
             text="Success"
           />
         </li>
         <li>
           <Label
-            size={LABEL_SIZE.LARGE}
-            theme={LABEL_THEME.PRIMARY}
+            size={LabelSize.LARGE}
+            theme={LabelTheme.PRIMARY}
             text="Primary"
           />
         </li>
         <li>
           <Label
-            size={LABEL_SIZE.LARGE}
-            theme={LABEL_THEME.WARNING}
+            size={LabelSize.LARGE}
+            theme={LabelTheme.WARNING}
             text="Warning"
           />
         </li>

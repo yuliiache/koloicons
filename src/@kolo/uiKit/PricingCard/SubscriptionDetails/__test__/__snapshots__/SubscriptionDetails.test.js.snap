@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubscriptionDetails Component renders snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="advantages"
+  >
+    <p
+      class="advantagesItem"
+    >
+      <span
+        class="itemTitle"
+      >
+        Formats:
+      </span>
+      <span
+        class="itemVal"
+      />
+    </p>
+    <p
+      class="advantagesItem"
+    >
+      <span
+        class="itemTitle"
+      >
+        Attribution:
+      </span>
+      <span
+        class="itemVal"
+      />
+    </p>
+  </div>
+  <dl
+    class="advantages"
+  >
+    <dt
+      class="optionTitle"
+    >
+      You can use icons for:
+    </dt>
+    <dd
+      class="optionVal"
+    >
+      <span>
+         - 
+      </span>
+      Option 1
+    </dd>
+    <dd
+      class="optionVal"
+    >
+      <span>
+         - 
+      </span>
+      Option 2
+    </dd>
+    <dd
+      class="optionVal"
+    >
+      <span>
+         - 
+      </span>
+      Option 3
+    </dd>
+    <dt
+      class="optionTitle"
+    >
+      You can not use icons for:
+    </dt>
+    <dd
+      class="optionVal"
+    >
+      <span>
+         - 
+      </span>
+      Option 4
+    </dd>
+    <dd
+      class="optionVal"
+    >
+      <span>
+         - 
+      </span>
+      Option 5
+    </dd>
+    <dd
+      class="optionVal"
+    >
+      <span>
+         - 
+      </span>
+      Option 6
+    </dd>
+  </dl>
+</DocumentFragment>
+`;

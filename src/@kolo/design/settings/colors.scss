@@ -63,8 +63,8 @@ $ColorPickerShadow: rgba(25, 37, 63, 0.1);
 $ColorPickerBoxShadow: 0 2px 6px 0 $ColorPickerShadow;
 
 //Button
-$GreyDisableBgBtn: rgba(175,181,196,.8);
-$LightGreyFontBtn: hsla(0,0%,100%,.5);
+$GreyDisableBgBtn: rgba(175, 181, 196, 0.8);
+$LightGreyFontBtn: hsla(0, 0%, 100%, 0.5);
 $LightGreyBgBtn: #eaeef7;
 $GreyFontBtn: #525866;
 $PrimaryGradientStart: #5c91e8;
@@ -99,3 +99,6 @@ $RadioButtonHover: hsla(0, 0%, 100%, 0.3);
 // Link
 $LinkShadow: rgba(36, 105, 242, 0.2);
 $LinkBoxShadow: 0 0 0 4px $LinkShadow;
+
+//Pricing Card
+$PricingCardShadow: 0 30px 48px 0 rgba(57, 63, 77, 0.1), 0 16px 32px -8px rgba(57, 63, 77, 0.05);

@@ -1,0 +1,14 @@
+@import "@kolo/design";
+
+.planFeatures {
+  min-height: 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 24px;
+  padding: 14px 0;
+  font-size: 14px;
+  line-height: 1.7;
+  border-top: 1px solid $DarkBG;
+  border-bottom: 1px solid $DarkBG;
+}

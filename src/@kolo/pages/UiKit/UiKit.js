@@ -14,6 +14,7 @@ import InputGroup from './components/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import LinksGroup from './components/LinksGroup/LinksGroup';
 import Logos from './components/Logos';
+import PricingCardWrap from './components/PricingCardWrap/PricingCardWrap';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
 import {Section} from './components/Section/Section';
 import SignInMessageWrap from './components/SignInMessage/SignInMessageWrap';
@@ -41,6 +42,7 @@ const UiKit = () => {
       <ButtonLinkWrap />
       <SignInMessageWrap />
       <LinksGroup />
+      <PricingCardWrap />
       <Section title="Link">
         <LinksGroup />
       </Section>

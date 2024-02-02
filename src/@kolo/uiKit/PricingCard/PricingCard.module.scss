@@ -1,0 +1,13 @@
+@import "@kolo/design";
+
+.card {
+  width: calc(33.33333% - 32px);
+  margin: 0 16px 16px;
+  padding: 24px 24px 16px;
+  background-color: $WhiteBG;
+  box-shadow: $PricingCardShadow;
+  font-size: 14px;
+}
+
+
+

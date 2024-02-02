@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptionList Component renders OptionList component with title and list items 1`] = `
+<DocumentFragment>
+  <dt
+    class="optionTitle"
+  >
+    Test
+  </dt>
+  <dd
+    class="optionVal"
+  >
+    <span>
+       - 
+    </span>
+    Item 1
+  </dd>
+  <dd
+    class="optionVal"
+  >
+    <span>
+       - 
+    </span>
+    Item 2
+  </dd>
+  <dd
+    class="optionVal"
+  >
+    <span>
+       - 
+    </span>
+    Item 3
+  </dd>
+</DocumentFragment>
+`;

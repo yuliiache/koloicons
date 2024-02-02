@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PricingCard Component renders snapshot PricingCard component 1`] = `
+<DocumentFragment>
+  <div
+    class="card"
+  >
+    <span
+      class="label success large"
+      data-testid="labelComponent"
+    >
+      Personal
+    </span>
+    <div
+      class="price"
+    >
+      <span
+        class="priceVal"
+      >
+        $2.50
+      </span>
+      <span
+        class="priceDesc"
+      >
+        per month, $30 billed yearly
+      </span>
+    </div>
+    <ul
+      class="planFeatures"
+    >
+      <li>
+        <strong>
+          Feature 1
+        </strong>
+      </li>
+      <li>
+        <strong>
+          Feature 2
+        </strong>
+      </li>
+      <li>
+        <strong>
+          Feature 3
+        </strong>
+      </li>
+    </ul>
+    <button
+      class="button button-full-width button-primary"
+      data-testid="buttonComponent"
+      type="button"
+    >
+      <span
+        data-testid="buttonComponentText"
+      >
+        Purchase
+      </span>
+    </button>
+    <div
+      class="advantages"
+    >
+      <p
+        class="advantagesItem"
+      >
+        <span
+          class="itemTitle"
+        >
+          Formats:
+        </span>
+        <span
+          class="itemVal"
+        >
+          PNG, SVG
+        </span>
+      </p>
+      <p
+        class="advantagesItem"
+      >
+        <span
+          class="itemTitle"
+        >
+          Attribution:
+        </span>
+        <span
+          class="itemVal"
+        >
+          No attribution required
+        </span>
+      </p>
+    </div>
+    <dl
+      class="advantages"
+    >
+      <dt
+        class="optionTitle"
+      >
+        You can use icons for:
+      </dt>
+      <dd
+        class="optionVal"
+      >
+        <span>
+           - 
+        </span>
+        Option 1
+      </dd>
+      <dd
+        class="optionVal"
+      >
+        <span>
+           - 
+        </span>
+        Option 2
+      </dd>
+      <dd
+        class="optionVal"
+      >
+        <span>
+           - 
+        </span>
+        Option 3
+      </dd>
+      <dt
+        class="optionTitle"
+      >
+        You can not use icons for:
+      </dt>
+      <dd
+        class="optionVal"
+      >
+        <span>
+           - 
+        </span>
+        Option 4
+      </dd>
+      <dd
+        class="optionVal"
+      >
+        <span>
+           - 
+        </span>
+        Option 5
+      </dd>
+      <dd
+        class="optionVal"
+      >
+        <span>
+           - 
+        </span>
+        Option 6
+      </dd>
+    </dl>
+  </div>
+</DocumentFragment>
+`;
