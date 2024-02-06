@@ -19,6 +19,7 @@ import PricingCardWrap from './components/PricingCardWrap/PricingCardWrap';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
 import {Section} from './components/Section/Section';
 import SignInMessageWrap from './components/SignInMessage/SignInMessageWrap';
+import SocialLinksGroup from './components/SocialLinks/SocialLinksGroup';
 import Tooltips from './components/Tooltips/Tooltips';
 
 import style from './UiKit.module.scss';
@@ -35,6 +36,7 @@ const UiKit = () => {
           <GetPricingGroup />
         </div>
       </Section>
+      <SocialLinksGroup />
       <InputGroup />
       <ColorPickerWrap />
       <LabelGroup />
