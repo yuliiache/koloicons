@@ -1,0 +1,42 @@
+@import "@kolo/design";
+
+.button {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 6px 0 $ColorPickerShadow;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $WhiteBG;
+  fill: $IconColor;
+
+  &.button-round {
+    border-radius: 50%;
+  }
+
+  &.button-square {
+    border-radius: 4px;
+  }
+
+  &:not(:disabled):active {
+    background-color: $LightBrandColor;
+    transition: all 0.2s linear;
+  }
+
+  &:not(:disabled):focus {
+    outline: none;
+    box-shadow: 0 0 0 4px $FocusShadowInput;
+  }
+
+  &:not(:disabled):hover {
+    fill: $BrandColor;
+    transition: all 0.3s linear;
+  }
+
+  &.button-disabled {
+    cursor: default;
+    fill: $GreyDisableBgBtn;
+  }
+}

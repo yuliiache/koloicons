@@ -60,6 +60,21 @@ exports[`Tooltip should render snapshot successfully with label 4`] = `
 ]
 `;
 
+exports[`Tooltip should render snapshot successfully with label 5`] = `
+[
+  <button>
+    map
+  </button>,
+  <div
+    class="rc-tooltip-inner"
+    role="tooltip"
+    style="padding: 8px 10px; color: rgb(255, 255, 255); text-align: left; text-decoration: none; background-color: rgb(55, 55, 55); border-radius: 6px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.17); min-height: 34px;"
+  >
+    map
+  </div>,
+]
+`;
+
 exports[`Tooltip should render snapshot successfully without label 1`] = `
 <DocumentFragment>
   <button>

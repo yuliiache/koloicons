@@ -4,9 +4,9 @@ import styles from './Tooltips.module.scss';
 
 const {tooltipWrapper, tooltipWrapperButton} = styles;
 
-import {TOOLTIP_PLACEMENT, TRIGGER_ACTION} from '@kolo/uiKit/Tooltip/constants';
+import {TooltipPlacement, TriggerAction} from '@kolo/uiKit/Tooltip/constants';
 
-const tooltipPlacements = Object.values(TOOLTIP_PLACEMENT);
+const tooltipPlacements = Object.values(TooltipPlacement);
 
 const Tooltips = () => {
   const renderTooltips = (trigger, label = 'label') => {
@@ -31,9 +31,9 @@ const Tooltips = () => {
 
   return (
     <div className={tooltipWrapper}>
-      {renderTooltips(TRIGGER_ACTION.HOVER)}
-      {renderTooltips(TRIGGER_ACTION.FOCUS)}
-      {renderTooltips(TRIGGER_ACTION.CLICK)}
+      {renderTooltips(TriggerAction.HOVER)}
+      {renderTooltips(TriggerAction.FOCUS)}
+      {renderTooltips(TriggerAction.CLICK)}
       {renderTooltips()}
     </div>
   );

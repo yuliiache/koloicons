@@ -1,6 +1,7 @@
 import React from 'react';
 import HelpLinks from '@kolo/uiKit/HelpLinks';
 
+import ButtonIconWrap from './components/ButtonIconWrap/ButtonIconWrap';
 import {ButtonLinkWrap} from './components/ButtonLink/ButtonLinkWrap';
 import {Buttons} from './components/Buttons/Buttons';
 import {Checkboxes} from './components/Checkboxes/Checkboxes';
@@ -57,6 +58,9 @@ const UiKit = () => {
       </Section>
       <IconsWrapper />
       <Logos />
+      <Section title="ButtonIcons">
+        <ButtonIconWrap />
+      </Section>
     </div>
   );
 };
