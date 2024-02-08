@@ -9,6 +9,7 @@ import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import GetCategoriesButton from './components/GetCategoriesButton/GetCategoriesButton';
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
 import GetFeedbacks from './components/GetFeedbacks/GetFeedBacks';
+import GetIconsButtons from './components/GetIconsButtons/GetIconsButtons';
 import GetPricingGroup from './components/GetPricing/GetPricingGroup';
 import IconsWrapper from './components/IconsWrapper/IconsWrapper';
 import InputGroup from './components/InputGroup/InputGroup';
@@ -34,6 +35,7 @@ const UiKit = () => {
           <GetFeedbacks />
           <GetFaqsButton />
           <GetPricingGroup />
+          <GetIconsButtons />
         </div>
       </Section>
       <SocialLinksGroup />

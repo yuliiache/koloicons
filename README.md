@@ -256,7 +256,6 @@ getCategories({all: true, iconSize: '48', iconStyle: 'solid'})
 - @param {string} [iconSize] optional - see below at API categories (server return '48px' by default)
 - @param {string} [iconStyle] optional - see below at API categories (server return 'line' by default)
 - @param {string} [isFree] optional - one of: string 'true' or empty string (TODO: yes, it should be fixed, use boolean)
-- @param {string} [withTags] optional - one of: string 'withTags' or empty string (TODO: yes, it should be fixed, use boolean)
 
 ```sh
 getIcons({
@@ -266,8 +265,7 @@ getIcons({
   iconStyle: "",
   categoryId: "",
   searchQuery: "",
-  isFree: "",
-  withTags
+  isFree: ""
 })
 ```
 
