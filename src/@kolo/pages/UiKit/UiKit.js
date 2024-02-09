@@ -10,6 +10,7 @@ import GetCategoriesButton from './components/GetCategoriesButton/GetCategoriesB
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
 import GetFeedbacks from './components/GetFeedbacks/GetFeedBacks';
 import GetIconsButtons from './components/GetIconsButtons/GetIconsButtons';
+import GetIconsByCategoryGroup from './components/GetIconsByCategory/GetIconsByCategoryGroup';
 import GetPricingGroup from './components/GetPricing/GetPricingGroup';
 import IconsWrapper from './components/IconsWrapper/IconsWrapper';
 import InputGroup from './components/InputGroup/InputGroup';
@@ -31,6 +32,7 @@ const UiKit = () => {
       <h1>UI-kit</h1>
       <Section title="HTTP request section">
         <div className={style.buttonsWrapper}>
+          <GetIconsByCategoryGroup />
           <GetCategoriesButton />
           <GetFeedbacks />
           <GetFaqsButton />
