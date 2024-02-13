@@ -1,0 +1,152 @@
+@import "@kolo/design";
+
+.searchWrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+
+  & .searchBtn {
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    z-index: 2;
+
+    & > button {
+      height: 72px;
+
+      background-color: transparent;
+      box-shadow: none;
+      cursor: pointer;
+
+      @media (max-width: 767px) {
+        height: 48px;
+      }
+
+      & .iconSearch path {
+        transition: fill $transition-main ease-in-out;
+      }
+
+      &:hover,
+      &:active {
+        .iconSearch path:first-child {
+          fill: $LighthIcon;
+        }
+
+        .iconSearch path:last-child {
+          fill: $IconHoverColor;
+        }
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:not(:disabled):active,
+      &:not(:disabled):hover {
+        background-color: transparent;
+        transition: none;
+      }
+    }
+  }
+
+  & .input {
+    position: relative;
+    height: 72px;
+    width: 100%;
+    padding: 20px 16px 20px 56px;
+    font-size: 0.8rem;
+    color: $secFontColor;
+    font-family: $mainFontFamily;
+    line-height: 1.56;
+    background: linear-gradient(180deg, $WhiteBG, $WhiteBG);
+    border: none;
+    border-bottom: 2px solid rgb(225 224 224 / 10%);
+    border-radius: 4px;
+    outline: none;
+    box-shadow: inset 0 2px 0 0 $WhiteBG, inset 0 24px 35px -4px $ShadowColor, 0 12px 24px 0 $ShadowPanel;
+
+    transition-property: box-shadow, border-color;
+    transition-duration: $transition-main;
+    transition-timing-function: ease-in-out;
+
+    @media (max-width: 767px) {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      height: 48px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $lighthGrey;
+      font-family: $mainFontFamily;
+      font-size: 0.8rem;
+      line-height: 1.5;
+
+      transition: color $transition-main ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+      box-shadow: inset 0 2px 0 0 $WhiteBG, inset 0 24px 35px -4px $ActiveInputColor, 0 12px 24px 0 $ShadowPanel;
+    }
+
+    &:focus {
+      box-shadow: inset 0 2px 0 0 $WhiteBG, inset 0 24px 35px -4px $ActiveInputColor, 0 12px 24px 0 $ShadowPanel;
+      border-bottom: 2px solid $BrandColor;
+
+      &::-webkit-input-placeholder {
+        color: $placeholderFocusColor;
+      }
+    }
+
+    &:hover + .searchBtn .iconSearch path:first-child,
+    &:focus + .searchBtn .iconSearch path:first-child {
+      fill: $LighthIcon;
+    }
+
+    &:hover + .searchBtn .iconSearch path:last-child,
+    &:focus + .searchBtn .iconSearch path:last-child {
+      fill: $IconHoverColor;
+    }
+  }
+
+  & .cancelBtn {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+      top: 4px;
+    }
+
+    & > button {
+      height: 40px;
+      width: 40px;
+      background-color: transparent;
+      box-shadow: none;
+      cursor: pointer;
+      fill: rgba(175, 181, 196, 0.8);
+
+      @media (max-width: 767px) {
+        padding: 12px;
+      }
+
+      &:hover,
+      &:active {
+        fill: #717886;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:not(:disabled):active,
+      &:not(:disabled):hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

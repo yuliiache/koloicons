@@ -16,6 +16,10 @@ export enum BillingInterval {
   YEAR = 'year',
 }
 
+export enum KeyCode {
+  ENTER = 'Enter',
+}
+
 export const PAGES = Object.freeze({
   freeIconPacks: 'Free Icon Packs',
   categories: 'Categories',
@@ -31,9 +35,5 @@ export const EMAIL_MAX_LENGTH = 255;
 
 export const PASSWORD_MIN_LENGTH = 3;
 export const PASSWORD_MAX_LENGTH = 1024;
-
-export const KEY_CODES = {
-  enter: 13,
-};
 
 export const DEFAULT_ICON_COLOR = '#000000';

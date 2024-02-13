@@ -20,6 +20,7 @@ import LinksGroup from './components/LinksGroup/LinksGroup';
 import Logos from './components/Logos';
 import PricingCardWrap from './components/PricingCardWrap/PricingCardWrap';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
+import SearchWrap from './components/SearchWrap/SearchWrap';
 import {Section} from './components/Section/Section';
 import SignInMessageWrap from './components/SignInMessage/SignInMessageWrap';
 import SocialLinksGroup from './components/SocialLinks/SocialLinksGroup';
@@ -42,6 +43,7 @@ const UiKit = () => {
           <GetIconsButtons />
         </div>
       </Section>
+      <SearchWrap />
       <SocialLinksGroup />
       <InputGroup />
       <ColorPickerWrap />
