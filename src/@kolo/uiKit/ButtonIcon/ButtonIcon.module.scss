@@ -11,28 +11,32 @@
   align-items: center;
   background-color: $WhiteBG;
   fill: $IconColor;
-
-  &.button-round {
-    border-radius: 50%;
-  }
-
-  &.button-square {
-    border-radius: 4px;
-  }
-
-  &:not(:disabled):active {
-    background-color: $LightBrandColor;
-    transition: all 0.2s linear;
-  }
+  transition: all 0.2s linear;
+  cursor: pointer;
 
   &:not(:disabled):focus {
     outline: none;
     box-shadow: 0 0 0 4px $FocusShadowInput;
   }
 
-  &:not(:disabled):hover {
-    fill: $BrandColor;
+  &:not(:disabled):active {
+    background-color: $LightBrandColor;
+  }
+
+  &.button-round {
+    border-radius: 50%;
     transition: all 0.3s linear;
+
+    &:not(:disabled):hover {
+      fill: $BrandColor;
+    }
+  }
+
+  &.button-square {
+    border-radius: 4px;
+    &:not(:disabled):hover {
+      background-color: $IconHoverBackground;
+    }
   }
 
   &.button-disabled {
