@@ -3,6 +3,7 @@
 .helpLinkList {
   display: flex;
   gap: 16px;
+  font-size: 0.6rem;
 
   @media (max-width: $mobileWidth) {
     gap: 32px;

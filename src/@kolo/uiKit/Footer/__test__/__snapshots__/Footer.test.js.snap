@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component renders without crashing and matches the snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer"
+  >
+    <p
+      class="copyright"
+    >
+      Copyright © 2024 KOLO ICONS
+    </p>
+    <div
+      data-testid="mock-help-links"
+    >
+      MockHelpLinks
+    </div>
+    <div
+      data-testid="mock-social-links"
+    >
+      MockSocialLinks
+    </div>
+  </footer>
+</DocumentFragment>
+`;

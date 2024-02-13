@@ -1,0 +1,28 @@
+@import "@kolo/design";
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: $WhiteBG;
+
+  @media (max-width: $mobileWidth) {
+    flex-direction: column;
+    padding: 1.2rem 0.8rem 3.2rem;
+    justify-content: center;
+
+    > *:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.6rem;
+  line-height: 1.33;
+  color: $lighthGrey;
+}

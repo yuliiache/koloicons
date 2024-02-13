@@ -2,6 +2,7 @@ import React, {lazy, Suspense} from 'react';
 import {Route, Routes} from 'react-router-dom';
 import {ToastContainer} from 'react-toastify';
 import {HomePage} from '@kolo/pages/Home/Home';
+import Footer from '@kolo/uiKit/Footer/Footer';
 import {AppRoute} from 'constants/AppRoute';
 
 import MyAccountPage from '../@kolo/pages/MyAccountPage';
@@ -19,7 +20,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // TODO: Replace Header, Footer placeholders
 const Header = () => <div>Header placeholder</div>;
-const Footer = () => <div>Footer placeholder</div>;
+// const Footer = () => <div>Footer placeholder</div>;
 
 const UiKit = lazy(() => import('@kolo/pages/UiKit/UiKit'));
 
