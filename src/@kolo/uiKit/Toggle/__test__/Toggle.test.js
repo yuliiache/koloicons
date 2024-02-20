@@ -8,7 +8,7 @@ import {Toggle} from '../Toggle';
 describe('Toggle', () => {
   afterEach(() => cleanup());
 
-  it('should render snapshot successfuly', () => {
+  it('should render snapshot successfully', () => {
     const props = {
       name: 'toggle',
       onChange: jest.fn(),

@@ -18,6 +18,7 @@ import InputGroup from './components/InputGroup/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import LinksGroup from './components/LinksGroup/LinksGroup';
 import Logos from './components/Logos';
+import PortalWrap from './components/Modal/PortalWrap';
 import PricingCardWrap from './components/PricingCardWrap/PricingCardWrap';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
 import SearchWrap from './components/SearchWrap/SearchWrap';
@@ -67,6 +68,7 @@ const UiKit = () => {
         <HelpLinks />
       </Section>
       <IconsWrapper />
+      <PortalWrap />
       <Logos />
       <Section title="ButtonIcons">
         <ButtonIconWrap />

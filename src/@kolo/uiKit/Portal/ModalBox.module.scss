@@ -1,0 +1,39 @@
+@import "@kolo/design";
+
+.modalOverlay {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  top: 0px;
+  background-color: $OverlayBG;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+}
+.modalBox {
+  width: 672px;
+  height: fit-content;
+  border-radius: 4px;
+  background: $LightBG;
+  z-index: 5;
+  padding: 24px;
+  position: relative;
+  top: 48px;
+}
+.closeButton {
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.closeIcon {
+  fill: $IconColor;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+    fill: $IconColor;
+    transition: all 0.3s linear;
+  }
+}

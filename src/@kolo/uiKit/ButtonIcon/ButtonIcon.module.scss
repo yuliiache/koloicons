@@ -43,4 +43,19 @@
     cursor: default;
     fill: $GreyDisableBgBtn;
   }
+
+  &.button-close {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    &:active {
+      background-color: transparent;
+    }
+    &:hover {
+      background-color: $IconHoverBackground;
+      transition: all 0.3s linear;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Toggle should render snapshot successfuly 1`] = `
+exports[`Toggle should render snapshot successfully 1`] = `
 <DocumentFragment>
   <label
     class="toggle"
