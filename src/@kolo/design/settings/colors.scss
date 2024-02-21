@@ -58,6 +58,10 @@ $BorderIconCard: rgba(61, 126, 255, 0.5);
 $ShadowPanel: rgba(57, 63, 77, 0.1);
 $ShadowPanelInfo: rgba(41, 48, 64, 0.1);
 
+// Register and Login pages
+$AdditionalShadow: rgba(57, 63, 77, 0.05);
+$FormBoxShadow: 0 54px 60px 0 $ShadowPanel, 0 27px 40px -16px $AdditionalShadow;
+
 // ButtonSocial
 $SocialIcon: #afb5c4cc;
 $IconFocus: rgba(36, 105, 242, 0.2);

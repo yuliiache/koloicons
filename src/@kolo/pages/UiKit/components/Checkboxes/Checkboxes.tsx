@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
 import {Checkbox} from '@kolo/uiKit/Checkbox/Checkbox';
+import {FC, useState} from 'react';
 
 import {Section} from '../Section/Section';
-
 import styles from './Checkboxes.module.scss';
 
-export const Checkboxes = () => {
+const Checkboxes: FC = () => {
   const [isUnchecked, setIsUnchecked] = useState(false);
   const [isChecked, setIsChecked] = useState(true);
   const [isDisabled, setIsDisabled] = useState(true);
@@ -56,3 +55,5 @@ export const Checkboxes = () => {
     </Section>
   );
 };
+
+export default Checkboxes;

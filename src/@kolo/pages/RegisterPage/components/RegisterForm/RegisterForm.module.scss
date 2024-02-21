@@ -1,0 +1,46 @@
+@import "@kolo/design";
+
+.registerForm {
+  margin-bottom: 24px;
+}
+
+.checkbox {
+  &Wrapper {
+    display: flex;
+    justify-content: flex-start;
+
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 16px;
+    }
+  }
+
+  &Text {
+    @include main-text(0.7rem, 1.43, null);
+    color: $secFontColor;
+
+    &.textDesktop {
+      display: block;
+
+      @media (max-width: $mobileWidth) {
+        display: none;
+      }
+    }
+
+    &.textMobile {
+      display: none;
+
+      @media (max-width: $mobileWidth) {
+        display: block;
+      }
+    }
+
+    & > a {
+      @include main-text(0.7rem, 1.43, null);
+      color: $secFontColor;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterPage component should render snapshot successfully 1`] = `
+<DocumentFragment>
+  <main
+    class="main"
+  >
+    <section
+      class="registerSection"
+    >
+      <div
+        class="registerContainer"
+      >
+        <h2
+          class="registerTitle"
+        >
+          Sign Up
+        </h2>
+        <div
+          data-testid="registerFormComponent"
+        >
+          <form
+            class="registerForm"
+          >
+            <div
+              class="inputGroup"
+            >
+              <label
+                class="inputGroupLabel"
+                for="firstName"
+              >
+                First name
+              </label>
+              <input
+                class="inputGroupInput"
+                id="firstName"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="inputGroup"
+            >
+              <label
+                class="inputGroupLabel"
+                for="lastName"
+              >
+                Last name
+              </label>
+              <input
+                class="inputGroupInput"
+                id="lastName"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="inputGroup"
+            >
+              <label
+                class="inputGroupLabel"
+                for="email"
+              >
+                Email
+              </label>
+              <input
+                class="inputGroupInput"
+                id="email"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="inputGroup"
+            >
+              <label
+                class="inputGroupLabel"
+                for="password"
+              >
+                Password
+              </label>
+              <input
+                class="inputGroupInput"
+                id="password"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="checkboxWrapper"
+            >
+              <div
+                data-testid="subscribeAgreementCheckbox"
+              >
+                <label
+                  class="checkbox"
+                >
+                  <input
+                    checked=""
+                    class="checkbox__input"
+                    id="subscribeAgreement"
+                    type="checkbox"
+                  />
+                  <span
+                    class="checkbox__indicator"
+                  />
+                </label>
+              </div>
+              <p
+                class="checkboxText"
+              >
+                Agree to receive emails from koloicons with discounts or special offers.
+              </p>
+            </div>
+            <div
+              class="checkboxWrapper"
+            >
+              <div
+                data-testid="termsAgreementCheckbox"
+              >
+                <label
+                  class="checkbox"
+                >
+                  <input
+                    class="checkbox__input"
+                    id="termsAgreement"
+                    type="checkbox"
+                  />
+                  <span
+                    class="checkbox__indicator"
+                  />
+                </label>
+              </div>
+              <p
+                class="checkboxText textDesktop"
+              >
+                Agree to KOLO Icons Terms of Use and Privacy Policy.
+              </p>
+              <p
+                class="checkboxText textMobile"
+              >
+                Agree to KOLO Icons 
+                <a
+                  class="link link--default"
+                  data-testid="internalLinkComponent"
+                  href="/terms-of-service"
+                >
+                  <span>
+                    Terms of Use
+                  </span>
+                </a>
+                 and 
+                <a
+                  class="link link--default"
+                  data-testid="internalLinkComponent"
+                  href="/privacy-policy-docs"
+                >
+                  <span>
+                    Privacy Policy
+                  </span>
+                </a>
+                .
+              </p>
+            </div>
+            <button
+              class="button button-full-width button-primary"
+              data-testid="buttonComponent"
+              type="submit"
+            >
+              <span
+                data-testid="buttonComponentText"
+              >
+                Sign Up
+              </span>
+            </button>
+          </form>
+        </div>
+        <div>
+          <p
+            class="registerText"
+          >
+            Already registered?
+          </p>
+          <a
+            data-testid="buttonLinkComponent"
+            href="/login"
+          >
+            <button
+              class="button button-full-width button-basic"
+              data-testid="buttonComponent"
+              type="button"
+            >
+              <span
+                data-testid="buttonComponentText"
+              >
+                Sign In
+              </span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;

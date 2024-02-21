@@ -1,0 +1,354 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterForm component should render snapshot successfully 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="registerFormComponent"
+  >
+    <form
+      class="registerForm"
+    >
+      <div
+        class="inputGroup"
+      >
+        <label
+          class="inputGroupLabel"
+          for="firstName"
+        >
+          First name
+        </label>
+        <input
+          class="inputGroupInput"
+          id="firstName"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="inputGroup"
+      >
+        <label
+          class="inputGroupLabel"
+          for="lastName"
+        >
+          Last name
+        </label>
+        <input
+          class="inputGroupInput"
+          id="lastName"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="inputGroup"
+      >
+        <label
+          class="inputGroupLabel"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputGroupInput"
+          id="email"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="inputGroup"
+      >
+        <label
+          class="inputGroupLabel"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputGroupInput"
+          id="password"
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        class="checkboxWrapper"
+      >
+        <div
+          data-testid="subscribeAgreementCheckbox"
+        >
+          <label
+            class="checkbox"
+          >
+            <input
+              checked=""
+              class="checkbox__input"
+              id="subscribeAgreement"
+              type="checkbox"
+            />
+            <span
+              class="checkbox__indicator"
+            />
+          </label>
+        </div>
+        <p
+          class="checkboxText"
+        >
+          Agree to receive emails from koloicons with discounts or special offers.
+        </p>
+      </div>
+      <div
+        class="checkboxWrapper"
+      >
+        <div
+          data-testid="termsAgreementCheckbox"
+        >
+          <label
+            class="checkbox"
+          >
+            <input
+              class="checkbox__input"
+              id="termsAgreement"
+              type="checkbox"
+            />
+            <span
+              class="checkbox__indicator"
+            />
+          </label>
+        </div>
+        <p
+          class="checkboxText textDesktop"
+        >
+          Agree to KOLO Icons Terms of Use and Privacy Policy.
+        </p>
+        <p
+          class="checkboxText textMobile"
+        >
+          Agree to KOLO Icons 
+          <a
+            class="link link--default"
+            data-testid="internalLinkComponent"
+            href="/terms-of-service"
+          >
+            <span>
+              Terms of Use
+            </span>
+          </a>
+           and 
+          <a
+            class="link link--default"
+            data-testid="internalLinkComponent"
+            href="/privacy-policy-docs"
+          >
+            <span>
+              Privacy Policy
+            </span>
+          </a>
+          .
+        </p>
+      </div>
+      <button
+        class="button button-full-width button-primary"
+        data-testid="buttonComponent"
+        type="submit"
+      >
+        <span
+          data-testid="buttonComponentText"
+        >
+          Sign Up
+        </span>
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`RegisterForm component should show validation error on submit and render snapshot successfully 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="registerFormComponent"
+  >
+    <form
+      class="registerForm"
+    >
+      <div
+        class="inputGroup"
+      >
+        <label
+          class="inputGroupLabel"
+          for="firstName"
+        >
+          First name
+        </label>
+        <input
+          class="inputGroupInput invalid"
+          id="firstName"
+          type="text"
+          value=""
+        />
+        <span
+          class="inputGroupError"
+        >
+          Please, fill in first name
+        </span>
+      </div>
+      <div
+        class="inputGroup"
+      >
+        <label
+          class="inputGroupLabel"
+          for="lastName"
+        >
+          Last name
+        </label>
+        <input
+          class="inputGroupInput invalid"
+          id="lastName"
+          type="text"
+          value=""
+        />
+        <span
+          class="inputGroupError"
+        >
+          Please, fill in last name
+        </span>
+      </div>
+      <div
+        class="inputGroup"
+      >
+        <label
+          class="inputGroupLabel"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputGroupInput invalid"
+          id="email"
+          type="text"
+          value=""
+        />
+        <span
+          class="inputGroupError"
+        >
+          Please, fill in email
+        </span>
+      </div>
+      <div
+        class="inputGroup"
+      >
+        <label
+          class="inputGroupLabel"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputGroupInput invalid"
+          id="password"
+          type="password"
+          value=""
+        />
+        <span
+          class="inputGroupError"
+        >
+          Please, fill in password
+        </span>
+      </div>
+      <div
+        class="checkboxWrapper"
+      >
+        <div
+          data-testid="subscribeAgreementCheckbox"
+        >
+          <label
+            class="checkbox"
+          >
+            <input
+              checked=""
+              class="checkbox__input"
+              id="subscribeAgreement"
+              type="checkbox"
+            />
+            <span
+              class="checkbox__indicator"
+            />
+          </label>
+        </div>
+        <p
+          class="checkboxText"
+        >
+          Agree to receive emails from koloicons with discounts or special offers.
+        </p>
+      </div>
+      <div
+        class="checkboxWrapper"
+      >
+        <div
+          data-testid="termsAgreementCheckbox"
+        >
+          <label
+            class="checkbox"
+          >
+            <input
+              class="checkbox__input"
+              id="termsAgreement"
+              type="checkbox"
+            />
+            <span
+              class="checkbox__indicator checkbox__indicator--error"
+            />
+            <span
+              class="checkbox__error"
+            >
+              Required
+            </span>
+          </label>
+        </div>
+        <p
+          class="checkboxText textDesktop"
+        >
+          Agree to KOLO Icons Terms of Use and Privacy Policy.
+        </p>
+        <p
+          class="checkboxText textMobile"
+        >
+          Agree to KOLO Icons 
+          <a
+            class="link link--default"
+            data-testid="internalLinkComponent"
+            href="/terms-of-service"
+          >
+            <span>
+              Terms of Use
+            </span>
+          </a>
+           and 
+          <a
+            class="link link--default"
+            data-testid="internalLinkComponent"
+            href="/privacy-policy-docs"
+          >
+            <span>
+              Privacy Policy
+            </span>
+          </a>
+          .
+        </p>
+      </div>
+      <button
+        class="button button-full-width button-primary"
+        data-testid="buttonComponent"
+        type="submit"
+      >
+        <span
+          data-testid="buttonComponentText"
+        >
+          Sign Up
+        </span>
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

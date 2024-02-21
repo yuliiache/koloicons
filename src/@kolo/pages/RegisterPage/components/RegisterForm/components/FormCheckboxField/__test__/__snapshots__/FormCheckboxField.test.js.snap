@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormCheckboxField component should render snapshot successfully for checked subscription agreement checkbox 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="subscribeAgreementCheckbox"
+  >
+    <label
+      class="checkbox"
+    >
+      <input
+        checked=""
+        class="checkbox__input"
+        id="subscribeAgreement"
+        type="checkbox"
+      />
+      <span
+        class="checkbox__indicator"
+      />
+    </label>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FormCheckboxField component should render snapshot successfully for unchecked terms agreement checkbox 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="termsAgreementCheckbox"
+  >
+    <label
+      class="checkbox"
+    >
+      <input
+        class="checkbox__input"
+        id="termsAgreement"
+        type="checkbox"
+      />
+      <span
+        class="checkbox__indicator"
+      />
+    </label>
+  </div>
+</DocumentFragment>
+`;

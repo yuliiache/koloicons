@@ -30,10 +30,4 @@ export const PAGES = Object.freeze({
   signup: 'Sign Up',
 });
 
-export const EMAIL_MIN_LENGTH = 4;
-export const EMAIL_MAX_LENGTH = 255;
-
-export const PASSWORD_MIN_LENGTH = 3;
-export const PASSWORD_MAX_LENGTH = 1024;
-
 export const DEFAULT_ICON_COLOR = '#000000';

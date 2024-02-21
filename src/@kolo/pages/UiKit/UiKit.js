@@ -4,7 +4,7 @@ import HelpLinks from '@kolo/uiKit/HelpLinks';
 import ButtonIconWrap from './components/ButtonIconWrap/ButtonIconWrap';
 import {ButtonLinkWrap} from './components/ButtonLink/ButtonLinkWrap';
 import {Buttons} from './components/Buttons/Buttons';
-import {Checkboxes} from './components/Checkboxes/Checkboxes';
+import Checkboxes from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import GetCategoriesButton from './components/GetCategoriesButton/GetCategoriesButton';
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';

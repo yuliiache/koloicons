@@ -1,0 +1,60 @@
+@import "@kolo/design";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 144px);
+
+  @media (max-width: $mobileWidth) {
+    min-height: calc(100vh - 64px);
+  }
+}
+
+.register {
+  &Section {
+    padding: 32px 0;
+    background-color: $DarkBG;
+
+    @media (max-width: $mobileWidth) {
+      padding: 20px 0 32px;
+
+      background-color: $LightBG;
+    }
+  }
+
+  &Container {
+    margin: 0 auto;
+    max-width: 448px;
+    padding: 24px;
+    background-color: $LightBG;
+    border-radius: 4px;
+    box-shadow: $FormBoxShadow;
+
+    @media (max-width: $mobileWidth) {
+      max-width: 480px;
+      width: 100%;
+      padding: 0 16px;
+      box-shadow: none;
+    }
+  }
+
+  &Title {
+    margin-bottom: 26px;
+    text-align: center;
+
+    font-size: 0.8rem;
+    color: $secFontColor;
+
+    @media (max-width: $mobileWidth) {
+      margin-bottom: 21px;
+    }
+  }
+
+  &Text {
+    margin-bottom: 10px;
+
+    text-align: center;
+    @include main-text(0.6rem, 1.33, null);
+    color: $secFontColor;
+  }
+}

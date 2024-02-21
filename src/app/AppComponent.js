@@ -2,6 +2,7 @@ import React, {lazy, Suspense} from 'react';
 import {Route, Routes} from 'react-router-dom';
 import {ToastContainer} from 'react-toastify';
 import {HomePage} from '@kolo/pages/Home/Home';
+import RegisterPage from '@kolo/pages/RegisterPage/RegisterPage';
 import Footer from '@kolo/uiKit/Footer/Footer';
 import {AppRoute} from 'constants/AppRoute';
 
@@ -42,6 +43,10 @@ export const AppComponent = () => {
           <Route
             path={AppRoute.MY_ACCOUNT}
             element={<MyAccountPage />}
+          />
+          <Route
+            path={AppRoute.REGISTER}
+            element={<RegisterPage />}
           />
           {/* { <Route path={'/login'} element={<LoginPage isLogin />} />
         <Route path={'/register'} element={<LoginPage />} />
