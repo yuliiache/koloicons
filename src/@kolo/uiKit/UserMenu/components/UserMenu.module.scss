@@ -1,0 +1,89 @@
+@import "@kolo/design";
+
+.userMenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include mobile-screen {
+    flex-wrap: nowrap;
+  }
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.2rem solid $BlueColor;
+  background-color: $LightBrandColor;
+  color: $BlueColor;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-right: 0.4rem;
+}
+
+.userInfo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  line-height: 1.2;
+
+  a {
+    margin-right: 1.2rem;
+    padding: 0.6rem 0;
+  }
+}
+
+.signIn {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  line-height: 1.2;
+
+  .icon {
+    margin-right: 0.4rem;
+    fill: $IconColor;
+  }
+}
+
+.signIn:hover svg {
+  fill: $BlueColor;
+  transition: fill 0.3s ease-in-out;
+}
+
+.hoverMenu {
+  ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    min-width: 8.4rem;
+    margin: 0;
+    padding: 0.8rem 0.4rem;
+    list-style: none;
+    line-height: 1.6;
+    background-color: $WhiteBG;
+    border: 1px solid $DarkBG;
+    border-radius: 0.2rem;
+    transform: translateX(-20%);
+    box-shadow: 0 0.25rem 1rem -0.05rem $ColorPickerShadow;
+  }
+
+  li a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.2rem;
+    transition: background-color 0.35s ease-out;
+    font-size: 0.7rem;
+  }
+
+  li:hover a {
+    color: $GreyFontBtn;
+    background-color: $LightBG;
+  }
+}

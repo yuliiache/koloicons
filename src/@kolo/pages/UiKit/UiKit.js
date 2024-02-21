@@ -26,6 +26,7 @@ import {Section} from './components/Section/Section';
 import SignInMessageWrap from './components/SignInMessage/SignInMessageWrap';
 import SocialLinksGroup from './components/SocialLinks/SocialLinksGroup';
 import Tooltips from './components/Tooltips/Tooltips';
+import UserMenus from './components/UserMenus/UserMenus';
 
 import style from './UiKit.module.scss';
 
@@ -46,6 +47,7 @@ const UiKit = () => {
       </Section>
       <SearchWrap />
       <SocialLinksGroup />
+      <UserMenus />
       <InputGroup />
       <ColorPickerWrap />
       <LabelGroup />
