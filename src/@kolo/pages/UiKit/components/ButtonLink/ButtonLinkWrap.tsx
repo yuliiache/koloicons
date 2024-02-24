@@ -1,5 +1,5 @@
 import ButtonLink from '@kolo/uiKit/ButtonLink/ButtonLink';
-import { AppRoute } from 'constants/AppRoute';
+import {AppRoute} from 'constants/AppRoute';
 import {FC} from 'react';
 
 import styles from './ButtonLinkWrap.module.scss';

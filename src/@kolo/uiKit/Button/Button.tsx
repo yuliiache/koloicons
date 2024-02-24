@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import {FC} from 'react';
+import {FC, ReactNode} from 'react';
 
 import styles from './Button.module.scss';
 import {BUTTON_TEST_ID, BUTTON_TEXT_TEST_ID, ButtonColor, ButtonSize, ButtonType} from './constants';
@@ -11,11 +11,13 @@ export interface ButtonProps {
   color?: ButtonColor;
   size?: ButtonSize;
   type?: ButtonType;
+  children?: ReactNode;
 }
 
 const Button: FC<ButtonProps> = ({
   text,
   onClick,
+  children,
   isDisabled = false,
   color = ButtonColor.PRIMARY,
   size = ButtonSize.SMALL,
@@ -23,6 +25,7 @@ const Button: FC<ButtonProps> = ({
 }) => {
   const buttonClasses = classnames(styles.button, styles[`button-${size}`], styles[`button-${color}`], {
     [styles['button-disabled']]: isDisabled,
+    [styles['button-children']]: children,
   });
 
   return (
@@ -34,6 +37,7 @@ const Button: FC<ButtonProps> = ({
       disabled={isDisabled}
     >
       <span data-testid={BUTTON_TEXT_TEST_ID}>{text}</span>
+      {children && <span>{children}</span>}
     </button>
   );
 };

@@ -14,6 +14,7 @@ const ButtonLink: FC<ButtonLinkProps> = ({
   url,
   text,
   isDisabled,
+  children,
   color = ButtonColor.PRIMARY,
   size = ButtonSize.SMALL,
 }) => {
@@ -30,7 +31,9 @@ const ButtonLink: FC<ButtonLinkProps> = ({
           isDisabled={isDisabled}
           color={color}
           size={size}
-        />
+        >
+          {children}
+        </Button>
       </InternalLink>
     );
   }
@@ -47,7 +50,9 @@ const ButtonLink: FC<ButtonLinkProps> = ({
         isDisabled={isDisabled}
         color={color}
         size={size}
-      />
+      >
+        {children}
+      </Button>
     </a>
   );
 };
