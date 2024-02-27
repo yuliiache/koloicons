@@ -1,6 +1,6 @@
 import {getUpdatedUser} from '@kolo/facade';
-import {loginUserSuccess} from '@kolo/pages/login';
-import {httpService,writeJwt} from '@kolo/services';
+import {loginUserSuccess} from '@kolo/pages/Login';
+import {httpService, writeJwt} from '@kolo/services';
 import {call, put, takeEvery} from 'redux-saga/effects';
 
 import {refreshJWT} from '../actions';

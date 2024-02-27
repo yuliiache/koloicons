@@ -24,6 +24,7 @@ const Header = () => <div>Header placeholder</div>;
 // const Footer = () => <div>Footer placeholder</div>;
 
 const UiKit = lazy(() => import('@kolo/pages/UiKit/UiKit'));
+const LoginPage = lazy(() => import('@kolo/pages/LoginPage/LoginPage'));
 
 export const AppComponent = () => {
   return (
@@ -43,6 +44,10 @@ export const AppComponent = () => {
           <Route
             path={AppRoute.MY_ACCOUNT}
             element={<MyAccountPage />}
+          />
+          <Route
+            path={AppRoute.LOGIN}
+            element={<LoginPage />}
           />
           <Route
             path={AppRoute.REGISTER}

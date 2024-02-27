@@ -88,6 +88,8 @@ $basicBoxShadowColor: rgba(84, 90, 105, 0.1);
 $focusBoxShadowColor: rgba(80, 130, 230, 0.2);
 $hoverBoxShadowColor: rgba(255, 255, 255, 0.2);
 $basicBoxShadowColorSec: rgba(145, 158, 171, 0.2);
+$primaryBoxShadowColorAuth: rgba(57, 63, 77, 0.1);
+$secondaryBoxShadowColorAuth: rgba(57, 63, 77, 0.05);
 
 $primaryBoxShadow: inset 0 -1px 3px 0 $primaryBoxShadowColor;
 $primaryBoxShadowActStart: inset 0 1px 3px 0 $primaryBoxShadowColor;
@@ -101,6 +103,9 @@ $basicBoxShadowActEnd: inset 0 30px 40px -2px $basicBoxShadowColorSec;
 $basicBoxShadowFocHovStart: inset 0 -1px 3px 0 $basicBoxShadowColor;
 $basicBoxShadowFocMid: inset 0 -30px 40px -2px $basicBoxShadowColorSec;
 $basicBoxShadowHovEnd: inset 0 -10px 40px -10px $basicBoxShadowColorSec;
+$primaryBoxShadowAuth: 0 54px 60px 0 $primaryBoxShadowColorAuth;
+$secondaryBoxShadowAuth: 0 27px 40px -16px $secondaryBoxShadowColorAuth;
+
 //Radio Buttons Colors
 $RadioButtonHover: hsla(0, 0%, 100%, 0.3);
 

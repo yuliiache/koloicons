@@ -1,0 +1,40 @@
+@import "@kolo/design";
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  &Xs {
+    max-width: 480px;
+  }
+}
+
+.authorization {
+  padding: 24px;
+  background-color: $LightBG;
+  border-radius: 4px;
+  box-shadow: $primaryBoxShadowAuth, $secondaryBoxShadowAuth;
+
+  &Form {
+    margin-bottom: 24px;
+  }
+  &Footer {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 1.33;
+    color: $GreyFontBtn;
+  }
+}
+
+.headerName {
+  text-align: center;
+  color: $secFontColor;
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage should create snapshot successfully 1`] = `
+<DocumentFragment>
+  <div
+    class="container containerXs"
+  >
+    <section
+      class="authorization"
+    >
+      <h2
+        class="headerName"
+      >
+        Login
+      </h2>
+      <form
+        class="authorizationForm"
+      >
+        <div
+          class="inputGroup"
+        >
+          <label
+            class="inputGroupLabel"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="inputGroupInput"
+            id="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="inputGroup"
+        >
+          <label
+            class="inputGroupLabel"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="inputGroupInput"
+            id="password"
+            type="password"
+            value=""
+          />
+        </div>
+        <button
+          class="button button-full-width button-primary"
+          data-testid="buttonComponent"
+          type="submit"
+        >
+          <span
+            data-testid="buttonComponentText"
+          >
+            Sign In
+          </span>
+        </button>
+      </form>
+      <p
+        class="authorizationFooter"
+      >
+        Create an account to use KOLO Icons for free!
+      </p>
+      <a
+        data-testid="buttonLinkComponent"
+        href="/register"
+      >
+        <button
+          class="button button-full-width button-basic"
+          data-testid="buttonComponent"
+          type="button"
+        >
+          <span
+            data-testid="buttonComponentText"
+          >
+            Sign Up
+          </span>
+        </button>
+      </a>
+    </section>
+  </div>
+</DocumentFragment>
+`;
