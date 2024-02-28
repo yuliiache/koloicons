@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PricingFAQs component should render snapshot successfully 1`] = `
+<DocumentFragment>
+  <li
+    class="item"
+  >
+    <p
+      class="question"
+    >
+      Question
+    </p>
+    <p>
+      Answer
+    </p>
+  </li>
+</DocumentFragment>
+`;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PricingFAQs from '@kolo/pages/PricingPage/components/PricingFAQs/PricingFAQs';
 import HelpLinks from '@kolo/uiKit/HelpLinks';
 
 import ButtonIconWrap from './components/ButtonIconWrap/ButtonIconWrap';
@@ -45,6 +46,7 @@ const UiKit = () => {
           <GetIconsButtons />
         </div>
       </Section>
+      <PricingFAQs />
       <SearchWrap />
       <SocialLinksGroup />
       <UserMenus />

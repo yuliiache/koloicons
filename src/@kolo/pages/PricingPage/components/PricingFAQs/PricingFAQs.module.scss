@@ -1,0 +1,50 @@
+@import "@kolo/design";
+
+.section {
+  padding-top: 76px;
+  padding-bottom: 118px;
+
+  @media screen and (max-width: 1023px) {
+    padding-bottom: 116px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 44px;
+    padding-bottom: 90px;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+  @include container;
+}
+
+.title {
+  margin-bottom: 44px;
+
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: $TitleColor;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+    font-size: 0.9rem;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 68px;
+
+  @media screen and (max-width: 1023px) {
+    row-gap: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
