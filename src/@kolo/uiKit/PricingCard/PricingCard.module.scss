@@ -9,5 +9,20 @@
   font-size: 14px;
 }
 
+@media screen and (max-width: $tabletWidth) {
+  .card {
+    width: calc(33.33333% - 16px);
+    margin: 0 8px 16px;
+    padding: 16px 16px 8px;
+  }
+}
 
 
+@media screen and (max-width: $mobileWidth) {
+  .card {
+    width: 100%;
+    margin-bottom: 8px;
+    padding-bottom: 11px;
+    border-radius: 4px;
+  }
+}
