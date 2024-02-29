@@ -7,6 +7,7 @@ import {ButtonLinkWrap} from './components/ButtonLink/ButtonLinkWrap';
 import {Buttons} from './components/Buttons/Buttons';
 import Checkboxes from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
+import FormatsWrap from './components/FormatsWrap/FormatsWrap';
 import GetCategoriesButton from './components/GetCategoriesButton/GetCategoriesButton';
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
 import GetFeedbacks from './components/GetFeedbacks/GetFeedBacks';
@@ -77,6 +78,7 @@ const UiKit = () => {
       <Section title="ButtonIcons">
         <ButtonIconWrap />
       </Section>
+      <FormatsWrap />
     </div>
   );
 };
