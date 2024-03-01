@@ -1,0 +1,36 @@
+@import "@kolo/design";
+
+.feedbackItem {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.3% - 32px);
+  text-align: center;
+
+  @media screen and (max-width: $mobileWidth) {
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    align-self: center;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+  }
+}
+
+.feedbackText {
+  margin-top: 0;
+  font-style: italic;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: $secFontColor;
+}
+
+.feedbackInfo {
+  font-size: 0.6rem;
+  line-height: 1.3;
+  color: $GreyColor;
+}

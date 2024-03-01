@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeedbackItem Component renders snapshot correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="feedbackItem"
+  >
+    <img
+      alt="John Doe"
+      height="56"
+      src="undefined/avatar.jpg"
+      width="56"
+    />
+    <p
+      class="feedbackText"
+      data-testid="feedbackText"
+    >
+      This is a sample feedback text.
+    </p>
+    <span>
+      <a
+        class="link link--default"
+        data-testid="externalLinkComponent"
+        href="https://example.com"
+        rel="noopener noreferrer nofollow"
+      >
+        John Doe, Sample Company
+      </a>
+    </span>
+  </div>
+</DocumentFragment>
+`;
