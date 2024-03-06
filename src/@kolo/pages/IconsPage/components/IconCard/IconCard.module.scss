@@ -1,0 +1,99 @@
+@import "@kolo/design";
+
+.iconCard {
+  cursor: pointer;
+  width: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: table;
+    padding-top: 100%;
+  }
+}
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.buttons {
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  right: 8px;
+  display: none;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 120px;
+  color: $lighthGrey;
+}
+
+@media (hover: hover) {
+  .iconCard:hover .wrapper {
+    padding-top: 8px;
+    background-color: $IconHoverBackground;
+    border: 1px solid $BorderIconCard;
+    transition: all 0.3s linear;
+  }
+
+  .iconCard:hover .buttons {
+    display: flex;
+  }
+
+  .iconCard:hover .title {
+    color: $BlueColor;
+    transition: all 0.3s linear;
+  }
+
+}
+
+.iconCard:focus {
+  box-shadow: inset 0 -1px 3px 0 $FocusShadowCards, 0 0 0 4px $focusBoxShadowColor,
+  inset 0 30px 40px -2px hsla(0, 0%, 100%, 0.2);
+  outline: none;
+}
+
+.iconCard:focus .buttons {
+  display: flex;
+}
+
+.iconCard:focus .title {
+  color: $BlueColor;
+}
+
+.iconCardAdded .wrapper {
+  padding-top: 8px;
+  background-color: $IconHoverBackground;
+}
+
+.iconCardAdded .buttons {
+  display: flex;
+}
+
+

@@ -17,15 +17,7 @@
     justify-content: center;
     align-items: center;
 
-    transition: opacity 500ms;
-
-    &Enter,
-    &EnterActive {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    &ExitActive {
+    &Hidden {
       opacity: 0;
       visibility: hidden;
     }
@@ -40,7 +32,7 @@
     transition: opacity 500ms;
     opacity: 0;
 
-    &EnterDone {
+    &Visible {
       opacity: 1;
       visibility: visible;
     }

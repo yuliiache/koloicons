@@ -16,6 +16,7 @@ import GetIconButtons from './components/GetIconButtons/GetIconButtons';
 import GetIconsButtons from './components/GetIconsButtons/GetIconsButtons';
 import GetIconsByCategoryGroup from './components/GetIconsByCategory/GetIconsByCategoryGroup';
 import GetPricingGroup from './components/GetPricing/GetPricingGroup';
+import IconCardWrapper from './components/IconCardWrapper/IconCardWrapper';
 import IconsWrapper from './components/IconsWrapper/IconsWrapper';
 import InputGroup from './components/InputGroup/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
@@ -50,6 +51,7 @@ const UiKit = () => {
         </div>
       </Section>
       <PricingFAQs />
+      <IconCardWrapper />
       <SearchWrap />
       <SocialLinksGroup />
       <UserMenus />
