@@ -9,17 +9,17 @@ import styles from './ButtonIconWrap.module.scss';
 const ButtonIconWrap: FC = () => {
   return (
     <div className={styles.buttonIconWrap}>
-      <ButtonIcon type={ButtonIconType.SQUARE}>
+      <ButtonIcon type={ButtonIconType.ROUNDED_SQUARE}>
         <Icon.Add />
       </ButtonIcon>
       <ButtonIcon
-        type={ButtonIconType.SQUARE}
+        type={ButtonIconType.ROUNDED_SQUARE}
         isDisabled
       >
         <Icon.Add />
       </ButtonIcon>
       <ButtonIcon
-        type={ButtonIconType.SQUARE}
+        type={ButtonIconType.ROUNDED_SQUARE}
         tooltipLabel="Add"
       >
         <Icon.Add />

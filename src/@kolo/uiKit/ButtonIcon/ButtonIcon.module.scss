@@ -23,6 +23,11 @@
     background-color: $LightBrandColor;
   }
 
+  &:disabled {
+    cursor: default;
+    fill: $GreyDisableBgBtn;
+  }
+
   &.button-round {
     border-radius: 50%;
     transition: all 0.3s linear;
@@ -32,30 +37,29 @@
     }
   }
 
-  &.button-square {
+  &.button-rounded-square {
     border-radius: 4px;
+
     &:not(:disabled):hover {
       background-color: $IconHoverBackground;
     }
   }
 
-  &.button-disabled {
-    cursor: default;
-    fill: $GreyDisableBgBtn;
-  }
-
-  &.button-close {
+  &.button-square {
+    box-shadow: none;
     width: 32px;
     height: 32px;
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0;
-    &:active {
-      background-color: transparent;
-    }
-    &:hover {
-      background-color: $IconHoverBackground;
-      transition: all 0.3s linear;
+    border-radius: 0px;
+    background-color: inherit;
+    transition: all 0.3s linear;
+
+    svg {
+      box-shadow: none;
+      border-radius: 0;
+
+      &:hover {
+        background-color: $IconHoverBackground;
+      }
     }
   }
 }

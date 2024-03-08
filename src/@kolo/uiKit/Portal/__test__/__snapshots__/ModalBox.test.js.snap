@@ -15,7 +15,7 @@ exports[`ModalBox Component renders children and triggers modalHandler 1`] = `
         class="closeButton"
       >
         <button
-          class="button button-square button-close"
+          class="button button-square"
           data-testid="buttonIconComponent"
         >
           <svg

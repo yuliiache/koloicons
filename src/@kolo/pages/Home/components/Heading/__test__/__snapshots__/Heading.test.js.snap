@@ -14,7 +14,7 @@ exports[`Heading component should render and match snapshot successfully for una
         Icons Library
       </h1>
       <div
-        class="searchWrap"
+        class="searchWrap rounded"
       >
         <input
           class="input"
@@ -112,7 +112,7 @@ exports[`Heading component should render and match snapshot without Try for Free
         Icons Library
       </h1>
       <div
-        class="searchWrap"
+        class="searchWrap rounded"
       >
         <input
           class="input"

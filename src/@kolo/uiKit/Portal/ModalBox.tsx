@@ -35,7 +35,6 @@ const ModalBox: FC<ModalProps> = ({isOpen, children, closeModal}) => {
           <ButtonIcon
             type={ButtonIconType.SQUARE}
             onClick={closeModal}
-            classModifier="button-close"
           >
             <Icon.Close
               width="20px"

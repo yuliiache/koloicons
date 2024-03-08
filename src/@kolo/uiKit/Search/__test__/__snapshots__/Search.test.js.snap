@@ -3,7 +3,7 @@
 exports[`Search component should render snapshot successfully 1`] = `
 <DocumentFragment>
   <div
-    class="searchWrap"
+    class="searchWrap rounded"
   >
     <input
       class="input"
@@ -52,7 +52,7 @@ exports[`Search component should render snapshot successfully 1`] = `
 exports[`Search component should render snapshot with the cancel button successfully 1`] = `
 <DocumentFragment>
   <div
-    class="searchWrap"
+    class="searchWrap rounded"
   >
     <input
       class="input"

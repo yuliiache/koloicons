@@ -27,13 +27,3 @@
   top: 24px;
   right: 24px;
 }
-.closeIcon {
-  fill: $IconColor;
-  opacity: 0.6;
-
-  &:hover {
-    opacity: 1;
-    fill: $IconColor;
-    transition: all 0.3s linear;
-  }
-}

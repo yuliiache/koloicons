@@ -1,3 +1,4 @@
+import classnames from 'classnames';
 import {FC} from 'react';
 
 import ButtonIcon from '../ButtonIcon/ButtonIcon';
@@ -12,13 +13,17 @@ interface Props {
   placeholder: string;
   onSearch: (value: string) => void;
   isFocused?: boolean;
+  isRounded?: boolean;
 }
 
-const Search: FC<Props> = ({placeholder, onSearch, isFocused = false}) => {
+const Search: FC<Props> = ({placeholder, onSearch, isFocused = false, isRounded = true}) => {
   const {inputValue, onInputChange, onSearchHandle, onClearBtnClick} = useSearch(onSearch);
+  const searchWrapClasses = classnames(styles.searchWrap, {
+    [styles.rounded]: isRounded,
+  });
 
   return (
-    <div className={styles.searchWrap}>
+    <div className={searchWrapClasses}>
       <input
         data-testid={SEARCH_INPUT_TEST_ID}
         className={styles.input}

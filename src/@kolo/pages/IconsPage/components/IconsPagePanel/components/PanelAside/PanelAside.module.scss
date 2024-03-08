@@ -1,0 +1,42 @@
+@import "@kolo/design";
+
+.asideContainer {
+  display: flex;
+  height: 72px;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: $secFontColor;
+  text-align: left;
+  background-color: inherit;
+  cursor: pointer;
+  min-width: 188px;
+  box-shadow: 0 12px 24px 0 $ShadowPanel;
+
+  &.opened {
+    width: 598px;
+    box-shadow: none;
+    align-items: normal;
+    border-top: none;
+    height: calc(95.6vh - 60px);
+    border-right: 1px solid $DarkBG;
+    background-color: $LightBG;
+    z-index: 10;
+  }
+}
+
+.aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px 21px 16px;
+
+  &.opened {
+    border-bottom: 1px solid $DarkBG;
+  }
+}
+
+.asideContent {
+  height: 100%;
+}

@@ -13,26 +13,10 @@ interface ButtonIconProps {
   tooltipLabel?: string;
   tooltipPlacement?: TooltipPlacement;
   onClick?: MouseEventHandler<HTMLElement>;
-  classModifier?: string;
 }
 
-const ButtonIcon: FC<ButtonIconProps> = ({
-  children,
-  type,
-  isDisabled,
-  tooltipLabel,
-  tooltipPlacement,
-  onClick,
-  classModifier,
-}) => {
-  const buttonIconClasses = classnames(
-    styles.button,
-    styles[`button-${type}`],
-    {
-      [styles['button-disabled']]: isDisabled,
-    },
-    {[styles[`${classModifier}`]]: classModifier}
-  );
+const ButtonIcon: FC<ButtonIconProps> = ({children, type, isDisabled, tooltipLabel, tooltipPlacement, onClick}) => {
+  const buttonIconClasses = classnames(styles.button, styles[`button-${type}`]);
 
   if (tooltipLabel) {
     return (

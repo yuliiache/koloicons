@@ -1,0 +1,14 @@
+@import "@kolo/design";
+
+.panel {
+  box-sizing: border-box;
+  display: flex;
+  height: 72px;
+  background-color: $WhiteBG;
+  border-top: 1px solid $DarkBG;
+  transition: all 0.25s linear;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

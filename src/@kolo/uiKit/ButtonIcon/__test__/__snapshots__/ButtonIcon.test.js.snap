@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonIcon component snapshot should render { description: 'disabled state', props: [Object] } snapshot: disabled state 1`] = `
+exports[`ButtonIcon component snapshot should render { description: 'round type', props: [Object] } snapshot: round type 1`] = `
 <DocumentFragment>
   <button
-    class="button button-undefined button-disabled"
+    class="button button-round"
     data-testid="buttonIconComponent"
-    disabled=""
   >
     <svg
       data-testid="icon-add"
@@ -22,10 +21,10 @@ exports[`ButtonIcon component snapshot should render { description: 'disabled st
 </DocumentFragment>
 `;
 
-exports[`ButtonIcon component snapshot should render { description: 'round type', props: [Object] } snapshot: round type 1`] = `
+exports[`ButtonIcon component snapshot should render { description: 'rounded-square type', props: [Object] } snapshot: rounded-square type 1`] = `
 <DocumentFragment>
   <button
-    class="button button-round"
+    class="button button-rounded-square"
     data-testid="buttonIconComponent"
   >
     <svg

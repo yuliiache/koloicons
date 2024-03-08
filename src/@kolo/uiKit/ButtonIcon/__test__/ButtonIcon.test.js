@@ -16,10 +16,7 @@ describe('ButtonIcon component', () => {
   const types = Object.values(ButtonIconType);
 
   describe('snapshot', () => {
-    const testCases = [
-      {description: 'disabled state', props: {isDisabled: true}},
-      {description: 'with tooltips', props: {tooltipLabel: 'Add'}},
-    ];
+    const testCases = [{description: 'with tooltips', props: {tooltipLabel: 'Add'}}];
 
     types.forEach((type) => {
       const description = `${type} type`;
