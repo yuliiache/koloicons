@@ -1,3 +1,4 @@
+import {AUTH_TOKEN_HEADER_KEY} from '@kolo/constants/constants';
 import {forgotPasswordRequest, getUpdatedUser, registerUser, resetPassword} from '@kolo/facade/users/users';
 import {httpService} from '@kolo/services/httpService/httpService';
 import Button from '@kolo/uiKit/Button/Button';
@@ -9,7 +10,7 @@ const AuthAction = () => {
 
   const handleAuthAction = async (facadeFunction, params) => {
     const response = await facadeFunction(params);
-    const token = response.headers['x-auth-token'];
+    const token = response.headers[AUTH_TOKEN_HEADER_KEY];
     if (token) httpService.addJwtToHeader(token);
   };
 

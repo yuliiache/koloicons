@@ -1,18 +1,18 @@
 import {validateEmail, validatePassword} from '@kolo/services/validators/commonValidators';
 
-import type {Value} from './LoginPage';
+import {LoginFormValue} from './types/LoginFormValue';
 
 interface Error {
   email?: string;
   password?: string;
 }
 
-export const initalValues: Value = {
+export const initialValues: LoginFormValue = {
   email: '',
   password: '',
 };
 
-export const validateForm = (value: Value): Error => {
+export const validateForm = (value: LoginFormValue): Error => {
   const {email, password} = value;
 
   const errors: Error = {};

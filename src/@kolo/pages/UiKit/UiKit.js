@@ -22,6 +22,7 @@ import InputGroup from './components/InputGroup/InputGroup';
 import LabelGroup from './components/LabelGroup/LabelGroup';
 import LinksGroup from './components/LinksGroup/LinksGroup';
 import Logos from './components/Logos';
+import LogoutButton from './components/LogoutButton/LogoutButton';
 import PortalWrap from './components/Modal/PortalWrap';
 import PricingCardWrap from './components/PricingCardWrap/PricingCardWrap';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
@@ -50,6 +51,7 @@ const UiKit = () => {
           <AuthAction />
         </div>
       </Section>
+      <LogoutButton />
       <PricingFAQs />
       <IconCardWrapper />
       <SearchWrap />

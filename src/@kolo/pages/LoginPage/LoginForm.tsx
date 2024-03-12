@@ -5,20 +5,20 @@ import {FC} from 'react';
 import {Form} from 'react-final-form';
 
 import FormInput from './FormInput';
-import type {Value} from './LoginPage';
 import style from './LoginPage.module.scss';
-import {initalValues, validateForm} from './validateForm';
+import {LoginFormValue} from './types/LoginFormValue';
+import {initialValues, validateForm} from './validateForm';
 
 const {authorizationForm} = style;
 
 interface OnSubmit {
-  onSubmit: (value: Value) => void;
+  onSubmit: (value: LoginFormValue) => void;
 }
 
 const LoginForm: FC<OnSubmit> = ({onSubmit}) => {
   return (
     <Form
-      initialValues={initalValues}
+      initialValues={initialValues}
       validate={validateForm}
       onSubmit={onSubmit}
       render={({handleSubmit}) => (
@@ -28,7 +28,7 @@ const LoginForm: FC<OnSubmit> = ({onSubmit}) => {
         >
           <FormInput
             name={'email'}
-            inputType={InputType.EMAIL}
+            inputType={InputType.TEXT}
             id={'email'}
             hasAutoFocus
             label={'Email'}

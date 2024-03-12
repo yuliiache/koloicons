@@ -1,3 +1,4 @@
+import {AUTH_TOKEN_HEADER_KEY} from '@kolo/constants/constants';
 import axios from 'axios';
 
 import {logger} from '../logger/logger';
@@ -26,11 +27,11 @@ http.interceptors.response.use(
 );
 
 const addJwtToHeader = (jwt) => {
-  http.defaults.headers.common['x-auth-token'] = jwt;
+  http.defaults.headers.common[AUTH_TOKEN_HEADER_KEY] = jwt;
 };
 
 const removeJwtFromHeader = () => {
-  http.defaults.headers.common['x-auth-token'] = null;
+  http.defaults.headers.common[AUTH_TOKEN_HEADER_KEY] = null;
 };
 
 export const httpService = {

@@ -1,4 +1,6 @@
-import {getJwt, httpService, logger} from '@kolo/services';
+import {httpService} from '@kolo/services/httpService/httpService';
+import {getJwt} from '@kolo/services/jwtService/jwtService';
+import {logger} from '@kolo/services/logger/logger';
 import {ApiEndpoint} from 'constants/ApiEndpoint';
 import jwtDecode from 'jwt-decode';
 

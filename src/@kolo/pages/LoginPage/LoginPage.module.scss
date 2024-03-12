@@ -1,5 +1,11 @@
 @import "@kolo/design";
 
+.main {
+  padding: 32px 0;
+  min-height: calc(100vh - 144px);
+  background-color: $DarkBG;
+}
+
 .container {
   box-sizing: border-box;
   width: 100%;
@@ -37,4 +43,13 @@
   margin-top: 0;
   margin-bottom: 26px;
   font-size: 0.8rem;
+}
+
+.errorMessage {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.6rem;
+  line-height: 1.33;
+  color: $errorColor;
+  text-align: center;
 }

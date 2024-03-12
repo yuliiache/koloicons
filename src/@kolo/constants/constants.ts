@@ -31,3 +31,5 @@ export const PAGES = Object.freeze({
 });
 
 export const DEFAULT_ICON_COLOR = '#000000';
+
+export const AUTH_TOKEN_HEADER_KEY = 'x-auth-token';

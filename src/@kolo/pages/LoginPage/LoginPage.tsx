@@ -6,33 +6,30 @@ import {FC} from 'react';
 
 import LoginForm from './LoginForm';
 import style from './LoginPage.module.scss';
+import useLoginPage from './useLoginPage';
 
-const {authorization, headerName, container, containerXs, authorizationFooter} = style;
-
-export interface Value {
-  email: string;
-  password: string;
-}
+const {main, authorization, headerName, container, containerXs, authorizationFooter, errorMessage} = style;
 
 const LoginPage: FC = () => {
-  const handleSubmit = (value: Value) => {
-    console.log(value);
-  };
+  const {isAuthenticationError, handleSubmit} = useLoginPage();
 
   return (
-    <div className={classnames(container, containerXs)}>
-      <section className={authorization}>
-        <h2 className={headerName}>Login</h2>
-        <LoginForm onSubmit={handleSubmit} />
-        <p className={authorizationFooter}>Create an account to use KOLO Icons for free!</p>
-        <ButtonLink
-          url={AppRoute.REGISTER}
-          text="Sign Up"
-          color={ButtonColor.BASIC}
-          size={ButtonSize.FULL_WIDTH}
-        />
-      </section>
-    </div>
+    <main className={main}>
+      <div className={classnames(container, containerXs)}>
+        <section className={authorization}>
+          <h2 className={headerName}>Login</h2>
+          <LoginForm onSubmit={handleSubmit} />
+          <p className={authorizationFooter}>Create an account to use KOLO Icons for free!</p>
+          <ButtonLink
+            url={AppRoute.REGISTER}
+            text="Sign Up"
+            color={ButtonColor.BASIC}
+            size={ButtonSize.FULL_WIDTH}
+          />
+          {isAuthenticationError && <span className={errorMessage}>Please, enter a valid email and/or password</span>}
+        </section>
+      </div>
+    </main>
   );
 };
 
