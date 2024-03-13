@@ -5,12 +5,12 @@ import {HomePage} from '@kolo/pages/Home/Home';
 import IconsPage from '@kolo/pages/IconsPage/IconsPage';
 import RegisterPage from '@kolo/pages/RegisterPage/RegisterPage';
 import Footer from '@kolo/uiKit/Footer/Footer';
+import Header from '@kolo/uiKit/Header/Header';
 import {AppRoute} from 'constants/AppRoute';
 
 import MyAccountPage from '../@kolo/pages/MyAccountPage';
 
 import 'react-toastify/dist/ReactToastify.css';
-
 // import {Header, Footer} from '@kolo/ui-kit';
 // HomePage,
 // MyAccountPage,
@@ -21,7 +21,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // ResetPasswordPage,
 
 // TODO: Replace Header, Footer placeholders
-const Header = () => <div>Header placeholder</div>;
+//const Header = () => <div>Header placeholder</div>;
 // const Footer = () => <div>Footer placeholder</div>;
 
 const UiKit = lazy(() => import('@kolo/pages/UiKit/UiKit'));

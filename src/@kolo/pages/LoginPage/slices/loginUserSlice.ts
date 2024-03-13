@@ -28,6 +28,7 @@ const loginUserSlice = createSlice({
   name: LOGIN_USER_KEY,
   initialState,
   reducers: {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     loginUserStart: (state: LoginState, action: PayloadAction<LoginFormValue>): LoginState => ({
       ...state,
       errorCode: null,

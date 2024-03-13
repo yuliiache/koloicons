@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 88px;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+
+  &.hidden {
+    justify-content: center;
+  }
+}
+
+.logoWrapper {
+  position: absolute;
+  top: 16px;
+  left: calc(50% - 106px);
+}
+
+.logoContainer {
+  position: relative;
+  width: 230px;
+  height: 56px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 3.9rem;
+}

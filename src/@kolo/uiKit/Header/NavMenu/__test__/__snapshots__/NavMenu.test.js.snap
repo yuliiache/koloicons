@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavMenu component snapshot renders correctly 1`] = `
+<DocumentFragment>
+  <nav
+    class="mainNav"
+  >
+    <ul
+      class="mainNavLinks"
+    >
+      <li
+        class="navLinksItem"
+      >
+        <a
+          class="link link--main"
+          data-testid="internalLinkComponent"
+          href="/icons"
+        >
+          Icons
+        </a>
+      </li>
+      <li
+        class="navLinksItem"
+      >
+        <a
+          class="link link--main"
+          data-testid="internalLinkComponent"
+          href="/pricing"
+        >
+          Pricing
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
