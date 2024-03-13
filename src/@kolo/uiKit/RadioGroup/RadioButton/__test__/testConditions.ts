@@ -1,4 +1,12 @@
-export const testRadioButtonProps = [
+import {Option} from '@kolo/uiKit/RadioGroup/RadioButton/RadioButton';
+
+interface Props {
+  option: Option;
+  isSelected: boolean;
+  onChange: jest.Mock;
+}
+
+export const testRadioButtonProps: Props[] = [
   {
     option: {
       id: '1',

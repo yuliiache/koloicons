@@ -3,7 +3,8 @@ import {cleanup, fireEvent, render, waitFor} from '@testing-library/react';
 
 import {RADIO_BUTTON_TEST_ID} from '../constant';
 import RadioButton from '../RadioButton';
-import {testRadioButtonProps} from '../testConditions';
+
+import {testRadioButtonProps} from './testConditions';
 
 describe('RadioButton', () => {
   afterEach(cleanup);

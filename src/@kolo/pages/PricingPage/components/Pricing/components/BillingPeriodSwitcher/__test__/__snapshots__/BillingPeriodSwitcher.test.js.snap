@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BillingPeriodSwitcher renderes snapshot successfully 1`] = `
+<DocumentFragment>
+  <div
+    class="pricingOptions"
+  >
+    <div
+      class="radioGroup"
+    >
+      <div
+        class="radioButton"
+        tabindex="0"
+      >
+        <input
+          class="radioButtonInput"
+          data-testid="radioGroupComponent"
+          id="billed_monthly"
+          name="billingInterval"
+          type="radio"
+          value="month"
+        />
+        <label
+          class="radioButtonLabel"
+          for="billed_monthly"
+        >
+          Billed Monthly
+        </label>
+      </div>
+      <div
+        class="radioButton radioButtonActive"
+        tabindex="0"
+      >
+        <input
+          checked=""
+          class="radioButtonInput"
+          data-testid="radioGroupComponent"
+          id="billed_yearly"
+          name="billingInterval"
+          type="radio"
+          value="year"
+        />
+        <label
+          class="radioButtonLabel"
+          for="billed_yearly"
+        >
+          Billed Yearly
+        </label>
+      </div>
+    </div>
+    <span
+      class="sale"
+    >
+      <div
+        class="saleIcon"
+      >
+        <svg
+          data-testid="icon-arrow"
+          height="9"
+          viewBox="0 0 27 9"
+          width="27"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.16981132,0 L0,4.5 L9.16981132,9 L9.16981132,5 L10.6981132,5 L10.6981132,4 L9.16981132,4 L9.16981132,0 Z M12.7358491,4 L12.7358491,5 L14.7735849,5 L14.7735849,4 L12.7358491,4 Z M16.8113208,4 L16.8113208,5 L18.8490566,5 L18.8490566,4 L16.8113208,4 Z M20.8867925,4 L20.8867925,5 L22.9245283,5 L22.9245283,4 L20.8867925,4 Z M24.9622642,4 L24.9622642,5 L27,5 L27,4 L24.9622642,4 Z"
+            fill="#919EAB"
+          />
+        </svg>
+      </div>
+      Save 75%
+    </span>
+  </div>
+</DocumentFragment>
+`;

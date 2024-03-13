@@ -1,0 +1,43 @@
+@import "src/@kolo/design";
+
+.sale {
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  margin-left: 0.4rem;
+  color: #525866;
+}
+
+.pricingOptions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2.4rem;
+  font-size: 0.6rem;
+}
+
+.saleIcon {
+  margin-right: 0.4rem;
+}
+
+@media screen and (max-width: $mobileWidth) {
+  .sale {
+    display: inline-block;
+    width: 8.45rem;
+    line-height: 1;
+    text-align: right;
+    background: none;
+    margin-top: 0.1rem;
+    padding: 0;
+  }
+
+  .pricingOptions {
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+  }
+
+  .saleIcon {
+    display: none;
+  }
+}

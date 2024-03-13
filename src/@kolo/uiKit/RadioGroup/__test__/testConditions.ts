@@ -1,4 +1,11 @@
-export const testRadioGroupProps = Object.freeze({
+import {Option} from '@kolo/uiKit/RadioGroup/RadioButton/RadioButton';
+
+interface Props {
+  options: Option[];
+  currentValue: string;
+  onChange: jest.Mock;
+}
+export const testRadioGroupProps: Props = Object.freeze({
   options: [
     {
       id: '1',

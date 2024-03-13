@@ -2,7 +2,8 @@ import React from 'react';
 import {cleanup, render} from '@testing-library/react';
 
 import RadioGroup from '../RadioGroup';
-import {testRadioGroupProps} from '../testConditions';
+
+import {testRadioGroupProps} from './testConditions';
 
 describe('RadioGroup', () => {
   afterEach(cleanup);

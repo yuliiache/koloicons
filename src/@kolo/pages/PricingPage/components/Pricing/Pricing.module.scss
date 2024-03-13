@@ -1,0 +1,29 @@
+@import "@kolo/design";
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 51.2rem;
+  margin: 0 auto;
+  padding: 2.4rem 0.8rem 0.8rem;
+}
+
+.pricingCards {
+  display: flex;
+  margin: 0 -0.8rem;
+}
+
+@media screen and (max-width: $mobileWidth) {
+  .pricing {
+    padding: 0.8rem 0;
+  }
+
+  .pricingCards {
+    flex-wrap: wrap;
+    margin: 0 -0.4rem;
+  }
+}
