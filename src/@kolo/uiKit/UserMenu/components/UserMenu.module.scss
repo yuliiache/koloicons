@@ -40,8 +40,12 @@
 .signIn {
   position: relative;
   display: flex;
-  align-items: baseline;
   line-height: 1.2;
+
+  .signInContent {
+    display: flex;
+    align-items: center;
+  }
 
   .icon {
     margin-right: 0.4rem;
