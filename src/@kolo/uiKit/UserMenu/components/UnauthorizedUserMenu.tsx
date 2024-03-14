@@ -13,10 +13,8 @@ const UnauthorizedUserMenu = () => {
         url={AppRoute.LOGIN}
         type={LinkType.MAIN}
       >
-        <div className={styles.signInContent}>
-          <Icon.User className={styles.icon} />
-          Sign In
-        </div>
+        <Icon.User className={styles.icon} />
+        Sign In
       </Link>
     </section>
   );
