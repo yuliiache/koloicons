@@ -6,6 +6,7 @@ import {FC} from 'react';
 import RegisterForm from './components/RegisterForm/RegisterForm';
 import {RegisterFormValues} from './components/RegisterForm/types/RegisterFormValues';
 import styles from './RegisterPage.module.scss';
+import useRegisterPage from './useRegisterPage';
 
 interface FormValues {
   firstName: string;
@@ -24,10 +25,12 @@ const trimFormValues = (values: FormValues): FormValues => {
 };
 
 const RegisterPage: FC = () => {
+  const {handleSubmit} = useRegisterPage();
+
   const onFormSubmit = (values: RegisterFormValues) => {
     const trimmedValues = trimFormValues(values);
 
-    console.log('RegisterPage, trimmed user data:', {...values, ...trimmedValues});
+    handleSubmit({...values, ...trimmedValues});
   };
 
   return (

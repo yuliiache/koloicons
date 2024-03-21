@@ -1,5 +1,6 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
+import {RegisterFormValues} from '../../RegisterPage/components/RegisterForm/types/RegisterFormValues';
 import {LOGIN_USER_KEY} from '../constants';
 import {ErrorCode} from '../types/ErrorCode';
 import {LoginFormValue} from '../types/LoginFormValue';
@@ -56,6 +57,23 @@ const loginUserSlice = createSlice({
       errorCode: null,
       isAuthenticated: false,
     }),
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    registerUserStart: (state: LoginState, action: PayloadAction<RegisterFormValues>): LoginState => ({
+      ...state,
+      errorCode: null,
+      isAuthenticated: false,
+    }),
+    registerUserSuccess: (state: LoginState, action: PayloadAction<UserData>): LoginState => ({
+      ...state,
+      user: action.payload,
+      errorCode: null,
+      isAuthenticated: true,
+    }),
+    registerUserFail: (_, action): LoginState => ({
+      user: initialState.user,
+      errorCode: action.payload,
+      isAuthenticated: initialState.isAuthenticated,
+    }),
   },
 });
 
@@ -65,6 +83,9 @@ export const {
   loginUserFail: loginUserFailAction,
   logoutUserStart: logoutUserStartAction,
   logoutUserSuccess: logoutUserSuccessAction,
+  registerUserStart: registerUserStartAction,
+  registerUserSuccess: registerUserSuccessAction,
+  registerUserFail: registerUserFailAction,
 } = loginUserSlice.actions;
 
 export default loginUserSlice.reducer;
