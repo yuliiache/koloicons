@@ -2,7 +2,7 @@ import ButtonIcon from '@kolo/uiKit/ButtonIcon/ButtonIcon';
 import {ButtonIconType} from '@kolo/uiKit/ButtonIcon/constants';
 import Icon from '@kolo/uiKit/Icons';
 import classnames from 'classnames';
-import {FC, ReactElement} from 'react';
+import React, {FC, ReactElement} from 'react';
 
 import styles from './PanelAside.module.scss';
 
@@ -12,9 +12,10 @@ interface PanelAsideProps {
   closePanel: () => void;
   isOpened: boolean;
   children?: ReactElement;
+  icon?: ReactElement;
 }
 
-const PanelAside: FC<PanelAsideProps> = ({title, openPanel, closePanel, isOpened = false, children}) => {
+const PanelAside: FC<PanelAsideProps> = ({title, openPanel, closePanel, isOpened = false, children, icon}) => {
   const panelAsideClasses = classnames(styles.asideContainer, {
     [styles.opened]: isOpened,
   });
@@ -29,7 +30,10 @@ const PanelAside: FC<PanelAsideProps> = ({title, openPanel, closePanel, isOpened
       onClick={openPanel}
     >
       <div className={asideClasses}>
-        <p className={styles.title}>{title}</p>
+        <div className={styles.panelContent}>
+          {icon && <div className={styles.icon}>{icon}</div>}
+          <p className={styles.title}>{title}</p>
+        </div>
         {isOpened && (
           <>
             <ButtonIcon

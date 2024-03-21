@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryButton renders correctly with given name and matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="categoryButton"
+  >
+    Test Category
+  </button>
+</DocumentFragment>
+`;

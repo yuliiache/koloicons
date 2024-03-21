@@ -1,0 +1,35 @@
+@import "src/@kolo/design";
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $LightBG;
+  padding: 16px;
+  list-style: none;
+  transition: all .25s linear;
+  height: calc(100vh - 162px);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 4px;
+    opacity: .5;
+    border-radius: 4px;
+    background-color: $ScrollbarColor;
+  }
+}
+
+.item {
+  width: 100%;
+
+  &:hover {
+    border-radius: 4px;
+    background-color: $DarkBG;
+    color: $secFontColor;
+    transition: all .2s linear;
+  }
+}

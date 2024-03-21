@@ -1,0 +1,27 @@
+@import "src/@kolo/design";
+
+.categoryButton {
+  background-color: transparent;
+  width: 100%;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  color: $secFontColor;
+  border-radius: 4px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  border: 0;
+  cursor: pointer;
+
+  &.categoryButton-active {
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: $BlueColor;
+    color: $WhiteBG;
+    outline: none;
+  }
+}

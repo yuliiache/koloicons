@@ -8,11 +8,15 @@ exports[`PanelAside renders close aside correctly and matches snapshot 1`] = `
     <div
       class="aside"
     >
-      <p
-        class="title"
+      <div
+        class="panelContent"
       >
-        Categories
-      </p>
+        <p
+          class="title"
+        >
+          Categories
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -26,11 +30,15 @@ exports[`PanelAside renders close aside with correctly title and matches snapsho
     <div
       class="aside"
     >
-      <p
-        class="title"
+      <div
+        class="panelContent"
       >
-        Collection
-      </p>
+        <p
+          class="title"
+        >
+          Collection
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -44,11 +52,15 @@ exports[`PanelAside renders open aside correctly and matches snapshot 1`] = `
     <div
       class="aside opened"
     >
-      <p
-        class="title"
+      <div
+        class="panelContent"
       >
-        Categories
-      </p>
+        <p
+          class="title"
+        >
+          Categories
+        </p>
+      </div>
       <button
         class="button button-square"
         data-testid="buttonIconComponent"

@@ -1,6 +1,7 @@
 import {refreshJWTandLoginUser} from '@kolo/framework/resourcesProvider/sagas/refreshJwt';
 import {watcherSagaFeedbacks} from '@kolo/pages/Home/components/Feedbacks/sagas/watcherSagaFeedbacks';
 import {getMonthPack} from '@kolo/pages/Home/components/MonthPack/sagas/getMonthPack';
+import {getCategoriesWatcher} from '@kolo/pages/IconsPage/components/Categories/sagas/getCategories';
 import {loginUserWatcher} from '@kolo/pages/LoginPage/sagas/loginUser';
 import {logoutUserWatcher} from '@kolo/pages/LoginPage/sagas/logoutUser';
 import {getPricingData} from '@kolo/pages/PricingPage/components/Pricing/sagas/getPricingData';
@@ -17,10 +18,10 @@ export function* rootSagas() {
       loginUserWatcher,
       logoutUserWatcher,
       registerUserWatcher,
-      // ...
       refreshJWTandLoginUser,
+      getCategoriesWatcher,
       getPricingData,
-      // refreshJWTandLoginUser,
+      //...
     ].map(fork)
   );
 }

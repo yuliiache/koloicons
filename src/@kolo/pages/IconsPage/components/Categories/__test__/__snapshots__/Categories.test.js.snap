@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories Component matches snapshot with categories list 1`] = `
+<DocumentFragment>
+  <ul
+    class="categoryList"
+  >
+    <li
+      class="item"
+    >
+      <button
+        data-active="false"
+        data-testid="category-button"
+      >
+        Category 1
+      </button>
+    </li>
+    <li
+      class="item"
+    >
+      <button
+        data-active="false"
+        data-testid="category-button"
+      >
+        Category 2
+      </button>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

@@ -15,6 +15,7 @@
   min-width: 188px;
   box-shadow: 0 12px 24px 0 $ShadowPanel;
 
+
   &.opened {
     width: 598px;
     box-shadow: none;
@@ -27,10 +28,28 @@
   }
 }
 
+.panelContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon svg{
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
 .aside {
   display: flex;
   justify-content: space-between;
   padding: 20px 16px 21px 16px;
+
+  &:hover svg g path:last-child,
+  &.opened:hover svg g path:last-child {
+    fill: $IconHoverColor;
+    transition: all .25s linear;
+  }
 
   &.opened {
     border-bottom: 1px solid $DarkBG;
