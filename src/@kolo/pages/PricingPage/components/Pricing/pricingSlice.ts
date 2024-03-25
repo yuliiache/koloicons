@@ -14,6 +14,7 @@ const pricingSlice = createSlice({
   name: PRICING_KEY,
   initialState,
   reducers: {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     getPricingStart: (state: PricingState, action: PayloadAction<BillingInterval>): PricingState => ({
       ...state,
       isLoading: true,

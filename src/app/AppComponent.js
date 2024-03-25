@@ -26,6 +26,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const UiKit = lazy(() => import('@kolo/pages/UiKit/UiKit'));
 const LoginPage = lazy(() => import('@kolo/pages/LoginPage/LoginPage'));
+const PricingPage = lazy(() => import('@kolo/pages/PricingPage/PricingPage'));
 
 export const AppComponent = () => {
   return (
@@ -57,6 +58,10 @@ export const AppComponent = () => {
           <Route
             path={AppRoute.REGISTER}
             element={<RegisterPage />}
+          />
+          <Route
+            path={AppRoute.PRICING}
+            element={<PricingPage />}
           />
           {/* { <Route path={'/login'} element={<LoginPage isLogin />} />
         <Route path={'/register'} element={<LoginPage />} />

@@ -1,0 +1,31 @@
+@import "@kolo/design";
+
+.heading {
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.container {
+  padding: 0 16px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.title {
+  margin: 16px 0 24px;
+  font-size: 3.2rem;
+  line-height: 1.18;
+  font-weight: 900;
+  color: $mainFontColor;
+}
+
+.introText {
+  margin: 0 auto;
+  max-width: 480px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: $secFontColor;
+}

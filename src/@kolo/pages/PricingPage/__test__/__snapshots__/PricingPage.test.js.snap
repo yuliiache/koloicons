@@ -1,0 +1,421 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pricing page component should render snapshot successfully 1`] = `
+<DocumentFragment>
+  <main>
+    <section
+      class="heading"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="searchWrap rounded"
+        >
+          <input
+            class="input"
+            data-testid="searchInputComponent"
+            id="search-input"
+            placeholder="Search icon"
+            type="text"
+            value=""
+          />
+          <div
+            class="searchBtn"
+            data-testid="searchButtonComponent"
+          >
+            <button
+              class="button button-square"
+              data-testid="buttonIconComponent"
+            >
+              <svg
+                class="iconSearch"
+                data-testid="icon-search"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <path
+                    d="M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z"
+                    fill="#E9EDF7"
+                  />
+                  <path
+                    d="M11,2 C15.9705627,2 20,6.02943725 20,11 C20,13.124779 19.2636898,15.0775836 18.0323074,16.6171757 L21.7071068,20.2928932 C22.0976311,20.6834175 22.0976311,21.3165825 21.7071068,21.7071068 C21.3165825,22.0976311 20.6834175,22.0976311 20.2928932,21.7071068 L20.2928932,21.7071068 L16.6171757,18.0323074 C15.0775836,19.2636898 13.124779,20 11,20 C6.02943725,20 2,15.9705627 2,11 C2,6.02943725 6.02943725,2 11,2 Z M11,4 C7.13400675,4 4,7.13400675 4,11 C4,14.8659932 7.13400675,18 11,18 C12.8904747,18 14.6059153,17.25059 15.8654514,16.0326404 L15.9428932,15.9428932 C15.9713525,15.914434 16.0011003,15.8880487 16.031949,15.8637373 C17.25059,14.6059153 18,12.8904747 18,11 C18,7.13400675 14.8659932,4 11,4 Z"
+                    fill="#717886"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <h1
+          class="title"
+        >
+          Pricing
+        </h1>
+        <p
+          class="introText"
+        >
+          The Biggest Icons Pack. In other words, you will never have to purchase icons again!
+        </p>
+      </div>
+    </section>
+    <div
+      class="pricing"
+    >
+      <div
+        class="pricingOptions"
+      >
+        <div
+          class="radioGroup"
+        >
+          <div
+            class="radioButton"
+            tabindex="0"
+          >
+            <input
+              class="radioButtonInput"
+              data-testid="radioGroupComponent"
+              id="billed_monthly"
+              name="billingInterval"
+              type="radio"
+              value="month"
+            />
+            <label
+              class="radioButtonLabel"
+              for="billed_monthly"
+            >
+              Billed Monthly
+            </label>
+          </div>
+          <div
+            class="radioButton radioButtonActive"
+            tabindex="0"
+          >
+            <input
+              checked=""
+              class="radioButtonInput"
+              data-testid="radioGroupComponent"
+              id="billed_yearly"
+              name="billingInterval"
+              type="radio"
+              value="year"
+            />
+            <label
+              class="radioButtonLabel"
+              for="billed_yearly"
+            >
+              Billed Yearly
+            </label>
+          </div>
+        </div>
+        <span
+          class="sale"
+        >
+          <div
+            class="saleIcon"
+          >
+            <svg
+              data-testid="icon-arrow"
+              height="9"
+              viewBox="0 0 27 9"
+              width="27"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.16981132,0 L0,4.5 L9.16981132,9 L9.16981132,5 L10.6981132,5 L10.6981132,4 L9.16981132,4 L9.16981132,0 Z M12.7358491,4 L12.7358491,5 L14.7735849,5 L14.7735849,4 L12.7358491,4 Z M16.8113208,4 L16.8113208,5 L18.8490566,5 L18.8490566,4 L16.8113208,4 Z M20.8867925,4 L20.8867925,5 L22.9245283,5 L22.9245283,4 L20.8867925,4 Z M24.9622642,4 L24.9622642,5 L27,5 L27,4 L24.9622642,4 Z"
+                fill="#919EAB"
+              />
+            </svg>
+          </div>
+          Save 75%
+        </span>
+      </div>
+      <div
+        class="pricingCards"
+      >
+        <div
+          class="card"
+        >
+          <span
+            class="label success large"
+            data-testid="labelComponent"
+          >
+            Personal
+          </span>
+          <div
+            class="price"
+          >
+            <span
+              class="priceVal"
+            >
+              $2.50
+            </span>
+            <span
+              class="priceDesc"
+            >
+              per month, $30 billed yearly
+            </span>
+          </div>
+          <ul
+            class="planFeatures"
+          >
+            <li>
+              <strong>
+                SVG format
+              </strong>
+            </li>
+            <li>
+              <strong>
+                PNG - all sizes
+              </strong>
+            </li>
+            <li>
+              <strong>
+                2 styles
+              </strong>
+            </li>
+            <li>
+              <strong>
+                Unlimited downloads
+              </strong>
+            </li>
+            <li>
+              <strong>
+                Updates
+              </strong>
+            </li>
+          </ul>
+          <button
+            class="button button-full-width button-primary"
+            data-testid="buttonComponent"
+            type="button"
+          >
+            <span
+              data-testid="buttonComponentText"
+            >
+              Purchase
+            </span>
+          </button>
+          <div
+            class="advantages"
+          >
+            <p
+              class="advantagesItem"
+            >
+              <span
+                class="itemTitle"
+              >
+                Formats:
+              </span>
+              <span
+                class="itemVal"
+              >
+                PNG, SVG
+              </span>
+            </p>
+            <p
+              class="advantagesItem"
+            >
+              <span
+                class="itemTitle"
+              >
+                Attribution:
+              </span>
+              <span
+                class="itemVal"
+              >
+                No attribution required
+              </span>
+            </p>
+          </div>
+          <dl
+            class="advantages"
+          >
+            <dt
+              class="optionTitle"
+            >
+              You can use icons for:
+            </dt>
+            <dd
+              class="optionVal"
+            >
+              <span>
+                 - 
+              </span>
+              End products not for sale
+            </dd>
+            <dd
+              class="optionVal"
+            >
+              <span>
+                 - 
+              </span>
+              One personal social media account with non-commercial activities
+            </dd>
+            <dt
+              class="optionTitle"
+            >
+              You can not use icons for:
+            </dt>
+            <dd
+              class="optionVal"
+            >
+              <span>
+                 - 
+              </span>
+              Business social media accounts
+            </dd>
+            <dd
+              class="optionVal"
+            >
+              <span>
+                 - 
+              </span>
+              Physical or digital paid advertisements
+            </dd>
+            <dd
+              class="optionVal"
+            >
+              <span>
+                 - 
+              </span>
+              Native apps, web apps, or games
+            </dd>
+            <dd
+              class="optionVal"
+            >
+              <span>
+                 - 
+              </span>
+              Resell, share, sublicense, transfer or otherwise redistribute the icons (even for free or within a more complex downloadable file)
+            </dd>
+            <dd
+              class="optionVal"
+            >
+              <span>
+                 - 
+              </span>
+              Maximum of 100 per product
+            </dd>
+            <dd
+              class="optionVal"
+            >
+              <span>
+                 - 
+              </span>
+              Trademark and Logo
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <section
+      class="feedbacks"
+    >
+      <div
+        class="feedbackContainer"
+      >
+        <div
+          class="feedbackItem"
+        >
+          <img
+            alt="John Doe"
+            height="56"
+            src="undefined/avatar.jpg"
+            width="56"
+          />
+          <p
+            class="feedbackText"
+            data-testid="feedbackText"
+          >
+            This is a sample feedback text.
+          </p>
+          <span>
+            <a
+              class="link link--default"
+              data-testid="externalLinkComponent"
+              href="https://example.com"
+              rel="noopener noreferrer nofollow"
+            >
+              John Doe, Sample Company
+            </a>
+          </span>
+        </div>
+        <div
+          class="feedbackItem"
+        >
+          <img
+            alt="Jane Smith"
+            height="56"
+            src="undefined/avatar2.jpg"
+            width="56"
+          />
+          <p
+            class="feedbackText"
+            data-testid="feedbackText"
+          >
+            Another feedback text.
+          </p>
+          <span>
+            <a
+              class="link link--default"
+              data-testid="externalLinkComponent"
+              href="https://example.com"
+              rel="noopener noreferrer nofollow"
+            >
+              Jane Smith, Another Company
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section"
+    >
+      <div
+        class="container"
+      >
+        <h2
+          class="title"
+        >
+          Frequently Asked Questions
+        </h2>
+        <ul
+          class="list"
+        >
+          <li
+            class="item"
+          >
+            <p
+              class="question"
+            >
+              Question 1
+            </p>
+            <p>
+              Answer 1
+            </p>
+          </li>
+          <li
+            class="item"
+          >
+            <p
+              class="question"
+            >
+              Question 2
+            </p>
+            <p>
+              Answer 2
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;

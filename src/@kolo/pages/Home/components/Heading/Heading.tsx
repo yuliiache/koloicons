@@ -1,4 +1,5 @@
 import useAuth from '@kolo/services/hooks/useAuth';
+import useNavigateOnSearch from '@kolo/services/hooks/useNavigateOnSearch';
 import {ButtonColor, ButtonSize} from '@kolo/uiKit/Button/constants';
 import ButtonLink from '@kolo/uiKit/ButtonLink/ButtonLink';
 import Search from '@kolo/uiKit/Search/Search';
@@ -6,11 +7,10 @@ import {AppRoute} from 'constants/AppRoute';
 import {FC} from 'react';
 
 import styles from './Heading.module.scss';
-import useNavigateOnSearch from './useNavigateOnSearch';
 
 const Heading: FC = () => {
   const {isAuthorized} = useAuth();
-  const {onSearch} = useNavigateOnSearch();
+  const {onSearch} = useNavigateOnSearch(AppRoute.ICONS);
 
   return (
     <section className={styles.section}>
