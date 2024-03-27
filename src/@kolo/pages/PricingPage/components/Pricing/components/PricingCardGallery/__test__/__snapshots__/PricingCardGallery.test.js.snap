@@ -43,7 +43,7 @@ exports[`PricingCardGallery renders a single pricing card for one pricing plan 1
         </li>
       </ul>
       <button
-        class="button button-full-width button-primary"
+        class="button button-full-width button-primary button-center"
         data-testid="buttonComponent"
         type="button"
       >

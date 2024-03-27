@@ -1,4 +1,4 @@
-import UnlockAllFormats from '@kolo/components/UnlockAllFormats/UnlockAllFormats';
+import UnlockAllFormats from '@kolo/pages/IconsPage/components/DownloadOptions/components/UnlockAllFormats/UnlockAllFormats';
 import React from 'react';
 
 import {Section} from '../Section/Section';

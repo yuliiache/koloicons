@@ -45,7 +45,7 @@ exports[`PricingCard Component renders snapshot PricingCard component 1`] = `
       </li>
     </ul>
     <button
-      class="button button-full-width button-primary"
+      class="button button-full-width button-primary button-center"
       data-testid="buttonComponent"
       type="button"
     >

@@ -21,7 +21,7 @@ exports[`SignInMessage should render SignInMessage snapshot 1`] = `
       href="/login"
     >
       <button
-        class="button button-full-width button-basic"
+        class="button button-full-width button-basic button-center"
         data-testid="buttonComponent"
         type="button"
       >

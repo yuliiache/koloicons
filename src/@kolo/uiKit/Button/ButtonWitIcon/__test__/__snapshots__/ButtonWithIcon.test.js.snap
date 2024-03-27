@@ -7,14 +7,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-accent button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -26,14 +27,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-accent button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -45,14 +47,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-accent button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -64,14 +67,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-basic button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -83,14 +87,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-basic button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -102,14 +107,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-basic button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -121,14 +127,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-primary button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -140,14 +147,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-primary button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -159,14 +167,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-primary button-center"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -178,14 +187,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-accent button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -197,14 +207,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-accent button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -216,14 +227,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-accent button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -235,14 +247,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-basic button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -254,14 +267,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-basic button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -273,14 +287,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-basic button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -292,14 +307,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-primary button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -311,14 +327,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-primary button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -330,14 +347,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-primary button-left"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -349,14 +367,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-accent button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -368,14 +387,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-accent button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -387,14 +407,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-accent button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -406,14 +427,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-basic button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -425,14 +447,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-basic button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -444,14 +467,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-basic button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -463,14 +487,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-big button-primary button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -482,14 +507,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-full-width button-primary button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -501,14 +527,15 @@ exports[`Button component snapshot should render {
 <DocumentFragment>
   <button
     class="button button-small button-primary button-right"
-    data-testid="buttonComponent"
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -516,16 +543,17 @@ exports[`Button component snapshot should render {
 exports[`Button component snapshot should render { description: 'disabled state', props: [Object] } snapshot: disabled state 1`] = `
 <DocumentFragment>
   <button
-    class="button button-small button-primary button-center button-disabled"
-    data-testid="buttonComponent"
+    class="button button-small button-primary button-left button-disabled"
     disabled=""
     type="button"
   >
-    <span
-      data-testid="buttonComponentText"
+    <div
+      class="buttonContent buttonContent-disabled"
     >
-      Common Text
-    </span>
+      <span>
+        Common Text
+      </span>
+    </div>
   </button>
 </DocumentFragment>
 `;

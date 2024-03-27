@@ -1,0 +1,48 @@
+@import "src/@kolo/design";
+
+
+.DownloadPage > :not(:last-child ){
+  margin-bottom: 8px;
+}
+
+.IconSizeWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+}
+
+.SizeButton {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  font-size: 12px;
+  color: $secFontColor;
+  width: 70px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &.SizeButton-disabled {
+    cursor: default;
+
+    &.SizeButton-disabled svg {
+      margin-right: 4px;
+      fill: $IconColor;
+    }
+  }
+
+  &.SizeButton-selected {
+    background-color: $WhiteBG;
+    box-shadow: 0 2px 6px 0 rgba(25,37,63,.1);
+    transition: all .3s linear;
+
+    &.SizeButton-selected svg {
+      margin-right: 4px;
+      fill: $CheckColor;
+    }
+  }
+}

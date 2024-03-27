@@ -8,6 +8,7 @@ import {ButtonLinkWrap} from './components/ButtonLink/ButtonLinkWrap';
 import {Buttons} from './components/Buttons/Buttons';
 import Checkboxes from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
+import DownloadOptionsWrapper from './components/DownloadOptionsWrapper/DownloadOptionsWrapper';
 import FormatsWrap from './components/FormatsWrap/FormatsWrap';
 import GetCategoriesButton from './components/GetCategoriesButton/GetCategoriesButton';
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
@@ -54,6 +55,7 @@ const UiKit = () => {
         </div>
       </Section>
       <LogoutButton />
+      <DownloadOptionsWrapper />
       <PricingFAQs />
       <IconCardWrapper />
       <SearchWrap />

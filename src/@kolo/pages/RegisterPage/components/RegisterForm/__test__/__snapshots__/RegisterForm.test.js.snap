@@ -149,7 +149,7 @@ exports[`RegisterForm component should render snapshot successfully 1`] = `
         </p>
       </div>
       <button
-        class="button button-full-width button-primary"
+        class="button button-full-width button-primary button-center"
         data-testid="buttonComponent"
         type="submit"
       >
@@ -338,7 +338,7 @@ exports[`RegisterForm component should show validation error on submit and rende
         </p>
       </div>
       <button
-        class="button button-full-width button-primary"
+        class="button button-full-width button-primary button-center"
         data-testid="buttonComponent"
         type="submit"
       >

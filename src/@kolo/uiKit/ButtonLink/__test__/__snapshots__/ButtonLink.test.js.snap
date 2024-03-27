@@ -7,7 +7,7 @@ exports[`ButtonLink component snapshot should render button link 1`] = `
     href="/"
   >
     <button
-      class="button button-small button-primary"
+      class="button button-small button-primary button-center"
       data-testid="buttonComponent"
       type="button"
     >

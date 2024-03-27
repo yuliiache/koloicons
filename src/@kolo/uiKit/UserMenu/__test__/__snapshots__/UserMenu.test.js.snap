@@ -33,7 +33,7 @@ exports[`UserMenu Component Authenticated Types renders correctly for Authentica
       href="/pricing"
     >
       <button
-        class="button button-small button-accent"
+        class="button button-small button-accent button-center"
         data-testid="buttonComponent"
         type="button"
       >
@@ -81,7 +81,7 @@ exports[`UserMenu Component Authenticated Types renders the Upgrade button when 
       href="/pricing"
     >
       <button
-        class="button button-small button-accent"
+        class="button button-small button-accent button-center"
         data-testid="buttonComponent"
         type="button"
       >

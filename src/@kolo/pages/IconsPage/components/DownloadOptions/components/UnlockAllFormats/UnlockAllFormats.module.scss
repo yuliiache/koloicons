@@ -1,4 +1,4 @@
-@import "@kolo/design";
+@import "src/@kolo/design/index";
 
 .formats {
   &__wrapper {
@@ -11,14 +11,16 @@
 
   &__text {
     &--desktop {
-      height: -webkit-fit-content;
-      height: -moz-fit-content;
       height: fit-content;
       padding: 24px 0 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      @supports not (height: fit-content) {
+        height: auto;
+      }
     }
 
     &__unlock-item {
@@ -54,4 +56,9 @@
       background-color: #fff;
     }
   }
+}
+
+.purchase-button__period {
+  font-size: 16px;
+  font-weight: 300;
 }

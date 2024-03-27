@@ -1,0 +1,17 @@
+@import "src/@kolo/design";
+
+.buttonContent {
+  fill: $WhiteBG;
+
+  &.buttonContent-disabled {
+    fill: $LightGreyFontBtn;
+  }
+
+  &.buttonContent svg {
+    margin-right: 17px;
+  }
+}
+.additionalText {
+  font-size: 14px;
+  font-weight: 400;
+}

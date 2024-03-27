@@ -65,7 +65,7 @@ exports[`Heading component should render and match snapshot successfully for una
           href="/register"
         >
           <button
-            class="button button-full-width button-accent"
+            class="button button-full-width button-accent button-center"
             data-testid="buttonComponent"
             type="button"
           >
@@ -81,7 +81,7 @@ exports[`Heading component should render and match snapshot successfully for una
           href="/icons"
         >
           <button
-            class="button button-full-width button-primary"
+            class="button button-full-width button-primary button-center"
             data-testid="buttonComponent"
             type="button"
           >
@@ -163,7 +163,7 @@ exports[`Heading component should render and match snapshot without Try for Free
           href="/icons"
         >
           <button
-            class="button button-full-width button-primary"
+            class="button button-full-width button-primary button-center"
             data-testid="buttonComponent"
             type="button"
           >

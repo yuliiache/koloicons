@@ -18,3 +18,9 @@ export enum ButtonType {
   SUBMIT = 'submit',
   RESET = 'reset',
 }
+
+export enum ButtonContentPlacement {
+  CENTER = 'center',
+  LEFT = 'left',
+  RIGHT = 'right',
+}

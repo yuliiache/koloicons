@@ -2,9 +2,8 @@ import React from 'react';
 import {cleanup, render, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import Button from '../Button';
-import {BUTTON_TEST_ID} from '../constants';
-import {ButtonColor, ButtonContentPlacement, ButtonSize, ButtonType} from '../constants';
+import {ButtonColor, ButtonContentPlacement, ButtonSize, ButtonType} from '../../constants';
+import ButtonWithIcon from '../ButtonWithIcon';
 
 describe('Button component', () => {
   afterEach(cleanup);
@@ -13,7 +12,7 @@ describe('Button component', () => {
     text: 'Common Text',
     size: 'small',
     color: 'primary',
-    placement: 'center',
+    placement: 'left',
     isDisabled: false,
     onClick: jest.fn(),
     type: ButtonType.BUTTON,
@@ -38,7 +37,7 @@ describe('Button component', () => {
 
     test.each(testCases)('should render %s snapshot', ({description, props}) => {
       const {asFragment} = render(
-        <Button
+        <ButtonWithIcon
           {...commonProps}
           {...props}
         />
@@ -51,7 +50,7 @@ describe('Button component', () => {
   it('should have text', () => {
     const buttonText = 'Text';
     const {getByText} = render(
-      <Button
+      <ButtonWithIcon
         {...commonProps}
         text={buttonText}
       />
@@ -63,17 +62,39 @@ describe('Button component', () => {
 
   it('should call onClick function', async () => {
     const onClick = jest.fn();
-    const {getByTestId} = render(
-      <Button
+    const {getByRole} = render(
+      <ButtonWithIcon
         {...commonProps}
         text="OnClick"
         onClick={onClick}
       />
     );
-    const buttonElement = getByTestId(BUTTON_TEST_ID);
+    const buttonElement = getByRole('button');
 
     userEvent.click(buttonElement);
 
     await waitFor(() => expect(onClick).toHaveBeenCalled());
+  });
+
+  it('should render an icon when provided', () => {
+    const iconText = '🔍';
+    const {getByText} = render(
+      <ButtonWithIcon
+        {...commonProps}
+        icon={<span>{iconText}</span>}
+      />
+    );
+    expect(getByText(iconText)).toBeInTheDocument();
+  });
+
+  it('should display additional text when provided', () => {
+    const additionalText = 'Extra Info';
+    const {getByText} = render(
+      <ButtonWithIcon
+        {...commonProps}
+        additionalText={additionalText}
+      />
+    );
+    expect(getByText(additionalText)).toBeInTheDocument();
   });
 });

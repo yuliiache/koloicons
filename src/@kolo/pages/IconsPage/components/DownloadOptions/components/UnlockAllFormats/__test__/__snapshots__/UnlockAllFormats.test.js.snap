@@ -72,7 +72,7 @@ exports[`UnlockAllFormats component should render snapshot successfully 1`] = `
       href="/pricing"
     >
       <button
-        class="button button-full-width button-accent button-children"
+        class="button button-full-width button-accent button-center button-children"
         data-testid="buttonComponent"
         type="button"
       >

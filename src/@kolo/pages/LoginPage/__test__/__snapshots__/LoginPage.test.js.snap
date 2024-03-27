@@ -52,7 +52,7 @@ exports[`LoginPage should create snapshot successfully 1`] = `
             />
           </div>
           <button
-            class="button button-full-width button-primary"
+            class="button button-full-width button-primary button-center"
             data-testid="buttonComponent"
             type="submit"
           >
@@ -73,7 +73,7 @@ exports[`LoginPage should create snapshot successfully 1`] = `
           href="/register"
         >
           <button
-            class="button button-full-width button-basic"
+            class="button button-full-width button-basic button-center"
             data-testid="buttonComponent"
             type="button"
           >

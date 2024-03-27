@@ -115,7 +115,7 @@ _If a type is specific to a particular component but used in multiple places wit
 
 [source]
 ----
-// types.ts
+// constants.ts
 interface ButtonSize = {
   // button props definition
 };
