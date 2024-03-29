@@ -1,4 +1,5 @@
 import {AUTH_TOKEN_HEADER_KEY} from '@kolo/constants/constants';
+import {setLoading} from '@kolo/core/common/loadingSlice';
 import {login} from '@kolo/facade/auth/auth';
 import {dataKeyAdapter} from '@kolo/services/helpers/dataKeyAdapter';
 import {handleErrorInSagas} from '@kolo/services/helpers/handleErrorInSagas';
@@ -21,6 +22,7 @@ type Login = (params: LoginFormValue) => Promise<UserData>;
 
 function* callLoginUserWorker(action: PayloadAction<LoginFormValue>) {
   try {
+    yield put(setLoading(true));
     const {email, password}: LoginFormValue = action.payload;
 
     const {data, headers}: LoginUserResponse = yield call(login as Login, {email, password});
@@ -38,6 +40,8 @@ function* callLoginUserWorker(action: PayloadAction<LoginFormValue>) {
 
     yield call(handleErrorInSagas, loginUserFailAction);
     yield put(loginUserFailAction(errorCode));
+  } finally {
+    yield put(setLoading(false));
   }
 }
 

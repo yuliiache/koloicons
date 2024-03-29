@@ -1,23 +1,26 @@
+import {useSelector} from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import {KeyCode} from '@kolo/constants/constants';
-import useAuth from '@kolo/services/hooks/useAuth';
 import {SEARCH_BUTTON_WRAP_TEST_ID, SEARCH_INPUT_TEST_ID} from '@kolo/uiKit/Search/constants';
 import {cleanup, fireEvent, render, screen} from '@testing-library/react';
 import {AppRoute} from 'constants/AppRoute';
 
 import Heading from '../Heading';
 
-jest.mock('@kolo/services/hooks/useAuth');
+jest.mock('react-redux', () => ({
+  ...jest.requireActual('react-redux'),
+  useSelector: jest.fn(),
+}));
 
 describe('Heading component', () => {
   const renderPage = () => render(<Heading />, {wrapper: BrowserRouter});
 
   beforeEach(() => {
-    useAuth.mockReturnValue({isAuthorized: false});
+    useSelector.mockReturnValue(false);
   });
   afterEach(() => {
     cleanup();
-    useAuth.mockReset();
+    useSelector.mockReset();
   });
 
   it('should render and match snapshot successfully for unauthorized user', () => {
@@ -52,7 +55,7 @@ describe('Heading component', () => {
   });
 
   it('should render and match snapshot without Try for Free button for authorized user', () => {
-    useAuth.mockReturnValue({isAuthorized: true});
+    useSelector.mockReturnValue(true);
     const {asFragment} = renderPage();
 
     const button = screen.queryByText('Try for Free');

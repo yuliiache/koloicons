@@ -6,15 +6,11 @@ import {AppRoute} from 'constants/AppRoute';
 import React from 'react';
 
 import useDropdown from '../hooks/useDropdown';
+import {User} from '../types/types';
 import UserDropdownMenu from './UserDropdownMenu';
 import styles from './UserMenu.module.scss';
 
-interface AuthorizedUserMenuProps {
-  name: string;
-  isPro: boolean;
-}
-
-const AuthorizedUserMenu: React.FC<AuthorizedUserMenuProps> = ({isPro, name}) => {
+const AuthorizedUserMenu: React.FC<User> = ({isPro, name}) => {
   const {isDropdownVisible, showDropdown, hideDropdown} = useDropdown();
   const getFirstLetter = (str: string) => {
     return str.charAt(0);

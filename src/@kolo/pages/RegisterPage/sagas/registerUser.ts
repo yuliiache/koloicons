@@ -44,16 +44,14 @@ function* callRegisterUserWorker(action: PayloadAction<RegisterFormValues>) {
       httpService.addJwtToHeader(token);
       writeJwt(token);
     }
-
-    yield put(setLoading(false));
   } catch (error: unknown) {
     const errorCode: ErrorCode | undefined = (error as AxiosError)?.response?.status;
 
     yield call(handleErrorInSagas, registerUserFailAction);
     yield put(registerUserFailAction(errorCode));
+  } finally {
+    yield put(setLoading(false));
   }
-
-  yield put(setLoading(false));
 }
 
 export function* registerUserWatcher() {

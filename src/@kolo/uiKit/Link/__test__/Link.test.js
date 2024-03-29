@@ -1,11 +1,13 @@
 import React from 'react';
-import {MemoryRouter} from 'react-router-dom';
-import {render} from '@testing-library/react';
+import {BrowserRouter} from 'react-router-dom';
+import {fireEvent, render, screen} from '@testing-library/react';
 
 import {LinkType} from '../constants';
 import Link from '../Link';
 
 describe('Link component', () => {
+  const renderLink = (props) => render(<Link {...props} />, {wrapper: BrowserRouter});
+
   Object.values(LinkType).forEach((type) => {
     ['internal', 'external'].forEach((linkType) => {
       const url = linkType === 'internal' ? '/' : 'http://external.com';
@@ -17,11 +19,7 @@ describe('Link component', () => {
       };
 
       it(`renders correctly for ${linkType} link with type ${type}`, () => {
-        const {asFragment} = render(
-          <MemoryRouter>
-            <Link {...props} />
-          </MemoryRouter>
-        );
+        const {asFragment} = renderLink(props);
 
         expect(asFragment()).toMatchSnapshot();
       });
@@ -32,13 +30,24 @@ describe('Link component', () => {
           isInNewTab: true,
         };
 
-        const {asFragment} = render(
-          <MemoryRouter>
-            <Link {...updatedProps} />
-          </MemoryRouter>
-        );
+        const {asFragment} = renderLink(updatedProps);
 
         expect(asFragment()).toMatchSnapshot();
+      });
+
+      it('should call onClick function when user click the link', () => {
+        const onClickMock = jest.fn();
+        const updatedProps = {
+          ...props,
+          onClick: onClickMock,
+        };
+        renderLink(updatedProps);
+
+        const link = screen.getByText(text);
+
+        fireEvent.click(link);
+
+        expect(onClickMock).toHaveBeenCalled();
       });
     });
   });

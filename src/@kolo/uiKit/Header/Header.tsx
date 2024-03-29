@@ -1,8 +1,6 @@
-import {shouldHideNavigationAndMenu} from '@kolo/services/helpers/shouldHideNavigationAndMenu';
 import classnames from 'classnames';
 import {AppRoute} from 'constants/AppRoute';
 import {FC} from 'react';
-import {useLocation} from 'react-router';
 
 import Icon from '../Icons';
 import Link from '../Link/Link';
@@ -10,12 +8,10 @@ import Logo from '../Logo';
 import UserMenu from '../UserMenu/UserMenu';
 import styles from './Header.module.scss';
 import NavMenu from './NavMenu/NavMenu';
+import {useHeader} from './useHeader';
 
 const Header: FC = () => {
-  //TODO: Add Loading and User selectors
-  const location = useLocation();
-  const pathname = location.pathname;
-  const isHidden = shouldHideNavigationAndMenu(pathname);
+  const {name, isPro, isLoading, isHidden} = useHeader();
   const headerClasses = classnames(styles.headerContainer, {
     [styles.hidden]: isHidden,
   });
@@ -30,15 +26,14 @@ const Header: FC = () => {
               <Icon.LogoText />
             </Link>
             <div className={styles.logo}>
-              <Logo isLoading={false} />
+              <Logo isLoading={isLoading} />
             </div>
           </div>
         </div>
         {!isHidden && (
           <UserMenu
-            email={''}
-            name={''}
-            isPro={false}
+            name={name}
+            isPro={isPro}
           />
         )}
       </div>

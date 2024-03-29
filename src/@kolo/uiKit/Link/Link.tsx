@@ -10,9 +10,10 @@ interface Props {
   children: React.ReactNode;
   type?: LinkType;
   isInNewTab?: boolean;
+  onClick?: () => void;
 }
 
-const Link: FC<Props> = ({url, children, type = LinkType.DEFAULT, isInNewTab = false}) => {
+const Link: FC<Props> = ({url, children, onClick, type = LinkType.DEFAULT, isInNewTab = false}) => {
   const isInternalUrl: boolean = url.startsWith('/');
   const linksClasses = classNames(styles.link, styles[`link--${type}`]);
 
@@ -24,6 +25,7 @@ const Link: FC<Props> = ({url, children, type = LinkType.DEFAULT, isInNewTab = f
         to={url}
         target={isInNewTab ? '_blank' : undefined}
         rel={isInNewTab ? 'noopener noreferrer' : undefined}
+        onClick={onClick}
       >
         {children}
       </InternalLink>
@@ -37,6 +39,7 @@ const Link: FC<Props> = ({url, children, type = LinkType.DEFAULT, isInNewTab = f
       data-testid={EXTERNAL_LINK_TEST_ID}
       target={isInNewTab ? '_blank' : undefined}
       rel="noopener noreferrer nofollow"
+      onClick={onClick}
     >
       {children}
     </a>

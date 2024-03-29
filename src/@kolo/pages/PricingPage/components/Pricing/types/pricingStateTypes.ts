@@ -1,6 +1,5 @@
 import {Currency, SubscriptionPlan} from '../constants';
 export interface PricingState {
-  isLoading: boolean;
   pricingPlans: PricingData[];
 }
 

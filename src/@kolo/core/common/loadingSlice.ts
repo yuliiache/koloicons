@@ -3,7 +3,7 @@ import {PayloadAction} from '@reduxjs/toolkit';
 
 import {LOADING_KEY} from './constants';
 
-interface LoadingState {
+export interface LoadingState {
   isLoading: boolean;
 }
 

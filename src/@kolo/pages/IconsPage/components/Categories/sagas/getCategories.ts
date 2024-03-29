@@ -37,9 +37,9 @@ function* callGetCategoriesWorker() {
     const adaptedData = dataKeyAdapter(data) as CategoriesData[];
 
     yield put(getIconCategoriesSuccessAction(adaptedData));
-    yield put(setLoading(false));
   } catch (error) {
     yield call(handleErrorInSagas, getIconCategoriesFailAction);
+  } finally {
     yield put(setLoading(false));
   }
 }

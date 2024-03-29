@@ -1,4 +1,5 @@
 import {BillingInterval} from '@kolo/constants/constants';
+import {setLoading} from '@kolo/core/common/loadingSlice';
 import getPricing from '@kolo/facade/getPricing/getPricing';
 import {handleErrorInSagas} from '@kolo/services/helpers/handleErrorInSagas';
 import {PayloadAction} from '@reduxjs/toolkit';
@@ -13,11 +14,14 @@ interface PricingResponse {
 
 function* callGetPricingData(action: PayloadAction<BillingInterval>) {
   try {
+    yield put(setLoading(true));
     const billingInterval: BillingInterval = action.payload || BillingInterval.YEAR;
     const {data}: PricingResponse = yield call(getPricing, {billingInterval});
     yield put(getPricingSuccess(data));
   } catch {
     yield call(handleErrorInSagas, getPricingFail);
+  } finally {
+    yield put(setLoading(false));
   }
 }
 

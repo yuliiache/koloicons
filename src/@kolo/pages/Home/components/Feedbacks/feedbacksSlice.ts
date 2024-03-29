@@ -3,7 +3,6 @@ import {createSlice} from '@reduxjs/toolkit';
 import {FEEDBACKS_KEY} from './constants';
 
 const initialState = {
-  isLoading: false,
   feedbacks: [{avatarPath: '', company: '', name: '', text: '', url: ''}],
 };
 
@@ -13,7 +12,6 @@ const feedbacksSlice = createSlice({
   reducers: {
     getFeedbacksStart: (state) => ({
       ...state,
-      isLoading: true,
     }),
     getFeedbacksSuccess: (state, action) => ({
       ...state,
@@ -21,7 +19,6 @@ const feedbacksSlice = createSlice({
     }),
     getFeedbacksFail: () => ({
       feedbacks: initialState.feedbacks,
-      isLoading: false,
     }),
   },
 });

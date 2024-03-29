@@ -8,9 +8,9 @@ import {ErrorCode} from './types/ErrorCode';
 
 const getUser: Selector<RootState, LoginState> = (state) => state[LOGIN_USER_KEY];
 
-export const loggedInUserSelector: Selector<RootState, UserData | null> = createSelector(
+export const userSelector: Selector<RootState, UserData> = createSelector(
   getUser,
-  (loginUser: LoginState): UserData | null => loginUser.user
+  (loginUser: LoginState): UserData => loginUser.user || {name: '', lastName: '', email: '', id: '', isPro: false}
 );
 
 export const isAuthenticatedSelector: Selector<RootState, boolean> = createSelector(
