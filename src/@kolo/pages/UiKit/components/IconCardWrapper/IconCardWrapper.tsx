@@ -9,6 +9,7 @@ interface IconProps {
   categoryNumber: number;
   categoryName: string;
   isFree: boolean;
+  iconId: string;
 }
 
 const iconData = {
@@ -35,6 +36,7 @@ const IconCardWrapper: React.FC = () => {
     categoryNumber: iconData.category.number,
     categoryName: iconData.category.name,
     isFree: iconData.isFree,
+    iconId: iconData.id,
   };
   return (
     <Section title={'IconCard'}>

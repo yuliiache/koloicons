@@ -1,10 +1,11 @@
 import {Icon as IconType} from '@kolo/types/icon';
 import {AdaptiveImage} from '@kolo/uiKit/AdaptiveImage/AdaptiveImage';
-import ButtonIcon from '@kolo/uiKit/ButtonIcon/ButtonIcon';
-import {ButtonIconType} from '@kolo/uiKit/ButtonIcon/constants';
-import Icon from '@kolo/uiKit/Icons';
+import ModalBox from '@kolo/uiKit/Portal/ModalBox';
+import useModal from '@kolo/uiKit/Portal/useModalBox';
 import React from 'react';
 
+import DownloadModal from '../DownloadModal/DownloadModal';
+import IconCardButton from '../IconCardButton/IconCardButton';
 import useIconCard from './hooks/useIconCard';
 import styles from './IconCard.module.scss';
 
@@ -15,39 +16,50 @@ interface IconCardProps {
   categoryNumber: number;
   categoryName: string;
   isFree: boolean;
+  iconId: string;
 }
 
-const IconCard: React.FC<IconCardProps> = ({icon, categoryNumber, categoryName, isFree}) => {
-  const {isAdded, handleClick} = useIconCard();
-
-  const actionIcon = isAdded ? <Icon.Close /> : <Icon.Add />;
-  const tooltipLabel = isAdded ? 'Remove from collection' : 'Add to collection';
+const IconCard: React.FC<IconCardProps> = ({icon, categoryNumber, categoryName, isFree, iconId}) => {
+  const {isAdded} = useIconCard();
   const iconCardClasses = `${iconCard} ${isAdded ? iconCardAdded : ''}`;
 
+  const {openModal, isOpen, closeModal, modalPropagationHandle} = useModal();
+
   return (
-    <div className={iconCardClasses}>
-      <div className={wrapper}>
-        <div className={buttons}>
-          <ButtonIcon
-            type={ButtonIconType.ROUND}
-            tooltipLabel={tooltipLabel}
-            onClick={handleClick}
+    <>
+      <div
+        className={iconCardClasses}
+        onClick={openModal}
+      >
+        <div className={wrapper}>
+          <div
+            className={buttons}
+            onClick={modalPropagationHandle}
           >
-            {actionIcon}
-          </ButtonIcon>
+            <IconCardButton />
+          </div>
+          <div className={imageWrapper}>
+            <AdaptiveImage
+              icon={icon}
+              categoryNumber={categoryNumber}
+              categoryName={categoryName}
+              isFree={isFree}
+              withWatermark={false}
+            />
+          </div>
         </div>
-        <div className={imageWrapper}>
-          <AdaptiveImage
-            icon={icon}
-            categoryNumber={categoryNumber}
-            categoryName={categoryName}
-            isFree={isFree}
-            withWatermark={false}
-          />
-        </div>
+        <span className={title}>{icon.name}</span>
       </div>
-      <span className={title}>{icon.name}</span>
-    </div>
+      <ModalBox
+        isOpen={isOpen}
+        closeModal={closeModal}
+      >
+        <DownloadModal
+          isFree={false}
+          iconId={iconId}
+        />
+      </ModalBox>
+    </>
   );
 };
 

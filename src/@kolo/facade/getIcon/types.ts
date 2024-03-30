@@ -3,7 +3,7 @@ import {IconStyle} from '@kolo/constants/constants';
 export interface Category {
   name: string;
   number: number;
-  _id: string;
+  id: string;
 }
 
 export interface Icon {
@@ -12,7 +12,7 @@ export interface Icon {
   size: string;
   style: string;
   types: string[];
-  _id: string;
+  id: string;
   tags?: string[];
 }
 export interface Params {

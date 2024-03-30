@@ -15,7 +15,6 @@ jest.mock('@kolo/services/httpService/httpService', () => {
 const ICON_ID = '5d6a87bdef38414cb068e989';
 
 const commonParams = {
-  iconId: ICON_ID,
   withTags: 'withTags',
   iconStyle: IconStyle.LINE,
 };

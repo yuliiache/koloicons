@@ -29,6 +29,7 @@ function* callGetCategoriesWorker() {
   try {
     yield put(setLoading(true));
     //getCategories as any applied due to the PropTypes in facade and typescript incompatibility
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const {data}: CategoriesResponse = yield call(getCategories as any, {
       iconSize: IconSize.DETAILED,
       iconStyle: IconStyle.LINE,

@@ -1,7 +1,10 @@
 @import "src/@kolo/design";
 
+.DownloadPage {
+  width: 240px;
+}
 
-.DownloadPage > :not(:last-child ){
+.DownloadPage > :not(:last-child) {
   margin-bottom: 8px;
 }
 
@@ -37,8 +40,8 @@
 
   &.SizeButton-selected {
     background-color: $WhiteBG;
-    box-shadow: 0 2px 6px 0 rgba(25,37,63,.1);
-    transition: all .3s linear;
+    box-shadow: 0 2px 6px 0 rgba(25, 37, 63, 0.1);
+    transition: all 0.3s linear;
 
     &.SizeButton-selected svg {
       margin-right: 4px;

@@ -1,0 +1,49 @@
+@import "@kolo/design";
+
+.modalIcon {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.modalIconImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalIconHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modalHeadTitle {
+  font-size: 24px;
+  margin: 0 8px 0 0;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.modalColorPicker {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.modalIconFooterCategory {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 0;
+}
+.modalIconFooter {
+  margin-top: 24px;
+}
+
+.modalIconFooterCategoryName {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $secFontColor;
+  margin: 0;
+  padding: 0 8px;
+}

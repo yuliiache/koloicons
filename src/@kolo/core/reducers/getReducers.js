@@ -3,6 +3,8 @@ import feedbacksReducer from '@kolo/pages/Home/components/Feedbacks/feedbacksSli
 import {MONTH_PACK_KEY} from '@kolo/pages/Home/components/MonthPack/constants';
 import monthPackReducer from '@kolo/pages/Home/components/MonthPack/monthPackSlice';
 import categoriesReducer, {CATEGORIES_KEY} from '@kolo/pages/IconsPage/components/Categories/slice/categoriesSlice';
+import {ICON_KEY} from '@kolo/pages/IconsPage/components/DownloadModal/constants';
+import iconReducer from '@kolo/pages/IconsPage/components/DownloadModal/iconSlice';
 import {LOGIN_USER_KEY} from '@kolo/pages/LoginPage/constants';
 import loginReducer from '@kolo/pages/LoginPage/slices/loginUserSlice';
 import pricingReducer, {PRICING_KEY} from '@kolo/pages/PricingPage/components/Pricing/pricingSlice';
@@ -16,6 +18,7 @@ const reducers = {
   [MONTH_PACK_KEY]: monthPackReducer,
   [FEEDBACKS_KEY]: feedbacksReducer,
   [PRICING_FAQS_KEY]: pricingFAQsReducer,
+  [ICON_KEY]: iconReducer,
   [LOGIN_USER_KEY]: loginReducer,
   [PRICING_KEY]: pricingReducer,
   [LOADING_KEY]: loadingReducer,

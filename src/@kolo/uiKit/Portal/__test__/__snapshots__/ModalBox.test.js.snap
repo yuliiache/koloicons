@@ -21,9 +21,9 @@ exports[`ModalBox Component renders children and triggers modalHandler 1`] = `
           <svg
             class="closeIcon"
             data-testid="icon-close"
-            height="20px"
+            height="16px"
             viewBox="0 0 16 16"
-            width="20px"
+            width="16px"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagList component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="iconTags"
+  >
+    <li
+      class="tagItem"
+      role="link"
+    >
+      #Accounting,
+    </li>
+    <li
+      class="tagItem"
+      role="link"
+    >
+      #Accountant,
+    </li>
+    <li
+      class="tagItem"
+      role="link"
+    >
+      #Calculate,
+    </li>
+    <li
+      class="tagItem"
+      role="link"
+    >
+      #Calculation
+    </li>
+  </ul>
+</DocumentFragment>
+`;

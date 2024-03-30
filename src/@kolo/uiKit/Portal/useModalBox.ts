@@ -4,6 +4,7 @@ import {MouseEventHandler, useEffect, useState} from 'react';
 interface ModalHookReturnType {
   openModal: () => void;
   closeModal: MouseEventHandler<HTMLElement>;
+  modalPropagationHandle: MouseEventHandler<HTMLDivElement>;
   isOpen: boolean;
 }
 
@@ -28,9 +29,14 @@ const useModal = (): ModalHookReturnType => {
     setIsModalOpen(false);
   };
 
+  const modalPropagationHandle: MouseEventHandler<HTMLDivElement> = (event) => {
+    event.stopPropagation();
+  };
+
   return {
     openModal,
     closeModal,
+    modalPropagationHandle,
     isOpen,
   };
 };

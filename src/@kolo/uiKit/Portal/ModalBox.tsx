@@ -6,6 +6,7 @@ import {createPortal} from 'react-dom';
 
 import {MODAL_BOX_TEST_ID} from './constants';
 import styles from './ModalBox.module.scss';
+import useModal from './useModalBox';
 
 interface ModalProps {
   isOpen: boolean;
@@ -15,10 +16,7 @@ interface ModalProps {
 
 const ModalBox: FC<ModalProps> = ({isOpen, children, closeModal}) => {
   if (!isOpen) return null;
-
-  const modalBoxPropagationHandle: MouseEventHandler<HTMLDivElement> = (event) => {
-    event.stopPropagation();
-  };
+  const {modalPropagationHandle} = useModal();
 
   return createPortal(
     <div
@@ -29,7 +27,7 @@ const ModalBox: FC<ModalProps> = ({isOpen, children, closeModal}) => {
     >
       <div
         className={styles.modalBox}
-        onClick={modalBoxPropagationHandle}
+        onClick={modalPropagationHandle}
       >
         <div className={styles.closeButton}>
           <ButtonIcon
@@ -37,8 +35,8 @@ const ModalBox: FC<ModalProps> = ({isOpen, children, closeModal}) => {
             onClick={closeModal}
           >
             <Icon.Close
-              width="20px"
-              height="20px"
+              width="16px"
+              height="16px"
               className={styles.closeIcon}
             />
           </ButtonIcon>
