@@ -1,13 +1,17 @@
 import Icon from '@kolo/uiKit/Icons';
 import Search from '@kolo/uiKit/Search/Search';
-import {FC} from 'react';
+import {FC, useEffect} from 'react';
 
-import Categories from '../Categories/Categories';
 import PanelAside from './components/PanelAside/PanelAside';
 import styles from './IconsPagePanel.module.scss';
 import {useIconsPagePanel} from './useIconsPagePanel';
 
-const IconsPagePanel: FC = () => {
+interface Props {
+  setIsLeftPanelOpen: (isOpen: boolean) => void;
+  setIsRightPanelOpen: (isOpen: boolean) => void;
+}
+
+const IconsPagePanel: FC<Props> = ({setIsLeftPanelOpen, setIsRightPanelOpen}) => {
   const {
     isOpen: isCategoriesOpen,
     openPanelAside: openCategories,
@@ -19,6 +23,11 @@ const IconsPagePanel: FC = () => {
     closePanelAside: closeCollection,
   } = useIconsPagePanel();
 
+  useEffect(() => {
+    setIsLeftPanelOpen(isCategoriesOpen);
+    setIsRightPanelOpen(isCollectionOpen);
+  }, [isCategoriesOpen, isCollectionOpen]);
+
   return (
     <div className={styles.panel}>
       <PanelAside
@@ -27,9 +36,7 @@ const IconsPagePanel: FC = () => {
         isOpened={isCategoriesOpen}
         openPanel={openCategories}
         closePanel={closeCategories}
-      >
-        <Categories />
-      </PanelAside>
+      />
       <Search
         placeholder="Search icon"
         onSearch={() => {

@@ -3,9 +3,15 @@
 exports[`IconsPageContent renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="content"
+    class="contentSection"
   >
-    Content
+    <div
+      class="content"
+    >
+      <div>
+        Child Component
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

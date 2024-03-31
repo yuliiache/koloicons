@@ -1,9 +1,24 @@
 @import "@kolo/design";
 
-.asideContainer {
+.panelContent {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon svg {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px 21px 16px;
+
+  flex-shrink: 0;
   height: 72px;
-  flex-direction: column;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -15,47 +30,16 @@
   min-width: 188px;
   box-shadow: 0 12px 24px 0 $ShadowPanel;
 
-
-  &.opened {
-    width: 598px;
-    box-shadow: none;
-    align-items: normal;
-    border-top: none;
-    height: calc(95.6vh - 60px);
-    border-right: 1px solid $DarkBG;
-    background-color: $LightBG;
-    z-index: 10;
-  }
-}
-
-.panelContent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.icon svg{
-  margin-right: 8px;
-  display: flex;
-  align-items: center;
-}
-
-.aside {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 16px 21px 16px;
-
   &:hover svg g path:last-child,
   &.opened:hover svg g path:last-child {
     fill: $IconHoverColor;
-    transition: all .25s linear;
+    transition: all 0.25s linear;
   }
 
   &.opened {
+    width: 344px;
     border-bottom: 1px solid $DarkBG;
+    background-color: $LightBG;
+    box-shadow: none;
   }
-}
-
-.asideContent {
-  height: 100%;
 }

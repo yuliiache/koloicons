@@ -11,41 +11,33 @@ interface PanelAsideProps {
   openPanel: () => void;
   closePanel: () => void;
   isOpened: boolean;
-  children?: ReactElement;
   icon?: ReactElement;
 }
 
-const PanelAside: FC<PanelAsideProps> = ({title, openPanel, closePanel, isOpened = false, children, icon}) => {
-  const panelAsideClasses = classnames(styles.asideContainer, {
-    [styles.opened]: isOpened,
-  });
-
+const PanelAside: FC<PanelAsideProps> = ({title, openPanel, closePanel, icon, isOpened = false}) => {
   const asideClasses = classnames(styles.aside, {
     [styles.opened]: isOpened,
   });
 
   return (
     <div
-      className={panelAsideClasses}
+      className={asideClasses}
       onClick={openPanel}
     >
-      <div className={asideClasses}>
-        <div className={styles.panelContent}>
-          {icon && <div className={styles.icon}>{icon}</div>}
-          <p className={styles.title}>{title}</p>
-        </div>
-        {isOpened && (
-          <>
-            <ButtonIcon
-              type={ButtonIconType.SQUARE}
-              onClick={closePanel}
-            >
-              <Icon.Close width="16px" />
-            </ButtonIcon>
-          </>
-        )}
+      <div className={styles.panelContent}>
+        {icon && <div className={styles.icon}>{icon}</div>}
+        <p className={styles.title}>{title}</p>
       </div>
-      {isOpened && <div className={styles.asideContent}>{children}</div>}
+      {isOpened && (
+        <>
+          <ButtonIcon
+            type={ButtonIconType.SQUARE}
+            onClick={closePanel}
+          >
+            <Icon.Close width="16px" />
+          </ButtonIcon>
+        </>
+      )}
     </div>
   );
 };

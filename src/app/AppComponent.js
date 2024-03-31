@@ -11,6 +11,7 @@ import {AppRoute} from 'constants/AppRoute';
 import MyAccountPage from '../@kolo/pages/MyAccountPage';
 
 import 'react-toastify/dist/ReactToastify.css';
+import styles from './AppComponent.module.scss';
 // import {Header, Footer} from '@kolo/ui-kit';
 // HomePage,
 // MyAccountPage,
@@ -33,7 +34,7 @@ export const AppComponent = () => {
     <>
       <ToastContainer />
       <Header />
-      <Suspense fallback={<div>...Loading</div>}>
+      <Suspense fallback={<div className={styles.loadingContainer}>...Loading</div>}>
         <Routes>
           <Route
             path={AppRoute.HOME}

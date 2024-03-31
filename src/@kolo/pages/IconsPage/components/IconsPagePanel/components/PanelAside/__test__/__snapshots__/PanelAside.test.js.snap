@@ -3,20 +3,16 @@
 exports[`PanelAside renders close aside correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="asideContainer"
+    class="aside"
   >
     <div
-      class="aside"
+      class="panelContent"
     >
-      <div
-        class="panelContent"
+      <p
+        class="title"
       >
-        <p
-          class="title"
-        >
-          Categories
-        </p>
-      </div>
+        Categories
+      </p>
     </div>
   </div>
 </DocumentFragment>
@@ -25,20 +21,16 @@ exports[`PanelAside renders close aside correctly and matches snapshot 1`] = `
 exports[`PanelAside renders close aside with correctly title and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="asideContainer"
+    class="aside"
   >
     <div
-      class="aside"
+      class="panelContent"
     >
-      <div
-        class="panelContent"
+      <p
+        class="title"
       >
-        <p
-          class="title"
-        >
-          Collection
-        </p>
-      </div>
+        Collection
+      </p>
     </div>
   </div>
 </DocumentFragment>
@@ -47,40 +39,33 @@ exports[`PanelAside renders close aside with correctly title and matches snapsho
 exports[`PanelAside renders open aside correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="asideContainer opened"
+    class="aside opened"
   >
     <div
-      class="aside opened"
+      class="panelContent"
     >
-      <div
-        class="panelContent"
+      <p
+        class="title"
       >
-        <p
-          class="title"
-        >
-          Categories
-        </p>
-      </div>
-      <button
-        class="button button-square"
-        data-testid="buttonIconComponent"
-      >
-        <svg
-          data-testid="icon-close"
-          height="16"
-          viewBox="0 0 16 16"
-          width="16px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2.29289322,2.29289322 C2.68341751,1.90236893 3.31658249,1.90236893 3.70710678,2.29289322 L3.70710678,2.29289322 L8,6.585 L12.2928932,2.29289322 C12.6533772,1.93240926 13.2206082,1.90467972 13.6128994,2.20970461 L13.7071068,2.29289322 C14.0976311,2.68341751 14.0976311,3.31658249 13.7071068,3.70710678 L13.7071068,3.70710678 L9.415,8 L13.7071068,12.2928932 C14.0675907,12.6533772 14.0953203,13.2206082 13.7902954,13.6128994 L13.7071068,13.7071068 C13.3165825,14.0976311 12.6834175,14.0976311 12.2928932,13.7071068 L12.2928932,13.7071068 L8,9.415 L3.70710678,13.7071068 C3.34662282,14.0675907 2.77939176,14.0953203 2.38710056,13.7902954 L2.29289322,13.7071068 C1.90236893,13.3165825 1.90236893,12.6834175 2.29289322,12.2928932 L2.29289322,12.2928932 L6.585,8 L2.29289322,3.70710678 C1.93240926,3.34662282 1.90467972,2.77939176 2.20970461,2.38710056 Z"
-          />
-        </svg>
-      </button>
+        Categories
+      </p>
     </div>
-    <div
-      class="asideContent"
-    />
+    <button
+      class="button button-square"
+      data-testid="buttonIconComponent"
+    >
+      <svg
+        data-testid="icon-close"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.29289322,2.29289322 C2.68341751,1.90236893 3.31658249,1.90236893 3.70710678,2.29289322 L3.70710678,2.29289322 L8,6.585 L12.2928932,2.29289322 C12.6533772,1.93240926 13.2206082,1.90467972 13.6128994,2.20970461 L13.7071068,2.29289322 C14.0976311,2.68341751 14.0976311,3.31658249 13.7071068,3.70710678 L13.7071068,3.70710678 L9.415,8 L13.7071068,12.2928932 C14.0675907,12.6533772 14.0953203,13.2206082 13.7902954,13.6128994 L13.7071068,13.7071068 C13.3165825,14.0976311 12.6834175,14.0976311 12.2928932,13.7071068 L12.2928932,13.7071068 L8,9.415 L3.70710678,13.7071068 C3.34662282,14.0675907 2.77939176,14.0953203 2.38710056,13.7902954 L2.29289322,13.7071068 C1.90236893,13.3165825 1.90236893,12.6834175 2.29289322,12.2928932 L2.29289322,12.2928932 L6.585,8 L2.29289322,3.70710678 C1.93240926,3.34662282 1.90467972,2.77939176 2.20970461,2.38710056 Z"
+        />
+      </svg>
+    </button>
   </div>
 </DocumentFragment>
 `;

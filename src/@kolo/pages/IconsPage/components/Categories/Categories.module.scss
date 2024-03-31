@@ -7,8 +7,7 @@
   background-color: $LightBG;
   padding: 16px;
   list-style: none;
-  transition: all .25s linear;
-  height: calc(100vh - 162px);
+  transition: all 0.25s linear;
   overflow-y: auto;
 
   &::-webkit-scrollbar {
@@ -17,7 +16,7 @@
 
   &::-webkit-scrollbar-thumb {
     width: 4px;
-    opacity: .5;
+    opacity: 0.5;
     border-radius: 4px;
     background-color: $ScrollbarColor;
   }
@@ -30,6 +29,6 @@
     border-radius: 4px;
     background-color: $DarkBG;
     color: $secFontColor;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
   }
 }
