@@ -1,21 +1,13 @@
-import {useAppDispatch} from 'app/hooks';
-import {FC, useEffect, useState} from 'react';
+import {FC} from 'react';
 
 import Categories from './components/Categories/Categories';
-import {getIconCategoriesStartAction} from './components/Categories/slice/categoriesSlice';
 import IconsPageContent from './components/IconsPageContent/IconsPageContent';
 import IconsPagePanel from './components/IconsPagePanel/IconsPagePanel';
 import styles from './IconsPage.module.scss';
+import {useIconsPage} from './useIconsPage';
 
 const IconsPage: FC = () => {
-  const [isLeftPanelOpen, setIsLeftPanelOpen] = useState(false);
-  const [isRightPanelOpen, setIsRightPanelOpen] = useState(false);
-
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    dispatch(getIconCategoriesStartAction());
-  }, []);
+  const {isLeftPanelOpen, isRightPanelOpen, setIsLeftPanelOpen, setIsRightPanelOpen} = useIconsPage();
 
   return (
     <section className={styles.pageSection}>

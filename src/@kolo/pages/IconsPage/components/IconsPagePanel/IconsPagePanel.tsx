@@ -1,6 +1,6 @@
 import Icon from '@kolo/uiKit/Icons';
 import Search from '@kolo/uiKit/Search/Search';
-import {FC, useEffect} from 'react';
+import {FC} from 'react';
 
 import PanelAside from './components/PanelAside/PanelAside';
 import styles from './IconsPagePanel.module.scss';
@@ -16,17 +16,12 @@ const IconsPagePanel: FC<Props> = ({setIsLeftPanelOpen, setIsRightPanelOpen}) =>
     isOpen: isCategoriesOpen,
     openPanelAside: openCategories,
     closePanelAside: closeCategories,
-  } = useIconsPagePanel();
+  } = useIconsPagePanel(setIsLeftPanelOpen);
   const {
     isOpen: isCollectionOpen,
     openPanelAside: openCollection,
     closePanelAside: closeCollection,
-  } = useIconsPagePanel();
-
-  useEffect(() => {
-    setIsLeftPanelOpen(isCategoriesOpen);
-    setIsRightPanelOpen(isCollectionOpen);
-  }, [isCategoriesOpen, isCollectionOpen]);
+  } = useIconsPagePanel(setIsRightPanelOpen);
 
   return (
     <div className={styles.panel}>

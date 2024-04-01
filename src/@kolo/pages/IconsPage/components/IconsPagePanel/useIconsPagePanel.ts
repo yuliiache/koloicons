@@ -1,4 +1,6 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
+
+type setPanelOpenType = (value: boolean) => void;
 
 interface PanelAsideHookReturnType {
   isOpen: boolean;
@@ -6,7 +8,7 @@ interface PanelAsideHookReturnType {
   closePanelAside: (event?: React.MouseEvent<HTMLElement>) => void;
 }
 
-export const useIconsPagePanel = (): PanelAsideHookReturnType => {
+export const useIconsPagePanel = (setPanelOpen: setPanelOpenType): PanelAsideHookReturnType => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openPanelAside = () => {
@@ -19,6 +21,10 @@ export const useIconsPagePanel = (): PanelAsideHookReturnType => {
     }
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    setPanelOpen(isOpen);
+  }, [isOpen]);
 
   return {
     isOpen,
