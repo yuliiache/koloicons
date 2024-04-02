@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
 import {render} from '@testing-library/react';
 
 import IconsPagePanel from '../IconsPagePanel';
@@ -9,7 +10,11 @@ describe('IconsPagePanel', () => {
       setIsLeftPanelOpen: jest.fn(),
       setIsRightPanelOpen: jest.fn(),
     };
-    const {asFragment} = render(<IconsPagePanel {...mockProps} />);
+    const {asFragment} = render(
+      <BrowserRouter>
+        <IconsPagePanel {...mockProps}/>
+      </BrowserRouter>
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });

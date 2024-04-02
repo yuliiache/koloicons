@@ -10,6 +10,9 @@ import styles from './TagList.module.scss';
 export const TagList = ({tags}: {tags?: string[]}) => {
   const navigate = useNavigate();
   const {search} = useLocation();
+
+  //backend sometimes returns repeating tags, add Set to omit the repeating keys error
+  const uniqueTags = tags ? Array.from(new Set(tags)) : [];
   const lastTag = tags && tags.length - 1;
 
   const tagQueryHandle = (tagName: string) => {
@@ -24,7 +27,7 @@ export const TagList = ({tags}: {tags?: string[]}) => {
   return (
     <ul className={styles.iconTags}>
       {tags &&
-        tags.map((tag, index) => (
+        uniqueTags.map((tag, index) => (
           <Tooltip
             label="Search by tag"
             key={tag}

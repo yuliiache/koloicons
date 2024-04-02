@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
 import {render} from '@testing-library/react';
 
 import IconsPageContent from '../IconsPageContent';
@@ -18,9 +19,11 @@ describe('IconsPageContent', () => {
   };
   const renderComponent = (props) =>
     render(
-      <IconsPageContent {...props}>
-        <ChildComponent />
-      </IconsPageContent>
+      <BrowserRouter>
+        <IconsPageContent {...props}>
+          <ChildComponent />
+        </IconsPageContent>
+      </BrowserRouter>
     );
 
   it('renders correctly and matches snapshot', () => {

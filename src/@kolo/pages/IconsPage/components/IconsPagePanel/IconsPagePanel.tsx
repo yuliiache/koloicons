@@ -4,6 +4,7 @@ import {FC} from 'react';
 
 import PanelAside from './components/PanelAside/PanelAside';
 import styles from './IconsPagePanel.module.scss';
+import useIconSearch from './useIconSearch';
 import {useIconsPagePanel} from './useIconsPagePanel';
 
 interface Props {
@@ -22,6 +23,7 @@ const IconsPagePanel: FC<Props> = ({setIsLeftPanelOpen, setIsRightPanelOpen}) =>
     openPanelAside: openCollection,
     closePanelAside: closeCollection,
   } = useIconsPagePanel(setIsRightPanelOpen);
+  const {handleIconSearch} = useIconSearch();
 
   return (
     <div className={styles.panel}>
@@ -34,9 +36,7 @@ const IconsPagePanel: FC<Props> = ({setIsLeftPanelOpen, setIsRightPanelOpen}) =>
       />
       <Search
         placeholder="Search icon"
-        onSearch={() => {
-          () => null;
-        }}
+        onSearch={handleIconSearch}
         isRounded={false}
       />
       <PanelAside

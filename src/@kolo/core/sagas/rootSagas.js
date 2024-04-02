@@ -10,6 +10,11 @@ import {getPricingFAQsWatcher} from '@kolo/pages/PricingPage/components/PricingF
 import {registerUserWatcher} from '@kolo/pages/RegisterPage/sagas/registerUser';
 import {all, fork} from 'redux-saga/effects';
 
+import {
+  getIconsByQueryWatcher,
+  getMoreIconsByQueryWatcher,
+} from '../../pages/IconsPage/components/IconsPagePanel/components/IconSearch/getIconsByQuery';
+
 export function* rootSagas() {
   yield all(
     [
@@ -23,6 +28,8 @@ export function* rootSagas() {
       refreshJWTandLoginUser,
       getCategoriesWatcher,
       getPricingData,
+      getIconsByQueryWatcher,
+      getMoreIconsByQueryWatcher,
       //...
     ].map(fork)
   );

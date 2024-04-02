@@ -11,7 +11,7 @@ import styles from './IconCard.module.scss';
 
 const {wrapper, buttons, title, imageWrapper, iconCard, iconCardAdded} = styles;
 
-interface IconCardProps {
+export interface IconCardProps {
   icon: IconType;
   categoryNumber: number;
   categoryName: string;
@@ -20,10 +20,9 @@ interface IconCardProps {
 }
 
 const IconCard: React.FC<IconCardProps> = ({icon, categoryNumber, categoryName, isFree, iconId}) => {
+  const {openModal, isOpen, closeModal, modalPropagationHandle} = useModal();
   const {isAdded} = useIconCard();
   const iconCardClasses = `${iconCard} ${isAdded ? iconCardAdded : ''}`;
-
-  const {openModal, isOpen, closeModal, modalPropagationHandle} = useModal();
 
   return (
     <>

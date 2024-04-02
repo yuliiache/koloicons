@@ -15,8 +15,9 @@ interface ModalProps {
 }
 
 const ModalBox: FC<ModalProps> = ({isOpen, children, closeModal}) => {
-  if (!isOpen) return null;
   const {modalPropagationHandle} = useModal();
+
+  if (!isOpen) return null;
 
   return createPortal(
     <div

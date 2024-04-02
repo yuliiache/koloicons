@@ -1,0 +1,47 @@
+@import "src/@kolo/design";
+
+.searchPage {
+  padding: 32px 16px 48px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.iconsSearchResult {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+
+  & h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #525866
+  }
+  & span {
+    margin-left: 8px;
+    font-weight: 600;
+  }
+}
+
+.searchIcon {
+  height: 26px;
+  margin: 8px;
+
+  & svg g path:first-child{
+    fill: $LighthIcon;
+  }
+
+  & svg g path:last-child{
+    fill: $CheckColor;
+  }
+}
+
+.button {
+  margin-top: 16px;
+}

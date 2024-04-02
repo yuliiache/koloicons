@@ -23,8 +23,9 @@ function* workerSagaIcon(action: GetIconStartAction): SagaIterator {
     const adaptedData = dataKeyAdapter(data) as Icon;
     yield put(getIconSuccess(adaptedData));
   } catch (error: unknown) {
-    yield put(setLoading(false));
     yield call(handleErrorInSagas, getIconFail);
+  } finally {
+    yield put(setLoading(false));
   }
 }
 
