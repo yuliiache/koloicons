@@ -39,4 +39,12 @@
 
 .content {
   min-height: calc(100vh - 216px);
+
+  &OnSide {
+    width: calc(100vw - 344px);
+  }
+
+  &InCenter {
+    width: calc(100vw - 688px);
+  }
 }

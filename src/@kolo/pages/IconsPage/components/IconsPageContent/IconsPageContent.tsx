@@ -19,11 +19,16 @@ const IconsPageContent: FC<Props> = ({
   children,
 }) => {
   const asideRightClasses = classNames(styles.asideContent, {[styles.asideContentRight]: isRightPanelOpen});
+  const contentClasses = classNames(
+    styles.content,
+    {[styles.contentOnSide]: isLeftPanelOpen || isRightPanelOpen},
+    {[styles.contentInCenter]: isLeftPanelOpen && isRightPanelOpen}
+  );
 
   return (
     <div className={styles.contentSection}>
       {isLeftPanelOpen && <aside className={styles.asideContent}>{LeftAsideContent}</aside>}
-      <div className={styles.content}>{children}</div>
+      <div className={contentClasses}>{children}</div>
       {isRightPanelOpen && <aside className={asideRightClasses}>{RightAsideContent}</aside>}
     </div>
   );
