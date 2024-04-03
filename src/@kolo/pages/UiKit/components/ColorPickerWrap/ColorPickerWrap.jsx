@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ColorPicker from '@kolo/uiKit/ColorPicker/ColorPicker';
-import {COLORPICKER_SIZE} from '@kolo/uiKit/ColorPicker/constants';
+import {ColorPickerSize} from '@kolo/uiKit/ColorPicker/constants';
 
 import {Section} from '../Section/Section';
 
@@ -31,7 +31,7 @@ const ColorPickerWrap = () => {
         <li className={styles['list__item']}>
           <h3 className={styles['list__title']}>Small</h3>
           <ColorPicker
-            size={COLORPICKER_SIZE.SMALL}
+            size={ColorPickerSize.SMALL}
             value={colorSmall}
             onChange={onChangeColorSmall}
           />

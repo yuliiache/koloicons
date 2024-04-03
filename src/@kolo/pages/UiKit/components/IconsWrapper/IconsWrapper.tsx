@@ -38,6 +38,7 @@ const IconsWrapper = () => {
         <Icon.Search />
         <Icon.SearchSpinner />
         <Icon.Twitter className={iconsRgba} />
+        <Icon.Up className={iconsGrey} />
         <Icon.Unlock />
         <Icon.User className={iconsGrey} />
         <Icon.Filter className={iconsGrey} />

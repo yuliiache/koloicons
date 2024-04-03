@@ -5,3 +5,8 @@ export enum ButtonIconType {
   ROUNDED_SQUARE = 'rounded-square',
   SQUARE = 'square',
 }
+
+export enum ButtonSize {
+  SMALL = 'small',
+  BIG = 'big',
+}

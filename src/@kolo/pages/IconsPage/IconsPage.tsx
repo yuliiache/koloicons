@@ -1,6 +1,7 @@
 import {FC} from 'react';
 
 import Categories from './components/Categories/Categories';
+import Collection from './components/Collection/Collection';
 import IconsPageContent from './components/IconsPageContent/IconsPageContent';
 import IconsByQuery from './components/IconsPagePanel/components/IconSearch/IconsByQuery';
 import IconsPagePanel from './components/IconsPagePanel/IconsPagePanel';
@@ -22,7 +23,7 @@ const IconsPage: FC = () => {
         isLeftPanelOpen={isLeftPanelOpen}
         isRightPanelOpen={isRightPanelOpen}
         LeftAsideContent={<Categories />}
-        RightAsideContent={<div>Collection</div>}
+        RightAsideContent={<Collection/>}
       >
         {/* {instead of a child component for testing} */}
         <>{currentSearchQuery && <IconsByQuery />}</>

@@ -29,7 +29,7 @@ exports[`Heading component should render and match snapshot successfully for una
           data-testid="searchButtonComponent"
         >
           <button
-            class="button button-square"
+            class="button button-square button-big"
             data-testid="buttonIconComponent"
           >
             <svg
@@ -127,7 +127,7 @@ exports[`Heading component should render and match snapshot without Try for Free
           data-testid="searchButtonComponent"
         >
           <button
-            class="button button-square"
+            class="button button-square button-big"
             data-testid="buttonIconComponent"
           >
             <svg

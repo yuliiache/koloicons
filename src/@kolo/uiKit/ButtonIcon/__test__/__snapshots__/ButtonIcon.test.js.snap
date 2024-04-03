@@ -3,7 +3,7 @@
 exports[`ButtonIcon component snapshot should render { description: 'round type', props: [Object] } snapshot: round type 1`] = `
 <DocumentFragment>
   <button
-    class="button button-round"
+    class="button button-round button-big"
     data-testid="buttonIconComponent"
   >
     <svg
@@ -24,7 +24,7 @@ exports[`ButtonIcon component snapshot should render { description: 'round type'
 exports[`ButtonIcon component snapshot should render { description: 'rounded-square type', props: [Object] } snapshot: rounded-square type 1`] = `
 <DocumentFragment>
   <button
-    class="button button-rounded-square"
+    class="button button-rounded-square button-big"
     data-testid="buttonIconComponent"
   >
     <svg
@@ -45,7 +45,7 @@ exports[`ButtonIcon component snapshot should render { description: 'rounded-squ
 exports[`ButtonIcon component snapshot should render { description: 'square type', props: [Object] } snapshot: square type 1`] = `
 <DocumentFragment>
   <button
-    class="button button-square"
+    class="button button-square button-big"
     data-testid="buttonIconComponent"
   >
     <svg
@@ -66,7 +66,7 @@ exports[`ButtonIcon component snapshot should render { description: 'square type
 exports[`ButtonIcon component snapshot should render { description: 'with tooltips', props: [Object] } snapshot: with tooltips 1`] = `
 <DocumentFragment>
   <button
-    class="button button-undefined"
+    class="button button-undefined button-big"
     data-testid="buttonIconComponent"
   >
     <svg

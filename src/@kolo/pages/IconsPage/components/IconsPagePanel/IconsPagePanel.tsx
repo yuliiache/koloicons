@@ -45,6 +45,7 @@ const IconsPagePanel: FC<Props> = ({setIsLeftPanelOpen, setIsRightPanelOpen}) =>
         isOpened={isCollectionOpen}
         openPanel={openCollection}
         closePanel={closeCollection}
+        isCollection
       />
     </div>
   );

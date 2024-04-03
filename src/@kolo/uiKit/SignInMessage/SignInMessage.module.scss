@@ -1,10 +1,10 @@
 @import "@kolo/design";
 
 .signInMessage {
-  height: calc(100% - 64px);
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   padding: 1rem;
   font-size: 16px;
+  width: 100%;
 }
 
 .signInText {

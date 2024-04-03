@@ -13,7 +13,7 @@ import {FC} from 'react';
 import {useLocation, useNavigate} from 'react-router';
 
 import useIcon from '../../hooks/useIcon';
-import {ModalIconProps} from '../../types/DownloadModalProps';
+import { ModalIconProps } from '../../types/DownloadModalProps';
 import TagList from '../TagList/TagList';
 import styles from './DownloadModalIcon.module.scss';
 

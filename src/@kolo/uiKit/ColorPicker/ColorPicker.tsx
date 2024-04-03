@@ -1,12 +1,20 @@
-import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
-
-import {COLORPICKER_DEFAULT_COLOR, COLORPICKER_SIZE, COLORPICKER_TEST_ID} from './constants';
+import {FC} from 'react';
 
 import styles from './ColorPicker.module.scss';
+import {COLORPICKER_TEST_ID, ColorPickerColor, ColorPickerSize} from './constants';
 
-const ColorPicker = ({onChange, size = COLORPICKER_SIZE.BIG, value = COLORPICKER_DEFAULT_COLOR}) => {
+interface ColorPickerProps {
+  onChange: () => void;
+  size?: ColorPickerSize;
+  value?: ColorPickerColor;
+}
+
+const ColorPicker: FC<ColorPickerProps> = ({
+  onChange,
+  size = ColorPickerSize.BIG,
+  value = ColorPickerColor.DEFAULT,
+}) => {
   const labelClassName = classNames(styles.label, styles[`${size}`]);
 
   return (
@@ -25,12 +33,6 @@ const ColorPicker = ({onChange, size = COLORPICKER_SIZE.BIG, value = COLORPICKER
       />
     </label>
   );
-};
-
-ColorPicker.propTypes = {
-  size: PropTypes.oneOf(Object.values(COLORPICKER_SIZE)),
-  value: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
 };
 
 export default ColorPicker;

@@ -32,6 +32,7 @@ import {Search} from './Search';
 import {SearchSpinner} from './SearchSpinner';
 import {Twitter} from './Twitter';
 import {Unlock} from './Unlock';
+import { Up } from './Up';
 import {User} from './User';
 
 type IconInstance = Record<IconInstanceName, IconComponent>;
@@ -67,6 +68,7 @@ export const IconInstance: IconInstance = {
   [IconInstanceName.SEARCH]: Search,
   [IconInstanceName.SEARCH_SPINNER]: SearchSpinner,
   [IconInstanceName.TWITTER]: Twitter,
+  [IconInstanceName.UP]: Up,
   [IconInstanceName.UNLOCK]: Unlock,
   [IconInstanceName.USER]: User,
   [IconInstanceName.FILTER]: Filter,

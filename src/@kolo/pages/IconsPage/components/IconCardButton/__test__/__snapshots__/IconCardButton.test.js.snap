@@ -3,7 +3,7 @@
 exports[`IconCardButton renders correctly 1`] = `
 <div>
   <button
-    class="button button-round"
+    class="button button-round button-big"
     data-testid="buttonIconComponent"
   >
     <svg

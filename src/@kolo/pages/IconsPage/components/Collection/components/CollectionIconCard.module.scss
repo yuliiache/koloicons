@@ -1,0 +1,75 @@
+@import "@kolo/design";
+
+.iconCard {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 103px;
+
+  &:before {
+    content: "";
+    display: table;
+    padding-top: 100%;
+  }
+}
+
+.wrapper {
+  position: relative;
+  height: 104px;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.buttons {
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  right: 8px;
+  display: none;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+@media (hover: hover) {
+  .iconCard:hover .wrapper {
+    padding-top: 8px;
+    background-color: $DarkBG;
+    transition: all 0.25s linear;
+  }
+
+  .iconCard:hover .buttons {
+    display: flex;
+  }
+}
+
+.iconCard:focus {
+  box-shadow: inset 0 -1px 3px 0 $FocusShadowCards, 0 0 0 4px $focusBoxShadowColor,
+    inset 0 30px 40px -2px hsla(0, 0%, 100%, 0.2);
+  outline: none;
+}
+
+.iconCard:focus .buttons {
+  display: flex;
+}
+
+.iconCardAdded .wrapper {
+  padding-top: 8px;
+  background-color: $IconHoverBackground;
+}
+
+.iconCardAdded .buttons {
+  display: flex;
+}

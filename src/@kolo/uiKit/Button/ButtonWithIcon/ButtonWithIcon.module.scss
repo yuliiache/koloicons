@@ -1,0 +1,20 @@
+@import "src/@kolo/design";
+
+.buttonContent {
+  fill: $WhiteBG;
+
+  &.buttonContent-disabled {
+    fill: $LightGreyFontBtn;
+  }
+
+  &.buttonContent svg {
+    margin-right: 17px;
+  }
+  &.buttonReverseOrder {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}

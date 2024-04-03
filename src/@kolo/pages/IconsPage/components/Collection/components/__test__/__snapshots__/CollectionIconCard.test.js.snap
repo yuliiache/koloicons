@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IconCard renders snapshot 1`] = `
+exports[`Collection Icon Card component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="iconCard "
+    class="iconCard"
   >
     <div
       class="wrapper"
@@ -16,14 +16,14 @@ exports[`IconCard renders snapshot 1`] = `
           data-testid="buttonIconComponent"
         >
           <svg
-            data-testid="icon-add"
+            data-testid="icon-close"
             height="16"
             viewBox="0 0 16 16"
             width="16"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M8,2 C8.55228475,2 9,2.44771525 9,3 L9,3 L9,7 L13,7 C13.5128358,7 13.9355072,7.38604019 13.9932723,7.88337887 L14,8 C14,8.55228475 13.5522847,9 13,9 L13,9 L9,9 L9,13 C9,13.5128358 8.61395981,13.9355072 8.11662113,13.9932723 L8,14 C7.44771525,14 7,13.5522847 7,13 L7,13 L7,9 L3,9 C2.48716416,9 2.06449284,8.61395981 2.00672773,8.11662113 L2,8 C2,7.44771525 2.44771525,7 3,7 L3,7 L7,7 L7,3 C7,2.48716416 7.38604019,2.06449284 7.88337887,2.00672773 Z"
+              d="M2.29289322,2.29289322 C2.68341751,1.90236893 3.31658249,1.90236893 3.70710678,2.29289322 L3.70710678,2.29289322 L8,6.585 L12.2928932,2.29289322 C12.6533772,1.93240926 13.2206082,1.90467972 13.6128994,2.20970461 L13.7071068,2.29289322 C14.0976311,2.68341751 14.0976311,3.31658249 13.7071068,3.70710678 L13.7071068,3.70710678 L9.415,8 L13.7071068,12.2928932 C14.0675907,12.6533772 14.0953203,13.2206082 13.7902954,13.6128994 L13.7071068,13.7071068 C13.3165825,14.0976311 12.6834175,14.0976311 12.2928932,13.7071068 L12.2928932,13.7071068 L8,9.415 L3.70710678,13.7071068 C3.34662282,14.0675907 2.77939176,14.0953203 2.38710056,13.7902954 L2.29289322,13.7071068 C1.90236893,13.3165825 1.90236893,12.6834175 2.29289322,12.2928932 L2.29289322,12.2928932 L6.585,8 L2.29289322,3.70710678 C1.93240926,3.34662282 1.90467972,2.77939176 2.20970461,2.38710056 Z"
             />
           </svg>
         </button>
@@ -71,24 +71,19 @@ exports[`IconCard renders snapshot 1`] = `
             class="adaptiveImagePicture"
           >
             <img
-              alt="mockIcon"
+              alt="Mobile payment"
               data-isfree="notfree"
-              data-testid="icon123"
+              data-testid="5d6a87bdef38414cb068e989"
               height="48"
               loading="lazy"
-              src="undefined/png/outline/48-origin-size/48/1%20sampleName/mockIcon.png"
-              srcset="undefined/png/outline/48-origin-size/96/1%20sampleName/mockIcon.png 2x"
+              src="undefined/png/line/60-origin-size/48/7%20Financial/Mobile%20payment.png"
+              srcset="undefined/png/line/60-origin-size/96/7%20Financial/Mobile%20payment.png 2x"
               width="48"
             />
           </picture>
         </div>
       </div>
     </div>
-    <span
-      class="title"
-    >
-      mockIcon
-    </span>
   </div>
 </DocumentFragment>
 `;

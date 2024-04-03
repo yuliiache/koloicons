@@ -4,7 +4,7 @@ import {FC, MouseEventHandler, ReactElement} from 'react';
 import {TooltipPlacement} from '../Tooltip/constants';
 import Tooltip from '../Tooltip/Tooltip';
 import styles from './ButtonIcon.module.scss';
-import {BUTTON_ICON_TEST_ID, ButtonIconType} from './constants';
+import {BUTTON_ICON_TEST_ID, ButtonIconType, ButtonSize} from './constants';
 
 interface ButtonIconProps {
   children: ReactElement;
@@ -13,10 +13,19 @@ interface ButtonIconProps {
   tooltipLabel?: string;
   tooltipPlacement?: TooltipPlacement;
   onClick?: MouseEventHandler<HTMLElement>;
+  size?: ButtonSize;
 }
 
-const ButtonIcon: FC<ButtonIconProps> = ({children, type, isDisabled, tooltipLabel, tooltipPlacement, onClick}) => {
-  const buttonIconClasses = classnames(styles.button, styles[`button-${type}`]);
+const ButtonIcon: FC<ButtonIconProps> = ({
+  children,
+  type,
+  isDisabled,
+  tooltipLabel,
+  tooltipPlacement,
+  onClick,
+  size = ButtonSize.BIG,
+}) => {
+  const buttonIconClasses = classnames(styles.button, styles[`button-${type}`], styles[`button-${size}`]);
 
   if (tooltipLabel) {
     return (

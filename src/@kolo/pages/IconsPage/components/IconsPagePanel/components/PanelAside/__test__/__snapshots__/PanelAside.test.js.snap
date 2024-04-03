@@ -51,7 +51,7 @@ exports[`PanelAside renders open aside correctly and matches snapshot 1`] = `
       </p>
     </div>
     <button
-      class="button button-square"
+      class="button button-square button-big"
       data-testid="buttonIconComponent"
     >
       <svg

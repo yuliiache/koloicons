@@ -18,7 +18,7 @@ exports[`Search component should render snapshot successfully 1`] = `
       data-testid="searchButtonComponent"
     >
       <button
-        class="button button-square"
+        class="button button-square button-big"
         data-testid="buttonIconComponent"
       >
         <svg
@@ -67,7 +67,7 @@ exports[`Search component should render snapshot with the cancel button successf
       data-testid="searchButtonComponent"
     >
       <button
-        class="button button-square"
+        class="button button-square button-big"
         data-testid="buttonIconComponent"
       >
         <svg
@@ -99,7 +99,7 @@ exports[`Search component should render snapshot with the cancel button successf
       data-testid="cancelButtonComponent"
     >
       <button
-        class="button button-square"
+        class="button button-square button-big"
         data-testid="buttonIconComponent"
       >
         <svg

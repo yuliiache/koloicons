@@ -52,6 +52,7 @@ const Icon: Icon = {
   [IconAppName.SEARCH_PANEL_SMALL]: makeIcon(IconInstance.Search, {width: '20', height: '20', viewBox: '0 0 24 24'}),
   [IconAppName.SEARCH_SPINNER]: makeIcon(IconInstance.SearchSpinner, {width: '24', height: '24', viewBox: '0 0 24 24'}),
   [IconAppName.TWITTER]: makeIcon(IconInstance.Twitter, {width: '20', height: '20', viewBox: '2 2 20 20'}),
+  [IconAppName.UP]: makeIcon(IconInstance.Up, {width: '16', height: '16', viewBox: '0 0 16 16'}),
   [IconAppName.UNLOCK]: makeIcon(IconInstance.Unlock, {width: '50', height: '50', viewBox: '0 0 48 48'}),
   [IconAppName.USER]: makeIcon(IconInstance.User, {width: '16', height: '16', viewBox: '0 0 16 16'}),
 };

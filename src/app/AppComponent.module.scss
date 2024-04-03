@@ -1,3 +1,7 @@
+iframe#webpack-dev-server-client-overlay {
+  display: none !important;
+}
+
 .loadingContainer {
   height: calc(100vh - 144px);
 }

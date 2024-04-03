@@ -53,7 +53,7 @@ exports[`IconsByQuery Component renders without crashing and matches snapshot 1`
                 class="buttons"
               >
                 <button
-                  class="button button-round"
+                  class="button button-round button-big"
                   data-testid="buttonIconComponent"
                 >
                   <svg

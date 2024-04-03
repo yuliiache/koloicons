@@ -2,10 +2,10 @@ import React from 'react';
 import {fireEvent, render, screen} from '@testing-library/react';
 
 import ColorPicker from '../ColorPicker';
-import {COLORPICKER_SIZE, COLORPICKER_TEST_ID} from '../constants';
+import {COLORPICKER_TEST_ID,ColorPickerSize} from '../constants';
 
 describe('ColorPicker component', () => {
-  Object.values(COLORPICKER_SIZE).forEach((size) => {
+  Object.values(ColorPickerSize).forEach((size) => {
     const onChange = jest.fn();
     const props = {
       size,

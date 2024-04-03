@@ -5,7 +5,8 @@ import {FC} from 'react';
 import DownloadOptions from '../DownloadOptions/DownloadOptions';
 import DownloadModalIcon from './components/DownloadModalIcon/DownloadModalIcon';
 import styles from './DownloadModal.module.scss';
-import {ModalIconProps} from './types/DownloadModalProps';
+import { ModalIconProps } from './types/DownloadModalProps';
+
 
 const DownloadModal: FC<ModalIconProps> = ({iconId, isFree}) => {
   const {isPro} = useAppSelector(userSelector);
