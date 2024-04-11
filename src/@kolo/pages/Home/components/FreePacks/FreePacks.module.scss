@@ -1,0 +1,66 @@
+@import "@kolo/design";
+
+.free-packs {
+  background-color: $BrightBG;
+
+  &__wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 80px 16px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: normal;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 0 0 16px;
+    text-align: center;
+    color: #292c33;
+
+    @include mobile-screen {
+      font-size: 48px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 0 0 24px;
+    text-align: center;
+    color: #525866;
+
+    @include mobile-screen {
+      max-width: 100%;
+    }
+
+    @include tablet-screen {
+      font-size: 24px;
+      line-height: 1.4;
+      max-width: 480px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    @include tablet-screen {
+      flex-direction: row;
+      margin-bottom: 24px;
+    }
+  }
+}

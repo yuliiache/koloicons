@@ -2,6 +2,8 @@ import React from 'react';
 import PricingFAQs from '@kolo/pages/PricingPage/components/PricingFAQs/PricingFAQs';
 import HelpLinks from '@kolo/uiKit/HelpLinks';
 
+import useHome from '../Home/useHome';
+
 import AuthAction from './components/AuthAction/AuthAction';
 import ButtonIconWrap from './components/ButtonIconWrap/ButtonIconWrap';
 import {ButtonLinkWrap} from './components/ButtonLink/ButtonLinkWrap';
@@ -10,6 +12,7 @@ import Checkboxes from './components/Checkboxes/Checkboxes';
 import ColorPickerWrap from './components/ColorPickerWrap/ColorPickerWrap';
 import DownloadOptionsWrapper from './components/DownloadOptionsWrapper/DownloadOptionsWrapper';
 import FormatsWrap from './components/FormatsWrap/FormatsWrap';
+import FreePacksWrap from './components/FreePacksWrap/FreePacksWrap';
 import GetCategoriesButton from './components/GetCategoriesButton/GetCategoriesButton';
 import GetFaqsButton from './components/GetFaqsButton/GetFaqsButton';
 import GetFeedbacks from './components/GetFeedbacks/GetFeedBacks';
@@ -40,10 +43,12 @@ import UserMenus from './components/UserMenus/UserMenus';
 import style from './UiKit.module.scss';
 
 const UiKit = () => {
+  useHome();
   return (
     <div>
       <h1>UI-kit</h1>
       <MonthPackWrap />
+      <FreePacksWrap />
       <PricingWrapper />
       <PackItemWrap />
       <Section title="HTTP request section">

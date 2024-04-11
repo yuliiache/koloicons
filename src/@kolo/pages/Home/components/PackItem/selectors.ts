@@ -1,5 +1,5 @@
 import {RootState} from 'app/store';
-import {createSelector,Selector} from 'reselect';
+import {createSelector, Selector} from 'reselect';
 
 import {PACK_ITEM_KEY} from './constatnts';
 import {Pack} from './types/Pack';

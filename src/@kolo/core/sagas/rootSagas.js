@@ -1,5 +1,6 @@
 import {refreshJWTandLoginUser} from '@kolo/framework/resourcesProvider/sagas/refreshJwt';
 import {watcherSagaFeedbacks} from '@kolo/pages/Home/components/Feedbacks/sagas/watcherSagaFeedbacks';
+import {getFreePacksWatcher} from '@kolo/pages/Home/components/FreePacks/sagas/getFreePacks';
 import {getMonthPackWathcer} from '@kolo/pages/Home/components/MonthPack/sagas/getMonthPack';
 import {getItemPacksWatcher} from '@kolo/pages/Home/components/PackItem/sagas/getPackItem';
 import {getCategoriesWatcher} from '@kolo/pages/IconsPage/components/Categories/sagas/getCategories';
@@ -26,6 +27,7 @@ export function* rootSagas() {
       loginUserWatcher,
       logoutUserWatcher,
       getItemPacksWatcher,
+      getFreePacksWatcher,
       registerUserWatcher,
       refreshJWTandLoginUser,
       getCategoriesWatcher,
