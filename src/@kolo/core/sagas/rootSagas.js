@@ -1,6 +1,6 @@
 import {refreshJWTandLoginUser} from '@kolo/framework/resourcesProvider/sagas/refreshJwt';
 import {watcherSagaFeedbacks} from '@kolo/pages/Home/components/Feedbacks/sagas/watcherSagaFeedbacks';
-import {getMonthPack} from '@kolo/pages/Home/components/MonthPack/sagas/getMonthPack';
+import {getMonthPackWathcer} from '@kolo/pages/Home/components/MonthPack/sagas/getMonthPack';
 import {getItemPacksWatcher} from '@kolo/pages/Home/components/PackItem/sagas/getPackItem';
 import {getCategoriesWatcher} from '@kolo/pages/IconsPage/components/Categories/sagas/getCategories';
 import {watcherSagaIcon} from '@kolo/pages/IconsPage/components/DownloadModal/sagas/watcherSagaIcon';
@@ -19,7 +19,7 @@ import {
 export function* rootSagas() {
   yield all(
     [
-      getMonthPack,
+      getMonthPackWathcer,
       watcherSagaFeedbacks,
       getPricingFAQsWatcher,
       watcherSagaIcon,

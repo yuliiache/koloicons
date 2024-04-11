@@ -1,16 +1,13 @@
-import React from 'react';
-import {getCurrentMonth} from '@kolo/services/helpers/getCurrentMonth';
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
-
-import useMonthPack from './useMonthPack';
-
 import './MonthPack.scss';
 
-// remove the mocked component
-const PackItem = () => <div>PackItem</div>;
+import {getCurrentMonth} from '@kolo/services/helpers/getCurrentMonth';
+import classNames from 'classnames';
+import {FC} from 'react';
 
-export const MonthPack = () => {
+import PackItem from '../PackItem/PackItem';
+import useMonthPack from './useMonthPack';
+
+export const MonthPack: FC = () => {
   const {handlePackItemClick, monthPack} = useMonthPack();
 
   return (
@@ -27,7 +24,11 @@ export const MonthPack = () => {
             monthPack.map((packItem) => (
               <PackItem
                 key={packItem.id}
-                pack={packItem}
+                categoryId={packItem.id}
+                icons={packItem.icons}
+                iconsAmount={packItem.number}
+                isFree={packItem.isFree}
+                title={packItem.name}
                 onClick={() => handlePackItemClick(packItem.id)}
               />
             ))}
@@ -35,17 +36,4 @@ export const MonthPack = () => {
       </div>
     </section>
   );
-};
-
-MonthPack.propTypes = {
-  monthPack: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      number: PropTypes.number,
-      isFree: PropTypes.bool,
-      icons: PropTypes.arrayOf(PropTypes.object),
-    })
-  ),
-  getMonthPackStart: PropTypes.func,
 };

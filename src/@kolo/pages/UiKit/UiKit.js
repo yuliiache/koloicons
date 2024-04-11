@@ -25,6 +25,7 @@ import LinksGroup from './components/LinksGroup/LinksGroup';
 import Logos from './components/Logos';
 import LogoutButton from './components/LogoutButton/LogoutButton';
 import PortalWrap from './components/Modal/PortalWrap';
+import MonthPackWrap from './components/MonthPackWrap/MonthPackWrap';
 import PackItemWrap from './components/PackItemWrap/PackItemWrap';
 import PricingWrapper from './components/Pricing/PricingWrapper';
 import PricingCardWrap from './components/PricingCardWrap/PricingCardWrap';
@@ -42,6 +43,7 @@ const UiKit = () => {
   return (
     <div>
       <h1>UI-kit</h1>
+      <MonthPackWrap />
       <PricingWrapper />
       <PackItemWrap />
       <Section title="HTTP request section">
