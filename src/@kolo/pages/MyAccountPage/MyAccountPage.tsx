@@ -28,7 +28,7 @@ const MyAccountPage: React.FC = () => {
   };
 
   return (
-    <>
+    <main>
       <section className={styles.header}>
         <div className={styles.headerContainer}>
           <div className={styles.circle}>{getFirstLetter(testUser.firstName)}</div>
@@ -57,7 +57,7 @@ const MyAccountPage: React.FC = () => {
           label={'Email'}
         />
       </div>
-    </>
+    </main>
   );
 };
 

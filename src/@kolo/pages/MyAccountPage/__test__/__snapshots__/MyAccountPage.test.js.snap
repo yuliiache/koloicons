@@ -2,71 +2,73 @@
 
 exports[`MyAccountPage Component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
-  <section
-    class="header"
-  >
-    <div
-      class="headerContainer"
+  <main>
+    <section
+      class="header"
     >
       <div
-        class="circle"
+        class="headerContainer"
       >
-        J
+        <div
+          class="circle"
+        >
+          J
+        </div>
+        <section
+          class="userInfo"
+        >
+          <h1>
+            John
+          </h1>
+          <p>
+            john.doe@mail.com
+          </p>
+        </section>
       </div>
-      <section
-        class="userInfo"
-      >
-        <h1>
-          John
-        </h1>
-        <p>
-          john.doe@mail.com
-        </p>
-      </section>
-    </div>
-  </section>
-  <div
-    class="inputGroup"
-  >
+    </section>
     <div
       class="inputGroup"
     >
-      <label
-        class="inputGroupLabel"
-        for="name"
+      <div
+        class="inputGroup"
       >
-        Real Name
-      </label>
-      <span
-        class="inputGroupHint"
+        <label
+          class="inputGroupLabel"
+          for="name"
+        >
+          Real Name
+        </label>
+        <span
+          class="inputGroupHint"
+        >
+          First name & Last name
+        </span>
+        <input
+          class="inputGroupInput"
+          disabled=""
+          id="name"
+          type="text"
+          value="John Doe"
+        />
+      </div>
+      <div
+        class="inputGroup"
       >
-        First name & Last name
-      </span>
-      <input
-        class="inputGroupInput"
-        disabled=""
-        id="name"
-        type="text"
-        value="John Doe"
-      />
+        <label
+          class="inputGroupLabel"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputGroupInput"
+          disabled=""
+          id="email"
+          type="email"
+          value="john.doe@mail.com"
+        />
+      </div>
     </div>
-    <div
-      class="inputGroup"
-    >
-      <label
-        class="inputGroupLabel"
-        for="email"
-      >
-        Email
-      </label>
-      <input
-        class="inputGroupInput"
-        disabled=""
-        id="email"
-        type="email"
-        value="john.doe@mail.com"
-      />
-    </div>
-  </div>
+  </main>
 </DocumentFragment>
 `;
