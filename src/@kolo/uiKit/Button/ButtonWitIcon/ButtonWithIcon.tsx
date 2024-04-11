@@ -27,7 +27,6 @@ const ButtonWithIcon: FC<ButtonWithIconProps> = ({
   color = ButtonColor.PRIMARY,
   size = ButtonSize.SMALL,
   type = ButtonType.BUTTON,
-  ...rest
 }) => {
   const buttonClasses = classnames(
     styles.button,
@@ -54,7 +53,6 @@ const ButtonWithIcon: FC<ButtonWithIconProps> = ({
       className={buttonClasses}
       onClick={onClick}
       disabled={isDisabled}
-      {...rest}
     >
       <div className={contentClasses}>
         {icon && <span>{icon}</span>}

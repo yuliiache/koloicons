@@ -1,0 +1,30 @@
+@import "@kolo/design";
+
+.blockTitle {
+  text-align: center;
+
+  &:not(:first-of-type) {
+    margin-top: 30px;
+  }
+}
+
+.tooltipList {
+  width: 450px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.tooltipButton {
+  width: 130px;
+  padding: 16px;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: $IconInvert;
+  background-color: $IconHoverColor;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}

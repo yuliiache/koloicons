@@ -2,7 +2,7 @@ import {useSelector} from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import {KeyCode} from '@kolo/constants/constants';
 import {SEARCH_BUTTON_WRAP_TEST_ID, SEARCH_INPUT_TEST_ID} from '@kolo/uiKit/Search/constants';
-import {cleanup, fireEvent, render, screen} from '@testing-library/react';
+import {act, cleanup, fireEvent, render, screen} from '@testing-library/react';
 import {AppRoute} from 'constants/AppRoute';
 
 import Heading from '../Heading';
@@ -40,9 +40,11 @@ describe('Heading component', () => {
     const searchButtonWrap = screen.getByTestId(SEARCH_BUTTON_WRAP_TEST_ID);
     const searchButton = searchButtonWrap.querySelector('button');
 
-    fireEvent.change(input, {target: {value: mockInputValue}});
-    fireEvent.click(searchButton);
-    fireEvent.keyDown(input, {key: KeyCode.ENTER, code: KeyCode.ENTER});
+    act(() => {
+      fireEvent.change(input, {target: {value: mockInputValue}});
+      fireEvent.click(searchButton);
+      fireEvent.keyDown(input, {key: KeyCode.ENTER, code: KeyCode.ENTER});
+    });
 
     expect(window.location.pathname + window.location.search).toEqual(mockPathname + mockSearchQuery);
   });

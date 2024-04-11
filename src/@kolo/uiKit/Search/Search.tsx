@@ -4,7 +4,6 @@ import {FC} from 'react';
 import ButtonIcon from '../ButtonIcon/ButtonIcon';
 import {ButtonIconType} from '../ButtonIcon/constants';
 import Icon from '../Icons';
-import {TooltipPlacement} from '../Tooltip/constants';
 import {CANCEL_BUTTON_WRAP_TEST_ID, SEARCH_BUTTON_WRAP_TEST_ID, SEARCH_INPUT_TEST_ID} from './constants';
 import styles from './Search.module.scss';
 import useSearch from './useSearch';
@@ -53,9 +52,9 @@ const Search: FC<Props> = ({placeholder, onSearch, isFocused = false, isRounded 
           data-testid={CANCEL_BUTTON_WRAP_TEST_ID}
         >
           <ButtonIcon
+            id={'search-clear'}
             type={ButtonIconType.SQUARE}
             tooltipLabel="Clear"
-            tooltipPlacement={TooltipPlacement.LEFT}
             onClick={onClearBtnClick}
           >
             <Icon.Cancel className={styles.iconCancel} />

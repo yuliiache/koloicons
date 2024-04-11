@@ -4,6 +4,8 @@ import Icon from '@kolo/uiKit/Icons';
 import Tooltip from '@kolo/uiKit/Tooltip/Tooltip';
 import React from 'react';
 
+import styles from './PNGDownloadButton.module.scss';
+
 interface PNGButtonProps {
   isAuthenticated: boolean;
   selectedPNGSize: string;
@@ -17,8 +19,11 @@ const PNGDownloadButton: React.FC<PNGButtonProps> = ({isAuthenticated, selectedP
   const tooltipLabel = isAuthenticated ? 'Download' : 'Sign in to download PNG';
 
   return (
-    <Tooltip label={tooltipLabel}>
-      <div>
+    <Tooltip
+      id="png-download"
+      label={tooltipLabel}
+    >
+      <div className={styles.buttonWrapper}>
         <ButtonWithIcon
           isDisabled={!isAuthenticated}
           onClick={handleDownload}

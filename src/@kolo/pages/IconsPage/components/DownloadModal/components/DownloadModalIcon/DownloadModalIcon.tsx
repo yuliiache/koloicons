@@ -13,7 +13,7 @@ import {FC} from 'react';
 import {useLocation, useNavigate} from 'react-router';
 
 import useIcon from '../../hooks/useIcon';
-import { ModalIconProps } from '../../types/DownloadModalProps';
+import {ModalIconProps} from '../../types/DownloadModalProps';
 import TagList from '../TagList/TagList';
 import styles from './DownloadModalIcon.module.scss';
 
@@ -39,7 +39,7 @@ const DownloadModalIcon: FC<ModalIconProps> = ({iconId, isFree}) => {
         <div className={styles.modalColorPicker}>
           <ColorPicker onChange={() => null} />
         </div>
-        {isAuthenticated && <IconCardButton />}
+        {isAuthenticated && <IconCardButton iconId={iconId} />}
       </div>
       <TagList tags={icon.tags} />
       <div className={styles.modalIconImage}>

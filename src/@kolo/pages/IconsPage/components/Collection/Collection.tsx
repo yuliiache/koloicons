@@ -13,7 +13,6 @@ import styles from './Collection.module.scss';
 import CollectionIconCard from './components/CollectionIconCard';
 import {useScrollPositionTrigger} from './hooks/useScrollPositionTrigger';
 
-
 const iconData = {
   //TODO: Delete dummy data after getting data from store
   category: {
@@ -73,6 +72,7 @@ const Collection: FC = () => {
         </>
       )}
       <Tooltip
+        id={tooltipLabel}
         label={tooltipLabel}
         placement={TooltipPlacement.TOP}
       >

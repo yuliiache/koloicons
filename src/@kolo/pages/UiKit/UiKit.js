@@ -37,7 +37,7 @@ import SearchWrap from './components/SearchWrap/SearchWrap';
 import {Section} from './components/Section/Section';
 import SignInMessageWrap from './components/SignInMessage/SignInMessageWrap';
 import SocialLinksGroup from './components/SocialLinks/SocialLinksGroup';
-import Tooltips from './components/Tooltips/Tooltips';
+import TooltipGroup from './components/TooltipGroup/TooltipGroup';
 import UserMenus from './components/UserMenus/UserMenus';
 
 import style from './UiKit.module.scss';
@@ -68,6 +68,7 @@ const UiKit = () => {
       <PricingFAQs />
       <IconCardWrapper />
       <SearchWrap />
+      <TooltipGroup />
       <SocialLinksGroup />
       <UserMenus />
       <InputGroup />
@@ -81,9 +82,6 @@ const UiKit = () => {
       <PricingCardWrap />
       <Section title="Link">
         <LinksGroup />
-      </Section>
-      <Section title="Tooltip">
-        <Tooltips />
       </Section>
       <Section title="RadioGroupButtons">
         <RadioGroupWrapper />

@@ -1,0 +1,20 @@
+@import "src/@kolo/design";
+
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  outline: none;
+  border: none;
+
+  & .tooltip {
+    font-size: 14px;
+    line-height: 1.43;
+    padding: 8px;
+    border-radius: 6px;
+    color: $WhiteBG;
+    z-index: 1;
+    background-color: $TooltipBG;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
+  }
+}

@@ -31,8 +31,6 @@ const Button: FC<ButtonProps> = ({
   size = ButtonSize.SMALL,
   type = ButtonType.BUTTON,
   placement = ButtonContentPlacement.CENTER,
-
-  ...rest
 }) => {
   const buttonClasses = classnames(
     styles.button,
@@ -52,7 +50,6 @@ const Button: FC<ButtonProps> = ({
       className={buttonClasses}
       onClick={onClick}
       disabled={isDisabled}
-      {...rest}
     >
       <span data-testid={BUTTON_TEXT_TEST_ID}>{text}</span>
       {children && <span>{children}</span>}

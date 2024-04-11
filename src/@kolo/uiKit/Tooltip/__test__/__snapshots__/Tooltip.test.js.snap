@@ -1,84 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip should render snapshot successfully with label 1`] = `
-[
-  <button>
-    left
-  </button>,
-  <div
-    class="rc-tooltip-inner"
-    role="tooltip"
-    style="padding: 8px 10px; color: rgb(255, 255, 255); text-align: left; text-decoration: none; background-color: rgb(55, 55, 55); border-radius: 6px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.17); min-height: 34px;"
-  >
-    left
-  </div>,
-]
-`;
-
-exports[`Tooltip should render snapshot successfully with label 2`] = `
-[
-  <button>
-    right
-  </button>,
-  <div
-    class="rc-tooltip-inner"
-    role="tooltip"
-    style="padding: 8px 10px; color: rgb(255, 255, 255); text-align: left; text-decoration: none; background-color: rgb(55, 55, 55); border-radius: 6px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.17); min-height: 34px;"
-  >
-    right
-  </div>,
-]
-`;
-
-exports[`Tooltip should render snapshot successfully with label 3`] = `
-[
-  <button>
-    top
-  </button>,
-  <div
-    class="rc-tooltip-inner"
-    role="tooltip"
-    style="padding: 8px 10px; color: rgb(255, 255, 255); text-align: left; text-decoration: none; background-color: rgb(55, 55, 55); border-radius: 6px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.17); min-height: 34px;"
-  >
-    top
-  </div>,
-]
-`;
-
-exports[`Tooltip should render snapshot successfully with label 4`] = `
-[
-  <button>
-    bottom
-  </button>,
-  <div
-    class="rc-tooltip-inner"
-    role="tooltip"
-    style="padding: 8px 10px; color: rgb(255, 255, 255); text-align: left; text-decoration: none; background-color: rgb(55, 55, 55); border-radius: 6px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.17); min-height: 34px;"
-  >
-    bottom
-  </div>,
-]
-`;
-
-exports[`Tooltip should render snapshot successfully with label 5`] = `
-[
-  <button>
-    map
-  </button>,
-  <div
-    class="rc-tooltip-inner"
-    role="tooltip"
-    style="padding: 8px 10px; color: rgb(255, 255, 255); text-align: left; text-decoration: none; background-color: rgb(55, 55, 55); border-radius: 6px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.17); min-height: 34px;"
-  >
-    map
-  </div>,
-]
-`;
-
-exports[`Tooltip should render snapshot successfully without label 1`] = `
+exports[`Tooltip should render snapshot successfully for only child element without tooltip 1`] = `
 <DocumentFragment>
   <button>
-    left
+    Test button
   </button>
 </DocumentFragment>
+`;
+
+exports[`Tooltip should render snapshot successfully with label 1`] = `
+<div>
+  <div
+    class="tooltipWrapper"
+    data-testid="tooltipTestId"
+    id="tooltip-1"
+  >
+    <button>
+      Test button
+    </button>
+  </div>
+</div>
 `;

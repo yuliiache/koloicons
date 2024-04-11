@@ -1,37 +1,50 @@
-import 'rc-tooltip/assets/bootstrap_white.css';
+import {FC, ReactNode} from 'react';
+import {Tooltip as ReactTooltip} from 'react-tooltip';
 
-import RcTooltip from 'rc-tooltip';
-import {FC, ReactElement} from 'react';
+import {CLOSE_ACTION_TRIGGER, OPEN_ACTION_TRIGGER, TOOLTIP_TEST_ID, TooltipPlacement} from './constants';
+import {createEventObject} from './helpers/createEventObject';
+import styles from './Tooltip.module.scss';
 
-import {TooltipPlacement, TriggerAction} from './constants';
-import {overlayInnerStyle} from './styles';
-
-interface TooltipProps {
-  label: string;
-  children: ReactElement;
+interface Props {
+  children: ReactNode;
+  id?: string;
+  label?: string;
+  openTrigger?: string;
+  closeTrigger?: string;
   placement?: TooltipPlacement;
-  trigger?: TriggerAction;
 }
 
-const Tooltip: FC<TooltipProps> = ({
+// id and label are required for rendering the Tooltip
+const Tooltip: FC<Props> = ({
+  id,
   label,
   children,
+  openTrigger = OPEN_ACTION_TRIGGER,
+  closeTrigger = CLOSE_ACTION_TRIGGER,
   placement = TooltipPlacement.LEFT,
-  trigger = TriggerAction.HOVER,
 }) => {
-  if (!label) {
-    return children;
+  const tooltipId = `tooltip-${id}`;
+
+  if (!label && !id) {
+    return <>{children}</>;
   }
 
   return (
-    <RcTooltip
-      placement={placement}
-      overlay={label}
-      trigger={trigger}
-      overlayInnerStyle={{...overlayInnerStyle}}
+    <div
+      data-testid={TOOLTIP_TEST_ID}
+      id={tooltipId}
+      className={styles.tooltipWrapper}
     >
       {children}
-    </RcTooltip>
+      <ReactTooltip
+        anchorSelect={`#${tooltipId}`}
+        className={styles.tooltip}
+        content={label}
+        place={placement}
+        openEvents={createEventObject(openTrigger)}
+        closeEvents={createEventObject(closeTrigger)}
+      />
+    </div>
   );
 };
 

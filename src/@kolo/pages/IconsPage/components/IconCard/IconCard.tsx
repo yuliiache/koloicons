@@ -35,7 +35,7 @@ const IconCard: React.FC<IconCardProps> = ({icon, categoryNumber, categoryName, 
             className={buttons}
             onClick={modalPropagationHandle}
           >
-            <IconCardButton />
+            <IconCardButton iconId={iconId} />
           </div>
           <div className={imageWrapper}>
             <AdaptiveImage

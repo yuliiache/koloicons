@@ -9,6 +9,7 @@ import {BUTTON_ICON_TEST_ID, ButtonIconType, ButtonSize} from './constants';
 interface ButtonIconProps {
   children: ReactElement;
   type: ButtonIconType;
+  id?: string;
   isDisabled?: boolean;
   tooltipLabel?: string;
   tooltipPlacement?: TooltipPlacement;
@@ -17,6 +18,7 @@ interface ButtonIconProps {
 }
 
 const ButtonIcon: FC<ButtonIconProps> = ({
+  id,
   children,
   type,
   isDisabled,
@@ -26,34 +28,23 @@ const ButtonIcon: FC<ButtonIconProps> = ({
   size = ButtonSize.BIG,
 }) => {
   const buttonIconClasses = classnames(styles.button, styles[`button-${type}`], styles[`button-${size}`]);
-
-  if (tooltipLabel) {
-    return (
-      <Tooltip
-        label={tooltipLabel}
-        placement={tooltipPlacement}
-      >
-        <button
-          data-testid={BUTTON_ICON_TEST_ID}
-          className={buttonIconClasses}
-          onClick={onClick}
-          disabled={isDisabled}
-        >
-          {children}
-        </button>
-      </Tooltip>
-    );
-  }
+  const tooltipId = id ? id : tooltipLabel;
 
   return (
-    <button
-      data-testid={BUTTON_ICON_TEST_ID}
-      onClick={onClick}
-      disabled={isDisabled}
-      className={buttonIconClasses}
+    <Tooltip
+      id={tooltipId}
+      label={tooltipLabel}
+      placement={tooltipPlacement}
     >
-      {children}
-    </button>
+      <button
+        data-testid={BUTTON_ICON_TEST_ID}
+        className={buttonIconClasses}
+        onClick={onClick}
+        disabled={isDisabled}
+      >
+        {children}
+      </button>
+    </Tooltip>
   );
 };
 export default ButtonIcon;

@@ -1,44 +1,36 @@
 import React from 'react';
-import {cleanup, fireEvent, render, screen} from '@testing-library/react';
+import {cleanup, render, screen} from '@testing-library/react';
 
-import {TooltipPlacement, TriggerAction} from '../constants';
 import Tooltip from '../Tooltip';
 
 describe('Tooltip', () => {
   afterEach(cleanup);
 
-  it('should render snapshot successfully with label', () => {
-    Object.values(TooltipPlacement).forEach((placement) => {
-      const {getByText} = render(
-        <Tooltip
-          placement={placement}
-          trigger={TriggerAction.HOVER}
-          label={placement}
-        >
-          {<button>{placement}</button>}
-        </Tooltip>
-      );
+  const label = 'Tooltip';
+  const buttonText = 'Test button';
 
-      const triggerElement = getByText(placement);
-
-      fireEvent.mouseEnter(triggerElement);
-
-      const tooltip = screen.queryAllByText(placement);
-
-      expect(tooltip).toMatchSnapshot();
-    });
-  });
-
-  it('should render snapshot successfully without label', () => {
-    const {asFragment} = render(
+  it(`should render snapshot successfully with label`, () => {
+    const {container} = render(
       <Tooltip
-        placement={TooltipPlacement.LEFT}
-        trigger={TriggerAction.HOVER}
+        id="1"
+        label={label}
       >
-        {<button>{TooltipPlacement.LEFT}</button>}
+        <button>{buttonText}</button>
       </Tooltip>
     );
 
+    const triggerElement = screen.getByText(buttonText);
+
+    expect(triggerElement).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render snapshot successfully for only child element without tooltip', () => {
+    const {asFragment} = render(<Tooltip>{<button>{buttonText}</button>}</Tooltip>);
+
+    const triggerElement = screen.getByText(buttonText);
+
+    expect(triggerElement).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 });

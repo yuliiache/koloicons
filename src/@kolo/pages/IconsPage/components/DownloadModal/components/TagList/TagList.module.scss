@@ -6,17 +6,21 @@
   font-size: 14px;
   line-height: 1.43;
   color: $GreyColor;
-  text-transform: capitalize;
+
   margin: 12px 0 24px 0;
-  cursor: pointer;
   outline: none;
   width: 100%;
   gap: 3px;
   padding: 0;
 }
 
-.tagItem {
+.tagLink {
   display: flex;
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  transition: color $transition-main ease-in-out;
 
   &:hover {
     color: $BlueColor;

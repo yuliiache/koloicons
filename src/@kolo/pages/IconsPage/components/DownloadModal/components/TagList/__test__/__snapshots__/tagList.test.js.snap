@@ -5,29 +5,57 @@ exports[`TagList component renders correctly and matches snapshot 1`] = `
   <ul
     class="iconTags"
   >
-    <li
-      class="tagItem"
-      role="link"
-    >
-      #Accounting,
+    <li>
+      <div
+        class="tooltipWrapper"
+        data-testid="tooltipTestId"
+        id="tooltip-Accounting"
+      >
+        <a
+          class="tagLink"
+        >
+          #Accounting,
+        </a>
+      </div>
     </li>
-    <li
-      class="tagItem"
-      role="link"
-    >
-      #Accountant,
+    <li>
+      <div
+        class="tooltipWrapper"
+        data-testid="tooltipTestId"
+        id="tooltip-Accountant"
+      >
+        <a
+          class="tagLink"
+        >
+          #Accountant,
+        </a>
+      </div>
     </li>
-    <li
-      class="tagItem"
-      role="link"
-    >
-      #Calculate,
+    <li>
+      <div
+        class="tooltipWrapper"
+        data-testid="tooltipTestId"
+        id="tooltip-Calculate"
+      >
+        <a
+          class="tagLink"
+        >
+          #Calculate,
+        </a>
+      </div>
     </li>
-    <li
-      class="tagItem"
-      role="link"
-    >
-      #Calculation
+    <li>
+      <div
+        class="tooltipWrapper"
+        data-testid="tooltipTestId"
+        id="tooltip-Calculation"
+      >
+        <a
+          class="tagLink"
+        >
+          #Calculation
+        </a>
+      </div>
     </li>
   </ul>
 </DocumentFragment>

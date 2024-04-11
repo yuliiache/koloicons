@@ -28,17 +28,18 @@ export const TagList = ({tags}: {tags?: string[]}) => {
     <ul className={styles.iconTags}>
       {tags &&
         uniqueTags.map((tag, index) => (
-          <Tooltip
-            label="Search by tag"
-            key={tag}
-            placement={TooltipPlacement.BOTTOM}
-          >
-            <li
-              className={styles.tagItem}
-              onClick={() => tagQueryHandle(tag)}
-              role="link"
-            >{`#${tag}${index !== lastTag ? ',' : ''}`}</li>
-          </Tooltip>
+          <li key={tag}>
+            <Tooltip
+              id={tag}
+              label="Search by tag"
+              placement={TooltipPlacement.BOTTOM}
+            >
+              <a
+                className={styles.tagLink}
+                onClick={() => tagQueryHandle(tag)}
+              >{`#${tag}${index !== lastTag ? ',' : ''}`}</a>
+            </Tooltip>
+          </li>
         ))}
     </ul>
   );

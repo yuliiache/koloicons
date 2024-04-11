@@ -21,6 +21,7 @@ const ButtonIconWrap: FC = () => {
       <ButtonIcon
         type={ButtonIconType.ROUNDED_SQUARE}
         tooltipLabel="Add"
+        id="test"
       >
         <Icon.Add />
       </ButtonIcon>
@@ -31,6 +32,7 @@ const ButtonIconWrap: FC = () => {
         type={ButtonIconType.ROUND}
         tooltipLabel="Add"
         tooltipPlacement={TooltipPlacement.TOP}
+        id="test2"
       >
         <Icon.Add />
       </ButtonIcon>
