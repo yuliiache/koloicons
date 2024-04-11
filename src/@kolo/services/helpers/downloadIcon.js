@@ -1,13 +1,12 @@
 import {toast} from 'react-toastify';
-import {DEFAULT_ICON_COLOR} from '@kolo/constants';
+import {DEFAULT_ICON_COLOR} from '@kolo/constants/constants';
 import {getIconFile} from '@kolo/facade/getIconFile/getIconFile';
 import {getIconsFiles} from '@kolo/facade/getIconFile/getIconsFiles';
 import {getIconsFilesByCategory} from '@kolo/facade/getIconFile/getIconsFilesByCategory';
+import {logger} from '@kolo/services/logger/logger';
 import downloadjs from 'downloadjs';
 
-import {logger} from '../logger';
-
-const LOADING_STOP_DELAY = 2500;
+import {LOADING_STOP_DELAY} from './constants';
 
 const downloadSingleFile = (res, {iconName, format = 'png'}) => {
   const fileName = `${iconName}.${format}`;
@@ -15,7 +14,10 @@ const downloadSingleFile = (res, {iconName, format = 'png'}) => {
   downloadjs(res.data, fileName, contentType);
 };
 
-const downloadFiles = (res) => downloadjs(res.data, 'koloicons.zip', 'application/zip');
+const downloadFiles = (res) => {
+  console.log(res);
+  return downloadjs(res.data, 'koloicons.zip', 'application/zip');
+};
 
 const showError = (error) => {
   toast.error('Something went wrong during downloading the icon.', {

@@ -13,6 +13,11 @@ export const userSelector: Selector<RootState, UserData> = createSelector(
   (loginUser: LoginState): UserData => loginUser.user || {name: '', lastName: '', email: '', id: '', isPro: false}
 );
 
+export const userIdSelector: Selector<RootState, string | undefined> = createSelector(
+  getUser,
+  (loginUser: LoginState): string | undefined => loginUser.user?.id
+);
+
 export const isAuthenticatedSelector: Selector<RootState, boolean> = createSelector(
   getUser,
   (loginUser: LoginState): boolean => loginUser.isAuthenticated

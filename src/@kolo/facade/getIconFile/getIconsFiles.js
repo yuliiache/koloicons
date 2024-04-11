@@ -1,4 +1,4 @@
-import {httpService} from '@kolo/services';
+import {httpService} from '@kolo/services/httpService/httpService';
 import {ApiEndpoint} from 'constants/ApiEndpoint';
 
 export const getIconsFiles = ({iconsList, userId, format = 'png', pngSize, color}) => {
