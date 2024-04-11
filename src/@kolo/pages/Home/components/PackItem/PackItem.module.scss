@@ -1,0 +1,92 @@
+@import "@kolo/design";
+
+.pack-item {
+  width: 100%;
+  margin-right: 32px;
+  padding: 16px;
+  background-color: $WhiteBG;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(41, 48, 64, 0.1);
+  cursor: pointer;
+  transition: border 0.3s ease;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border: 1px solid rgba(80, 130, 230, 0.5);
+  }
+
+  &:hover &__title {
+    color: $IconHoverColor;
+  }
+
+  @include tablet-screen {
+    margin-right: 0;
+    width: calc((100% - 64px) / 3);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 0 auto 0 0;
+    padding-right: 8px;
+    color: $secFontColor;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease;
+  }
+
+  &__tags-wrapper {
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    justify-content: space-between;
+    max-height: 144px;
+    margin-bottom: 8px;
+    padding: 16px;
+    overflow-y: hidden;
+    background-color: #f5f7fa;
+    border-radius: 4px;
+    column-gap: calc((100% - 288px) / 5);
+    row-gap: 16px;
+    grid-template-rows: repeat(2, 48px);
+    grid-template-columns: repeat(auto-fill, 48px);
+
+    @include mobile-screen {
+      column-gap: calc((100% - 384px) / 7);
+    }
+
+    @include tablet-screen {
+      max-height: 208px;
+      grid-template-rows: repeat(3, 48px);
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+
+  &__icon {
+    fill: $WhiteBG;
+  }
+}

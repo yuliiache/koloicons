@@ -25,6 +25,7 @@ import LinksGroup from './components/LinksGroup/LinksGroup';
 import Logos from './components/Logos';
 import LogoutButton from './components/LogoutButton/LogoutButton';
 import PortalWrap from './components/Modal/PortalWrap';
+import PackItemWrap from './components/PackItemWrap/PackItemWrap';
 import PricingWrapper from './components/Pricing/PricingWrapper';
 import PricingCardWrap from './components/PricingCardWrap/PricingCardWrap';
 import RadioGroupWrapper from './components/RadioGroupWrapper/RadioGroupWrapper';
@@ -42,6 +43,7 @@ const UiKit = () => {
     <div>
       <h1>UI-kit</h1>
       <PricingWrapper />
+      <PackItemWrap />
       <Section title="HTTP request section">
         <div className={style.buttonsWrapper}>
           <GetIconsByCategoryGroup />
