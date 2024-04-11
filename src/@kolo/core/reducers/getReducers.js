@@ -2,8 +2,6 @@ import {FEEDBACKS_KEY} from '@kolo/pages/Home/components/Feedbacks/constants';
 import feedbacksReducer from '@kolo/pages/Home/components/Feedbacks/feedbacksSlice';
 import {MONTH_PACK_KEY} from '@kolo/pages/Home/components/MonthPack/constants';
 import monthPackReducer from '@kolo/pages/Home/components/MonthPack/monthPackSlice';
-import {PACK_ITEM_KEY} from '@kolo/pages/Home/components/PackItem/constatnts';
-import packReducer from '@kolo/pages/Home/components/PackItem/slice/packItemSlice';
 import categoriesReducer, {CATEGORIES_KEY} from '@kolo/pages/IconsPage/components/Categories/slice/categoriesSlice';
 import {ICON_KEY} from '@kolo/pages/IconsPage/components/DownloadModal/constants';
 import iconReducer from '@kolo/pages/IconsPage/components/DownloadModal/iconSlice';
@@ -29,7 +27,6 @@ const reducers = {
   [LOADING_KEY]: loadingReducer,
   [CATEGORIES_KEY]: categoriesReducer,
   [ICON_SEARCH_KEY]: iconSearchReducer,
-  [PACK_ITEM_KEY]: packReducer,
   // ...
 };
 

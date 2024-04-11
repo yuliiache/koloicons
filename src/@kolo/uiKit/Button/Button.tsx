@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import {ButtonHTMLAttributes, FC, MouseEvent, ReactNode} from 'react';
+import {ButtonHTMLAttributes, FC, ReactNode} from 'react';
 
 import styles from './Button.module.scss';
 import {
@@ -14,7 +14,7 @@ import {
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   isDisabled?: boolean;
-  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+  onClick?: () => void;
   color?: ButtonColor;
   size?: ButtonSize;
   type?: ButtonType;
