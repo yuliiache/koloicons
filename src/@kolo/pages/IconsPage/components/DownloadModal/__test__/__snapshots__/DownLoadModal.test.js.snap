@@ -329,7 +329,7 @@ exports[`Download Modal renders correctly and matches snapshot 1`] = `
                 class="signInTitle"
                 data-testid="signInMessageComponent"
               >
-                 Sign In
+                 Download
               </span>
             </p>
             <a

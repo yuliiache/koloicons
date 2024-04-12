@@ -23,7 +23,7 @@ const DownloadOptions: React.FC<DownloadOptionsProps> = ({isAuthenticated, isPro
         isPro={isPro}
         isAuthenticated={isAuthenticated}
       />
-      {!isAuthenticated && <SignInMessage title="Sign In" />}
+      {!isAuthenticated && <SignInMessage title="Download" />}
     </div>
   );
 };
