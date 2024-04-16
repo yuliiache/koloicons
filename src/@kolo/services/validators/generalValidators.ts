@@ -19,3 +19,8 @@ export const testRegex =
   (regex: RegExp, error: string) =>
   (value: string): ValidatorResult =>
     !regex.test(value) ? error : undefined;
+
+export const equalPasswords = (error: string, ...value: string[]): string | undefined => {
+  const [password, confirmPassword] = value;
+  return password !== confirmPassword ? error : undefined;
+};

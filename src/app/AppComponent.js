@@ -28,6 +28,7 @@ import styles from './AppComponent.module.scss';
 const UiKit = lazy(() => import('@kolo/pages/UiKit/UiKit'));
 const LoginPage = lazy(() => import('@kolo/pages/LoginPage/LoginPage'));
 const PricingPage = lazy(() => import('@kolo/pages/PricingPage/PricingPage'));
+const ResetPasswordPage = lazy(() => import('@kolo/pages/ResetPasswordPage/ResetPasswordPage'));
 
 export const AppComponent = () => {
   return (
@@ -64,6 +65,10 @@ export const AppComponent = () => {
             path={AppRoute.PRICING}
             element={<PricingPage />}
           />
+          <Route
+            path={AppRoute.RESET_PASSWORD}
+            element={<ResetPasswordPage />}
+          />
           {/* { <Route path={'/login'} element={<LoginPage isLogin />} />
         <Route path={'/register'} element={<LoginPage />} />
         <Route path={'/pricing'} element={<PricingPage />} />
@@ -71,7 +76,7 @@ export const AppComponent = () => {
         <Route path={'/terms-of-service'} element={<PolicyDocsComponent />} />
         <Route path={'/privacy-policy-docs'} element={<PolicyDocsComponent />} />
         <Route path={'/cookie-policy-docs'} element={<PolicyDocsComponent />} />
-        <Route path={'/reset-password'} element={<ResetPasswordPage />} />} */}
+       } */}
         </Routes>
       </Suspense>
       <Footer />

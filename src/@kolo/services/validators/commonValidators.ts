@@ -1,6 +1,6 @@
 import {composeValidators} from './compose';
 import {EMAIL_REGEX, STRING_LENGTH} from './constants';
-import {testRegex, validateMaxLength, validateMinLength, validateRequired} from './generalValidators';
+import {equalPasswords, testRegex, validateMaxLength, validateMinLength, validateRequired} from './generalValidators';
 
 const {EMAIL_MAX_LENGTH, EMAIL_MIN_LENGTH, NAME_MAX_LENGTH, NAME_MIN_LENGTH, PASSWORD_MAX_LENGTH, PASSWORD_MIN_LENGTH} =
   STRING_LENGTH;
@@ -42,3 +42,6 @@ export const validatePassword = (value: string) => {
 
 export const validateCheckbox = (checked: boolean | undefined): boolean | undefined =>
   !toBoolean(checked) ? true : undefined;
+
+export const validateEqualPasswords = (...value: string[]): string | undefined =>
+  equalPasswords('Passwords do not match. Try again', ...value);
