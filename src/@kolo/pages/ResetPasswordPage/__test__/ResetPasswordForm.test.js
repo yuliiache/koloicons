@@ -1,7 +1,7 @@
 import {BrowserRouter} from 'react-router-dom';
 import {fireEvent, render, screen} from '@testing-library/react';
 
-import ResetPasswordForm from '../ResetPasswordForm';
+import ResetPasswordForm from '../components/ResetPasswordForm';
 
 const testCases = Object.freeze({
   password: 'Password',

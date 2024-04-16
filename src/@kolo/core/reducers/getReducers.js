@@ -17,6 +17,8 @@ import loginReducer from '@kolo/pages/LoginPage/slices/loginUserSlice';
 import pricingReducer, {PRICING_KEY} from '@kolo/pages/PricingPage/components/Pricing/pricingSlice';
 import {PRICING_FAQS_KEY} from '@kolo/pages/PricingPage/components/PricingFAQs/constants';
 import pricingFAQsReducer from '@kolo/pages/PricingPage/components/PricingFAQs/slice/pricingFAQsSlice';
+import {RESET_PASSWORD_KEY} from '@kolo/pages/ResetPasswordPage/slice/resetPasswordSlice';
+import resetPasswordReducer from '@kolo/pages/ResetPasswordPage/slice/resetPasswordSlice';
 
 import {LOADING_KEY} from '../common/constants';
 import loadingReducer from '../common/loadingSlice';
@@ -33,6 +35,7 @@ const reducers = {
   [ICON_SEARCH_KEY]: iconSearchReducer,
   [PACK_ITEM_KEY]: packReducer,
   [FREE_PACKS_KEY]: freePacksReducer,
+  [RESET_PASSWORD_KEY]: resetPasswordReducer,
   // ...
 };
 
