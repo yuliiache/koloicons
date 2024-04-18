@@ -9,8 +9,10 @@
 }
 
 .iconsSearchResult {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 152px);
+  justify-content: space-between;
 }
 
 .header {
@@ -21,7 +23,7 @@
   & h2 {
     font-size: 24px;
     font-weight: 300;
-    color: #525866
+    color: $secFontColor
   }
   & span {
     margin-left: 8px;

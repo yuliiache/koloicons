@@ -132,7 +132,13 @@ exports[`IconsPage renders correctly and matches snapshot 1`] = `
     >
       <div
         class="content"
-      />
+      >
+        <div
+          class="iconsPage"
+        >
+          <div />
+        </div>
+      </div>
     </div>
   </section>
 </DocumentFragment>

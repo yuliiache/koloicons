@@ -5,6 +5,8 @@ import {getMonthPackWathcer} from '@kolo/pages/Home/components/MonthPack/sagas/g
 import {getItemPacksWatcher} from '@kolo/pages/Home/components/PackItem/sagas/getPackItem';
 import {getCategoriesWatcher} from '@kolo/pages/IconsPage/components/Categories/sagas/getCategories';
 import {watcherSagaIcon} from '@kolo/pages/IconsPage/components/DownloadModal/sagas/watcherSagaIcon';
+import {getIconsByQueryWatcher} from '@kolo/pages/IconsPage/components/IconsPageContent/IconsBySearch/sagas/getIconsByQuery';
+import {getIconsByCategoryWatcher} from '@kolo/pages/IconsPage/components/IconsPageContent/IconsContent/sagas/getIconsByCategory';
 import {loginUserWatcher} from '@kolo/pages/LoginPage/sagas/loginUser';
 import {logoutUserWatcher} from '@kolo/pages/LoginPage/sagas/logoutUser';
 import {getPricingData} from '@kolo/pages/PricingPage/components/Pricing/sagas/getPricingData';
@@ -12,11 +14,6 @@ import {getPricingFAQsWatcher} from '@kolo/pages/PricingPage/components/PricingF
 import {registerUserWatcher} from '@kolo/pages/RegisterPage/sagas/registerUser';
 import {resetPasswordWatcher} from '@kolo/pages/ResetPasswordPage/sagas/resetPassword';
 import {all, fork} from 'redux-saga/effects';
-
-import {
-  getIconsByQueryWatcher,
-  getMoreIconsByQueryWatcher,
-} from '../../pages/IconsPage/components/IconsPagePanel/components/IconSearch/getIconsByQuery';
 
 export function* rootSagas() {
   yield all(
@@ -34,8 +31,8 @@ export function* rootSagas() {
       getCategoriesWatcher,
       getPricingData,
       getIconsByQueryWatcher,
-      getMoreIconsByQueryWatcher,
       resetPasswordWatcher,
+      getIconsByCategoryWatcher,
       //...
     ].map(fork)
   );

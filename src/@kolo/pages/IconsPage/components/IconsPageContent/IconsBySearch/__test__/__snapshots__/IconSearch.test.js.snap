@@ -119,7 +119,7 @@ exports[`IconsByQuery Component renders without crashing and matches snapshot 1`
                   >
                     <img
                       alt="IconName"
-                      data-isfree="free"
+                      data-isfree="notfree"
                       data-testid="1"
                       height="48"
                       loading="lazy"

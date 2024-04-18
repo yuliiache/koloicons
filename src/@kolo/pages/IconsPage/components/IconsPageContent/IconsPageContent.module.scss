@@ -2,6 +2,7 @@
 
 .contentSection {
   display: flex;
+  width: 100%;
   background-color: $WhiteBG;
 }
 
@@ -39,6 +40,7 @@
 
 .content {
   min-height: calc(100vh - 216px);
+  flex-grow: 1;
 
   &OnSide {
     width: calc(100vw - 344px);
@@ -48,3 +50,4 @@
     width: calc(100vw - 688px);
   }
 }
+

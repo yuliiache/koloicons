@@ -1,16 +1,16 @@
 import IconCard from '@kolo/pages/IconsPage/components/IconCard/IconCard';
+import {IconWithCategory} from '@kolo/types/icon';
 import Button from '@kolo/uiKit/Button/Button';
 import {ButtonColor, ButtonSize} from '@kolo/uiKit/Button/constants';
 import Icon from '@kolo/uiKit/Icons';
 import {FC} from 'react';
 
-import useIconSearch from '../../useIconSearch';
+import useIconSearch from '../../IconsPagePanel/useIconSearch';
 import styles from './IconsByQuery.module.scss';
-import {IconByQuery} from './iconSearchSlice';
 import useIconsByQuery from './useIconsByQuery';
 
 const IconsByQuery: FC = () => {
-  const {iconsSearchResult, hasMoreIcons, handleLoadMoreIcons, iconName, getPreferredStyle} = useIconsByQuery();
+  const {iconsSearchResult, hasMoreIcons, handleLoadMoreIcons, iconName} = useIconsByQuery();
   const {currentSearchQuery} = useIconSearch();
 
   return (
@@ -26,16 +26,15 @@ const IconsByQuery: FC = () => {
         </div>
         <ul className={styles.iconsSearchResult}>
           {iconsSearchResult.map(
-            ({id, name, style, size, category: {name: categoryName, number: categoryNumber}}: IconByQuery) => {
-              const iconStyle = getPreferredStyle(style);
+            ({id, name, style, size, category: {name: categoryName, number: categoryNumber}}: IconWithCategory) => {
               return (
                 <li key={id}>
                   <IconCard
-                    icon={{name, style: iconStyle, size, id}}
+                    icon={{name, style, size, id}}
                     iconId={id}
                     categoryNumber={categoryNumber}
                     categoryName={categoryName}
-                    isFree={true}
+                    isFree={false}
                   />
                 </li>
               );

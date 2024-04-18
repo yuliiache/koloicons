@@ -2,8 +2,9 @@ import {FC} from 'react';
 
 import Categories from './components/Categories/Categories';
 import Collection from './components/Collection/Collection';
+import IconsByQuery from './components/IconsPageContent/IconsBySearch/IconsByQuery';
+import IconsContent from './components/IconsPageContent/IconsContent/IconsContent';
 import IconsPageContent from './components/IconsPageContent/IconsPageContent';
-import IconsByQuery from './components/IconsPagePanel/components/IconSearch/IconsByQuery';
 import IconsPagePanel from './components/IconsPagePanel/IconsPagePanel';
 import useIconSearch from './components/IconsPagePanel/useIconSearch';
 import styles from './IconsPage.module.scss';
@@ -25,8 +26,10 @@ const IconsPage: FC = () => {
         LeftAsideContent={<Categories />}
         RightAsideContent={<Collection/>}
       >
-        {/* {instead of a child component for testing} */}
-        <>{currentSearchQuery && <IconsByQuery />}</>
+        <>
+          {currentSearchQuery && <IconsByQuery />}
+          {!currentSearchQuery && <IconsContent />}
+        </>
       </IconsPageContent>
     </section>
   );

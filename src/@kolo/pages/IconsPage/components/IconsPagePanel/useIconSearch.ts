@@ -1,3 +1,4 @@
+import {SEARCH_QUERY} from '@kolo/constants/constants';
 import {useSearchParams} from 'react-router-dom';
 
 interface useIconSearchReturn {
@@ -8,7 +9,7 @@ interface useIconSearchReturn {
 const useIconSearch = (): useIconSearchReturn => {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const currentSearchQuery = searchParams.get('searchQuery');
+  const currentSearchQuery = searchParams.get(SEARCH_QUERY);
   const handleIconSearch = (value: string) => {
     setSearchParams({searchQuery: value});
   };

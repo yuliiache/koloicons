@@ -5,15 +5,9 @@ export interface Icon {
   id: string;
 }
 
-// interface IconData {
-//   category: {
-//     name: string;
-//     number: number;
-//     id: string;
-//   };
-//   name: string;
-//   size: string;
-//   style: string;
-//   id: string;
-//   isFree: boolean;
-// }
+export interface IconWithCategory extends Icon {
+  category: {
+    name: string;
+    number: number;
+  };
+}
